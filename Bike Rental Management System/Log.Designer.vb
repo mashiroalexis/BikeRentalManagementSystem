@@ -38,11 +38,10 @@ Partial Class Log
         '
         Me.lblLogo.AutoSize = True
         Me.lblLogo.BackColor = System.Drawing.Color.Transparent
-        Me.lblLogo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLogo.Location = New System.Drawing.Point(202, 58)
-        Me.lblLogo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLogo.Font = New System.Drawing.Font("Virtual DJ", 16.2!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLogo.Location = New System.Drawing.Point(269, 71)
         Me.lblLogo.Name = "lblLogo"
-        Me.lblLogo.Size = New System.Drawing.Size(155, 26)
+        Me.lblLogo.Size = New System.Drawing.Size(261, 34)
         Me.lblLogo.TabIndex = 0
         Me.lblLogo.Text = "BIKE RENTAL"
         '
@@ -50,10 +49,10 @@ Partial Class Log
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(107, 46)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(143, 57)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(90, 48)
+        Me.PictureBox1.Size = New System.Drawing.Size(120, 59)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -63,10 +62,9 @@ Partial Class Log
         Me.lblUsername.AutoSize = True
         Me.lblUsername.BackColor = System.Drawing.Color.Transparent
         Me.lblUsername.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUsername.Location = New System.Drawing.Point(142, 127)
-        Me.lblUsername.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblUsername.Location = New System.Drawing.Point(189, 156)
         Me.lblUsername.Name = "lblUsername"
-        Me.lblUsername.Size = New System.Drawing.Size(75, 18)
+        Me.lblUsername.Size = New System.Drawing.Size(94, 23)
         Me.lblUsername.TabIndex = 2
         Me.lblUsername.Text = "Username"
         '
@@ -75,38 +73,37 @@ Partial Class Log
         Me.lblPassword.AutoSize = True
         Me.lblPassword.BackColor = System.Drawing.Color.Transparent
         Me.lblPassword.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPassword.Location = New System.Drawing.Point(142, 169)
-        Me.lblPassword.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPassword.Location = New System.Drawing.Point(189, 208)
         Me.lblPassword.Name = "lblPassword"
-        Me.lblPassword.Size = New System.Drawing.Size(69, 18)
+        Me.lblPassword.Size = New System.Drawing.Size(88, 23)
         Me.lblPassword.TabIndex = 3
         Me.lblPassword.Text = "Password"
         '
         'txtLogin
         '
         Me.txtLogin.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLogin.Location = New System.Drawing.Point(218, 125)
-        Me.txtLogin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtLogin.Location = New System.Drawing.Point(291, 154)
+        Me.txtLogin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtLogin.Name = "txtLogin"
-        Me.txtLogin.Size = New System.Drawing.Size(138, 24)
+        Me.txtLogin.Size = New System.Drawing.Size(183, 28)
         Me.txtLogin.TabIndex = 4
         '
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(218, 165)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPassword.Location = New System.Drawing.Point(291, 203)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(138, 24)
+        Me.txtPassword.Size = New System.Drawing.Size(183, 28)
         Me.txtPassword.TabIndex = 5
         '
         'btnLogin
         '
         Me.btnLogin.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.Location = New System.Drawing.Point(341, 247)
-        Me.btnLogin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnLogin.Location = New System.Drawing.Point(455, 304)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(73, 30)
+        Me.btnLogin.Size = New System.Drawing.Size(97, 37)
         Me.btnLogin.TabIndex = 6
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = True
@@ -114,20 +111,20 @@ Partial Class Log
         'btnRegister
         '
         Me.btnRegister.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRegister.Location = New System.Drawing.Point(95, 247)
-        Me.btnRegister.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRegister.Location = New System.Drawing.Point(127, 304)
+        Me.btnRegister.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRegister.Name = "btnRegister"
-        Me.btnRegister.Size = New System.Drawing.Size(73, 30)
+        Me.btnRegister.Size = New System.Drawing.Size(97, 37)
         Me.btnRegister.TabIndex = 7
         Me.btnRegister.Text = "Register"
         Me.btnRegister.UseVisualStyleBackColor = True
         '
         'Log
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(462, 344)
+        Me.ClientSize = New System.Drawing.Size(616, 423)
         Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPassword)
@@ -136,7 +133,7 @@ Partial Class Log
         Me.Controls.Add(Me.lblUsername)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblLogo)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Log"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
