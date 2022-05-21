@@ -22,7 +22,6 @@ Partial Class Reg
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Reg))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblFirstname = New System.Windows.Forms.Label()
         Me.lblLastname = New System.Windows.Forms.Label()
@@ -37,170 +36,220 @@ Partial Class Reg
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.btnSubmit = New System.Windows.Forms.Button()
-        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblacc = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(27, 25)
+        Me.Label1.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.SteelBlue
+        Me.Label1.Location = New System.Drawing.Point(182, 34)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(175, 18)
+        Me.Label1.Size = New System.Drawing.Size(226, 24)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Enter Personal Details"
+        Me.Label1.Text = "CREATE AN ACCOUNT"
         '
         'lblFirstname
         '
         Me.lblFirstname.AutoSize = True
         Me.lblFirstname.BackColor = System.Drawing.Color.Transparent
-        Me.lblFirstname.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFirstname.Location = New System.Drawing.Point(140, 89)
+        Me.lblFirstname.Font = New System.Drawing.Font("Lucida Bright", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFirstname.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lblFirstname.Location = New System.Drawing.Point(88, 136)
         Me.lblFirstname.Name = "lblFirstname"
-        Me.lblFirstname.Size = New System.Drawing.Size(97, 21)
+        Me.lblFirstname.Size = New System.Drawing.Size(82, 16)
         Me.lblFirstname.TabIndex = 1
-        Me.lblFirstname.Text = "First Name:"
+        Me.lblFirstname.Text = "First Name"
         '
         'lblLastname
         '
         Me.lblLastname.AutoSize = True
         Me.lblLastname.BackColor = System.Drawing.Color.Transparent
-        Me.lblLastname.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLastname.Location = New System.Drawing.Point(140, 126)
+        Me.lblLastname.Font = New System.Drawing.Font("Lucida Bright", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLastname.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lblLastname.Location = New System.Drawing.Point(328, 136)
         Me.lblLastname.Name = "lblLastname"
-        Me.lblLastname.Size = New System.Drawing.Size(95, 21)
+        Me.lblLastname.Size = New System.Drawing.Size(80, 16)
         Me.lblLastname.TabIndex = 2
-        Me.lblLastname.Text = "Last Name:"
+        Me.lblLastname.Text = "Last Name"
         '
         'lblemail
         '
         Me.lblemail.AutoSize = True
         Me.lblemail.BackColor = System.Drawing.Color.Transparent
-        Me.lblemail.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblemail.Location = New System.Drawing.Point(140, 165)
+        Me.lblemail.Font = New System.Drawing.Font("Lucida Bright", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblemail.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lblemail.Location = New System.Drawing.Point(88, 180)
         Me.lblemail.Name = "lblemail"
-        Me.lblemail.Size = New System.Drawing.Size(122, 21)
+        Me.lblemail.Size = New System.Drawing.Size(132, 20)
         Me.lblemail.TabIndex = 3
-        Me.lblemail.Text = "Email Address:"
+        Me.lblemail.Text = "Email Address"
         '
         'lblcontact
         '
         Me.lblcontact.AutoSize = True
         Me.lblcontact.BackColor = System.Drawing.Color.Transparent
-        Me.lblcontact.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcontact.Location = New System.Drawing.Point(140, 202)
+        Me.lblcontact.Font = New System.Drawing.Font("Lucida Bright", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcontact.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lblcontact.Location = New System.Drawing.Point(88, 253)
         Me.lblcontact.Name = "lblcontact"
-        Me.lblcontact.Size = New System.Drawing.Size(136, 21)
+        Me.lblcontact.Size = New System.Drawing.Size(156, 20)
         Me.lblcontact.TabIndex = 4
-        Me.lblcontact.Text = "Contact Number:"
+        Me.lblcontact.Text = "Contact Number*"
         '
         'lblusername
         '
         Me.lblusername.AutoSize = True
         Me.lblusername.BackColor = System.Drawing.Color.Transparent
-        Me.lblusername.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblusername.Location = New System.Drawing.Point(140, 239)
+        Me.lblusername.Font = New System.Drawing.Font("Lucida Bright", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblusername.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lblusername.Location = New System.Drawing.Point(88, 320)
         Me.lblusername.Name = "lblusername"
-        Me.lblusername.Size = New System.Drawing.Size(91, 21)
+        Me.lblusername.Size = New System.Drawing.Size(101, 20)
         Me.lblusername.TabIndex = 5
-        Me.lblusername.Text = "Username:"
+        Me.lblusername.Text = "Username*"
         '
         'lblpassword
         '
         Me.lblpassword.AutoSize = True
         Me.lblpassword.BackColor = System.Drawing.Color.Transparent
-        Me.lblpassword.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpassword.Location = New System.Drawing.Point(140, 277)
+        Me.lblpassword.Font = New System.Drawing.Font("Lucida Bright", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lblpassword.Location = New System.Drawing.Point(88, 391)
         Me.lblpassword.Name = "lblpassword"
-        Me.lblpassword.Size = New System.Drawing.Size(87, 21)
+        Me.lblpassword.Size = New System.Drawing.Size(95, 20)
         Me.lblpassword.TabIndex = 6
-        Me.lblpassword.Text = "Password:"
+        Me.lblpassword.Text = "Password*"
         '
         'txtFirstName
         '
-        Me.txtFirstName.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFirstName.Location = New System.Drawing.Point(297, 85)
+        Me.txtFirstName.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtFirstName.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFirstName.ForeColor = System.Drawing.Color.Black
+        Me.txtFirstName.Location = New System.Drawing.Point(89, 107)
         Me.txtFirstName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtFirstName.Name = "txtFirstName"
-        Me.txtFirstName.Size = New System.Drawing.Size(236, 26)
+        Me.txtFirstName.Size = New System.Drawing.Size(165, 22)
         Me.txtFirstName.TabIndex = 7
         '
         'txtLastName
         '
-        Me.txtLastName.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLastName.Location = New System.Drawing.Point(297, 121)
+        Me.txtLastName.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtLastName.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLastName.Location = New System.Drawing.Point(329, 107)
         Me.txtLastName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtLastName.Name = "txtLastName"
-        Me.txtLastName.Size = New System.Drawing.Size(236, 26)
+        Me.txtLastName.Size = New System.Drawing.Size(165, 22)
         Me.txtLastName.TabIndex = 8
         '
         'txtEmail
         '
-        Me.txtEmail.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(297, 163)
+        Me.txtEmail.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtEmail.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.Location = New System.Drawing.Point(90, 204)
         Me.txtEmail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(236, 26)
+        Me.txtEmail.Size = New System.Drawing.Size(403, 22)
         Me.txtEmail.TabIndex = 9
         '
         'txtContact
         '
-        Me.txtContact.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContact.Location = New System.Drawing.Point(297, 201)
+        Me.txtContact.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtContact.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtContact.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContact.Location = New System.Drawing.Point(91, 276)
         Me.txtContact.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtContact.Name = "txtContact"
-        Me.txtContact.Size = New System.Drawing.Size(236, 26)
+        Me.txtContact.Size = New System.Drawing.Size(402, 22)
         Me.txtContact.TabIndex = 10
         '
         'txtUsername
         '
-        Me.txtUsername.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsername.Location = New System.Drawing.Point(297, 238)
+        Me.txtUsername.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtUsername.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsername.Location = New System.Drawing.Point(92, 343)
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(236, 26)
+        Me.txtUsername.Size = New System.Drawing.Size(402, 22)
         Me.txtUsername.TabIndex = 11
         '
         'txtPassword
         '
-        Me.txtPassword.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(297, 276)
+        Me.txtPassword.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPassword.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(92, 414)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(236, 26)
+        Me.txtPassword.Size = New System.Drawing.Size(402, 22)
         Me.txtPassword.TabIndex = 12
         '
         'btnSubmit
         '
-        Me.btnSubmit.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSubmit.Location = New System.Drawing.Point(437, 322)
+        Me.btnSubmit.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnSubmit.Font = New System.Drawing.Font("Verdana", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmit.ForeColor = System.Drawing.Color.Snow
+        Me.btnSubmit.Location = New System.Drawing.Point(89, 453)
         Me.btnSubmit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(97, 37)
+        Me.btnSubmit.Size = New System.Drawing.Size(405, 41)
         Me.btnSubmit.TabIndex = 13
-        Me.btnSubmit.Text = "Submit"
-        Me.btnSubmit.UseVisualStyleBackColor = True
+        Me.btnSubmit.Text = "Sign Up"
+        Me.btnSubmit.UseVisualStyleBackColor = False
         '
-        'btnCancel
+        'Label2
         '
-        Me.btnCancel.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(145, 322)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(97, 37)
-        Me.btnCancel.TabIndex = 14
-        Me.btnCancel.Text = "Cancel"
-        Me.btnCancel.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Lucida Bright", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label2.Location = New System.Drawing.Point(87, 80)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(65, 20)
+        Me.Label2.TabIndex = 15
+        Me.Label2.Text = "Name*"
+        '
+        'lblacc
+        '
+        Me.lblacc.AutoSize = True
+        Me.lblacc.BackColor = System.Drawing.Color.Transparent
+        Me.lblacc.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblacc.Location = New System.Drawing.Point(151, 536)
+        Me.lblacc.Name = "lblacc"
+        Me.lblacc.Size = New System.Drawing.Size(192, 16)
+        Me.lblacc.TabIndex = 16
+        Me.lblacc.Text = "Already Have an Account?"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Lucida Fax", 7.8!, CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) _
+                Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Label3.Location = New System.Drawing.Point(337, 535)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(55, 16)
+        Me.Label3.TabIndex = 17
+        Me.Label3.Text = "Log In"
         '
         'Reg
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(616, 423)
-        Me.Controls.Add(Me.btnCancel)
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.ClientSize = New System.Drawing.Size(579, 612)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lblacc)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnSubmit)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUsername)
@@ -238,6 +287,8 @@ Partial Class Reg
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnSubmit As Button
-    Friend WithEvents btnCancel As Button
     Friend WithEvents txtFirstName As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents lblacc As Label
+    Friend WithEvents Label3 As Label
 End Class

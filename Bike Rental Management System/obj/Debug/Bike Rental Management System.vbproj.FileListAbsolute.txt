@@ -42,14 +42,21 @@ C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Managemen
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\bin\Debug\Bike Rental Management System.exe
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\bin\Debug\Bike Rental Management System.pdb
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\bin\Debug\Bike Rental Management System.xml
+<<<<<<< Updated upstream
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.frmMain.resources
+=======
+>>>>>>> Stashed changes
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\bin\Debug\Bike Rental Management System.exe.config
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\bin\Debug\Bike Rental Management System.exe
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\bin\Debug\Bike Rental Management System.pdb
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\bin\Debug\Bike Rental Management System.xml
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike Rental Management System.vbproj.AssemblyReference.cache
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.Log.resources
+<<<<<<< Updated upstream
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.frmMain.resources
+=======
+C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.Main.resources
+>>>>>>> Stashed changes
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.Resources.resources
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.Reg.resources
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.Splash.resources
