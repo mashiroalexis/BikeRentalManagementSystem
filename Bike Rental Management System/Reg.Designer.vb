@@ -38,7 +38,7 @@ Partial Class Reg
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblacc = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lbllogin = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -228,18 +228,19 @@ Partial Class Reg
         Me.lblacc.TabIndex = 16
         Me.lblacc.Text = "Already Have an Account?"
         '
-        'Label3
+        'lbllogin
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Lucida Fax", 7.8!, CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) _
+        Me.lbllogin.AutoSize = True
+        Me.lbllogin.BackColor = System.Drawing.Color.Transparent
+        Me.lbllogin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbllogin.Font = New System.Drawing.Font("Lucida Fax", 7.8!, CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) _
                 Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.MediumBlue
-        Me.Label3.Location = New System.Drawing.Point(337, 535)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(55, 16)
-        Me.Label3.TabIndex = 17
-        Me.Label3.Text = "Log In"
+        Me.lbllogin.ForeColor = System.Drawing.Color.MediumBlue
+        Me.lbllogin.Location = New System.Drawing.Point(349, 536)
+        Me.lbllogin.Name = "lbllogin"
+        Me.lbllogin.Size = New System.Drawing.Size(55, 16)
+        Me.lbllogin.TabIndex = 17
+        Me.lbllogin.Text = "Log In"
         '
         'Reg
         '
@@ -247,7 +248,7 @@ Partial Class Reg
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(579, 612)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lbllogin)
         Me.Controls.Add(Me.lblacc)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnSubmit)
@@ -290,5 +291,5 @@ Partial Class Reg
     Friend WithEvents txtFirstName As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents lblacc As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lbllogin As Label
 End Class

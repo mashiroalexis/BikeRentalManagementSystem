@@ -11,7 +11,7 @@
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles lbllogin.Click
         Me.Close()
         Log.Show()
     End Sub
