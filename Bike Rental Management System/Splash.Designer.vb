@@ -43,7 +43,7 @@ Partial Class Splash
         Me.PictureBox2.Image = Global.Bike_Rental_Management_System.My.Resources.Resources.bikeloader
         Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(653, 460)
+        Me.PictureBox2.Size = New System.Drawing.Size(506, 319)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox2.TabIndex = 10
         Me.PictureBox2.TabStop = False
@@ -52,25 +52,26 @@ Partial Class Splash
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(185, 116)
+        Me.PictureBox1.Location = New System.Drawing.Point(11, 33)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(90, 48)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox1.TabIndex = 12
+        Me.PictureBox1.TabIndex = 14
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.UseWaitCursor = True
+        Me.PictureBox1.Visible = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(283, 135)
+        Me.Label1.Font = New System.Drawing.Font("Candara Light", 20.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(171, 229)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(168, 29)
-        Me.Label1.TabIndex = 11
+        Me.Label1.Size = New System.Drawing.Size(164, 33)
+        Me.Label1.TabIndex = 16
         Me.Label1.Text = "BIKE RENTAL"
         Me.Label1.UseWaitCursor = True
         '
@@ -79,9 +80,9 @@ Partial Class Splash
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(653, 460)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.ClientSize = New System.Drawing.Size(506, 319)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2)
