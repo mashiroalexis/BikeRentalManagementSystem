@@ -215,6 +215,7 @@ Partial Class Reg
         Me.Controls.Add(Me.lblLastname)
         Me.Controls.Add(Me.lblFirstname)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Reg"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
