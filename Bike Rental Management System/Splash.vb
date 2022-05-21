@@ -5,7 +5,7 @@
         If tmrC >= 3 Then
             Me.tmrSplashForm.Enabled = False
             Me.Hide()
-            Main.Show()
+            frmMain.Show()
 
         End If
 

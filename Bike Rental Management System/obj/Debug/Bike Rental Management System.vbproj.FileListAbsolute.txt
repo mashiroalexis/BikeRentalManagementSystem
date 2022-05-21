@@ -30,7 +30,6 @@ C:\Users\ramon\Downloads\Compressed\wetransfer_bike-rental-management-system_202
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike Rental Management System.vbproj.AssemblyReference.cache
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike Rental Management System.vbproj.SuggestedBindingRedirects.cache
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.Log.resources
-C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.Main.resources
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.Resources.resources
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.Reg.resources
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.Splash.resources
@@ -43,3 +42,4 @@ C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Managemen
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\bin\Debug\Bike Rental Management System.exe
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\bin\Debug\Bike Rental Management System.pdb
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\bin\Debug\Bike Rental Management System.xml
+C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.frmMain.resources
