@@ -127,8 +127,8 @@ Partial Class Reg
         'txtFirstName
         '
         Me.txtFirstName.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFirstName.Location = New System.Drawing.Point(182, 69)
-        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtFirstName.Location = New System.Drawing.Point(223, 69)
+        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.Size = New System.Drawing.Size(178, 22)
         Me.txtFirstName.TabIndex = 7
@@ -136,8 +136,8 @@ Partial Class Reg
         'txtLastName
         '
         Me.txtLastName.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLastName.Location = New System.Drawing.Point(182, 102)
-        Me.txtLastName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtLastName.Location = New System.Drawing.Point(223, 95)
+        Me.txtLastName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtLastName.Name = "txtLastName"
         Me.txtLastName.Size = New System.Drawing.Size(178, 22)
         Me.txtLastName.TabIndex = 8
@@ -145,26 +145,26 @@ Partial Class Reg
         'txtEmail
         '
         Me.txtEmail.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(201, 133)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtEmail.Location = New System.Drawing.Point(223, 133)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(159, 22)
+        Me.txtEmail.Size = New System.Drawing.Size(178, 22)
         Me.txtEmail.TabIndex = 9
         '
         'txtContact
         '
         Me.txtContact.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtContact.Location = New System.Drawing.Point(223, 163)
-        Me.txtContact.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtContact.Margin = New System.Windows.Forms.Padding(2)
         Me.txtContact.Name = "txtContact"
-        Me.txtContact.Size = New System.Drawing.Size(138, 22)
+        Me.txtContact.Size = New System.Drawing.Size(178, 22)
         Me.txtContact.TabIndex = 10
         '
         'txtUsername
         '
         Me.txtUsername.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsername.Location = New System.Drawing.Point(182, 193)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUsername.Location = New System.Drawing.Point(223, 193)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(178, 22)
         Me.txtUsername.TabIndex = 11
@@ -172,8 +172,8 @@ Partial Class Reg
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(182, 223)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPassword.Location = New System.Drawing.Point(223, 224)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(178, 22)
         Me.txtPassword.TabIndex = 12
@@ -181,8 +181,8 @@ Partial Class Reg
         'btnSubmit
         '
         Me.btnSubmit.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSubmit.Location = New System.Drawing.Point(351, 275)
-        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSubmit.Location = New System.Drawing.Point(328, 262)
+        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(73, 30)
         Me.btnSubmit.TabIndex = 13
@@ -192,8 +192,8 @@ Partial Class Reg
         'btnCancel
         '
         Me.btnCancel.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(67, 275)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCancel.Location = New System.Drawing.Point(109, 262)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(73, 30)
         Me.btnCancel.TabIndex = 14
@@ -221,7 +221,7 @@ Partial Class Reg
         Me.Controls.Add(Me.lblLastname)
         Me.Controls.Add(Me.lblFirstname)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Reg"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registration"
