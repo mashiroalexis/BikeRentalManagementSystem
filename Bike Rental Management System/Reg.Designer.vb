@@ -24,18 +24,18 @@ Partial Class Reg
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Reg))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.lblFirstname = New System.Windows.Forms.Label()
+        Me.lblLastname = New System.Windows.Forms.Label()
+        Me.lblemail = New System.Windows.Forms.Label()
+        Me.lblcontact = New System.Windows.Forms.Label()
+        Me.lblusername = New System.Windows.Forms.Label()
+        Me.lblpassword = New System.Windows.Forms.Label()
+        Me.txtFirstName = New System.Windows.Forms.TextBox()
+        Me.txtLastName = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.txtContact = New System.Windows.Forms.TextBox()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -51,119 +51,119 @@ Partial Class Reg
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Enter Personal Details"
         '
-        'Label2
+        'lblFirstname
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(140, 88)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 21)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "First Name:"
+        Me.lblFirstname.AutoSize = True
+        Me.lblFirstname.BackColor = System.Drawing.Color.Transparent
+        Me.lblFirstname.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFirstname.Location = New System.Drawing.Point(140, 88)
+        Me.lblFirstname.Name = "lblFirstname"
+        Me.lblFirstname.Size = New System.Drawing.Size(97, 21)
+        Me.lblFirstname.TabIndex = 1
+        Me.lblFirstname.Text = "First Name:"
         '
-        'Label3
+        'lblLastname
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(140, 126)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(95, 21)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Last Name:"
+        Me.lblLastname.AutoSize = True
+        Me.lblLastname.BackColor = System.Drawing.Color.Transparent
+        Me.lblLastname.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLastname.Location = New System.Drawing.Point(140, 126)
+        Me.lblLastname.Name = "lblLastname"
+        Me.lblLastname.Size = New System.Drawing.Size(95, 21)
+        Me.lblLastname.TabIndex = 2
+        Me.lblLastname.Text = "Last Name:"
         '
-        'Label4
+        'lblemail
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(140, 165)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(122, 21)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Email Address:"
+        Me.lblemail.AutoSize = True
+        Me.lblemail.BackColor = System.Drawing.Color.Transparent
+        Me.lblemail.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblemail.Location = New System.Drawing.Point(140, 165)
+        Me.lblemail.Name = "lblemail"
+        Me.lblemail.Size = New System.Drawing.Size(122, 21)
+        Me.lblemail.TabIndex = 3
+        Me.lblemail.Text = "Email Address:"
         '
-        'Label5
+        'lblcontact
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(140, 202)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(136, 21)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Contact Number:"
+        Me.lblcontact.AutoSize = True
+        Me.lblcontact.BackColor = System.Drawing.Color.Transparent
+        Me.lblcontact.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcontact.Location = New System.Drawing.Point(140, 202)
+        Me.lblcontact.Name = "lblcontact"
+        Me.lblcontact.Size = New System.Drawing.Size(136, 21)
+        Me.lblcontact.TabIndex = 4
+        Me.lblcontact.Text = "Contact Number:"
         '
-        'Label6
+        'lblusername
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(140, 239)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(91, 21)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Username:"
+        Me.lblusername.AutoSize = True
+        Me.lblusername.BackColor = System.Drawing.Color.Transparent
+        Me.lblusername.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblusername.Location = New System.Drawing.Point(140, 239)
+        Me.lblusername.Name = "lblusername"
+        Me.lblusername.Size = New System.Drawing.Size(91, 21)
+        Me.lblusername.TabIndex = 5
+        Me.lblusername.Text = "Username:"
         '
-        'Label7
+        'lblpassword
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(140, 277)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(87, 21)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "Password:"
+        Me.lblpassword.AutoSize = True
+        Me.lblpassword.BackColor = System.Drawing.Color.Transparent
+        Me.lblpassword.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpassword.Location = New System.Drawing.Point(140, 277)
+        Me.lblpassword.Name = "lblpassword"
+        Me.lblpassword.Size = New System.Drawing.Size(87, 21)
+        Me.lblpassword.TabIndex = 6
+        Me.lblpassword.Text = "Password:"
         '
-        'TextBox1
+        'txtFirstName
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(243, 85)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(236, 26)
-        Me.TextBox1.TabIndex = 7
+        Me.txtFirstName.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFirstName.Location = New System.Drawing.Point(243, 85)
+        Me.txtFirstName.Name = "txtFirstName"
+        Me.txtFirstName.Size = New System.Drawing.Size(236, 26)
+        Me.txtFirstName.TabIndex = 7
         '
-        'TextBox2
+        'txtLastName
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(243, 125)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(236, 26)
-        Me.TextBox2.TabIndex = 8
+        Me.txtLastName.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLastName.Location = New System.Drawing.Point(243, 125)
+        Me.txtLastName.Name = "txtLastName"
+        Me.txtLastName.Size = New System.Drawing.Size(236, 26)
+        Me.txtLastName.TabIndex = 8
         '
-        'TextBox3
+        'txtEmail
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(268, 164)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(211, 26)
-        Me.TextBox3.TabIndex = 9
+        Me.txtEmail.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.Location = New System.Drawing.Point(268, 164)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(211, 26)
+        Me.txtEmail.TabIndex = 9
         '
-        'TextBox4
+        'txtContact
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(297, 201)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(182, 26)
-        Me.TextBox4.TabIndex = 10
+        Me.txtContact.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContact.Location = New System.Drawing.Point(297, 201)
+        Me.txtContact.Name = "txtContact"
+        Me.txtContact.Size = New System.Drawing.Size(182, 26)
+        Me.txtContact.TabIndex = 10
         '
-        'TextBox5
+        'txtUsername
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(243, 237)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(236, 26)
-        Me.TextBox5.TabIndex = 11
+        Me.txtUsername.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsername.Location = New System.Drawing.Point(243, 237)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(236, 26)
+        Me.txtUsername.TabIndex = 11
         '
-        'TextBox6
+        'txtPassword
         '
-        Me.TextBox6.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(243, 274)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(236, 26)
-        Me.TextBox6.TabIndex = 12
+        Me.txtPassword.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(243, 274)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(236, 26)
+        Me.txtPassword.TabIndex = 12
         '
         'btnSubmit
         '
@@ -193,18 +193,18 @@ Partial Class Reg
         Me.ClientSize = New System.Drawing.Size(616, 423)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnSubmit)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.txtUsername)
+        Me.Controls.Add(Me.txtContact)
+        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.txtLastName)
+        Me.Controls.Add(Me.txtFirstName)
+        Me.Controls.Add(Me.lblpassword)
+        Me.Controls.Add(Me.lblusername)
+        Me.Controls.Add(Me.lblcontact)
+        Me.Controls.Add(Me.lblemail)
+        Me.Controls.Add(Me.lblLastname)
+        Me.Controls.Add(Me.lblFirstname)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Reg"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -215,18 +215,18 @@ Partial Class Reg
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents lblFirstname As Label
+    Friend WithEvents lblLastname As Label
+    Friend WithEvents lblemail As Label
+    Friend WithEvents lblcontact As Label
+    Friend WithEvents lblusername As Label
+    Friend WithEvents lblpassword As Label
+    Friend WithEvents txtLastName As TextBox
+    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents txtContact As TextBox
+    Friend WithEvents txtUsername As TextBox
+    Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnSubmit As Button
     Friend WithEvents btnCancel As Button
+    Friend WithEvents txtFirstName As TextBox
 End Class
