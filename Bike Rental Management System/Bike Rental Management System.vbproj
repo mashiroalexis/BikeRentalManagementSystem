@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmRentBike.Designer.vb">
+      <DependentUpon>frmRentBike.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRentBike.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Log.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmRentBike.resx">
+      <DependentUpon>frmRentBike.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Log.resx">
       <DependentUpon>Log.vb</DependentUpon>
     </EmbeddedResource>

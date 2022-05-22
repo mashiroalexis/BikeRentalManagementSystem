@@ -32,6 +32,16 @@ Bike Rental Management System
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Bike_Rental_Management_System.My.Resources.Resources.cycle">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Bike_Rental_Management_System.My.Resources.Resources.icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Bike_Rental_Management_System.My.Resources.Resources.loader">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

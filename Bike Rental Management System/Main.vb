@@ -30,4 +30,27 @@
         showSubMenu(Me.pnlBikeSubMenu)
         'hideSubMenu()
     End Sub
+
+
+    'switch forms
+    Dim activeChildForm As Form = Nothing
+    Private Sub switchMenu(panel As Form)
+        If activeChildForm IsNot Nothing Then
+            activeChildForm.Close()
+        End If
+
+        pnlChildFormContainer.Controls.Clear()
+        panel.TopLevel = False
+        panel.Dock = DockStyle.Fill
+        panel.FormBorderStyle = FormBorderStyle.None
+        pnlChildFormContainer.Controls.Add(panel)
+        pnlChildFormContainer.Tag = panel
+        panel.BringToFront()
+        panel.Show()
+    End Sub
+
+    Private Sub btnRent_Click(sender As Object, e As EventArgs) Handles btnRent.Click
+        switchMenu(frmRentBike)
+
+    End Sub
 End Class
