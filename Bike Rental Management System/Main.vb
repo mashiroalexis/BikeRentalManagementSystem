@@ -54,4 +54,8 @@
     Private Sub btnBikeMenu_Click_2(sender As Object, e As EventArgs) Handles btnBikeMenu.Click
         showSubMenu(Me.pnlBikeSubMenu)
     End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Application.Exit()
+    End Sub
 End Class
