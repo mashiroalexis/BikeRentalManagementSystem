@@ -23,8 +23,6 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.pnlMenu = New System.Windows.Forms.Panel()
-        Me.btnExit = New FontAwesome.Sharp.IconButton()
-        Me.btnCustomer = New FontAwesome.Sharp.IconButton()
         Me.btnCustomers = New System.Windows.Forms.Button()
         Me.pnlBikeSubMenu = New System.Windows.Forms.Panel()
         Me.btnReturn = New System.Windows.Forms.Button()
@@ -33,6 +31,8 @@ Partial Class frmMain
         Me.pnlLogo = New System.Windows.Forms.Panel()
         Me.pnlChildFormContainer = New System.Windows.Forms.Panel()
         Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
+        Me.btnExit = New FontAwesome.Sharp.IconButton()
+        Me.btnCustomer = New FontAwesome.Sharp.IconButton()
         Me.pnlMenu.SuspendLayout()
         Me.pnlBikeSubMenu.SuspendLayout()
         Me.pnlChildFormContainer.SuspendLayout()
@@ -54,48 +54,6 @@ Partial Class frmMain
         Me.pnlMenu.Name = "pnlMenu"
         Me.pnlMenu.Size = New System.Drawing.Size(250, 749)
         Me.pnlMenu.TabIndex = 0
-        '
-        'btnExit
-        '
-        Me.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnExit.FlatAppearance.BorderSize = 0
-        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnExit.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.ForeColor = System.Drawing.Color.LightGray
-        Me.btnExit.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt
-        Me.btnExit.IconColor = System.Drawing.Color.LightGray
-        Me.btnExit.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnExit.IconSize = 35
-        Me.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnExit.Location = New System.Drawing.Point(0, 703)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Padding = New System.Windows.Forms.Padding(0, 0, 0, 13)
-        Me.btnExit.Size = New System.Drawing.Size(250, 46)
-        Me.btnExit.TabIndex = 5
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnExit.UseVisualStyleBackColor = True
-        '
-        'btnCustomer
-        '
-        Me.btnCustomer.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnCustomer.FlatAppearance.BorderSize = 0
-        Me.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCustomer.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCustomer.ForeColor = System.Drawing.Color.LightGray
-        Me.btnCustomer.IconChar = FontAwesome.Sharp.IconChar.UserFriends
-        Me.btnCustomer.IconColor = System.Drawing.Color.LightGray
-        Me.btnCustomer.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCustomer.Location = New System.Drawing.Point(0, 274)
-        Me.btnCustomer.Name = "btnCustomer"
-        Me.btnCustomer.Size = New System.Drawing.Size(250, 50)
-        Me.btnCustomer.TabIndex = 4
-        Me.btnCustomer.Text = "Customer"
-        Me.btnCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnCustomer.UseVisualStyleBackColor = True
         '
         'btnCustomers
         '
@@ -202,6 +160,49 @@ Partial Class frmMain
         Me.IconPictureBox1.Size = New System.Drawing.Size(359, 350)
         Me.IconPictureBox1.TabIndex = 0
         Me.IconPictureBox1.TabStop = False
+        '
+        'btnExit
+        '
+        Me.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnExit.FlatAppearance.BorderSize = 0
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExit.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.ForeColor = System.Drawing.Color.LightGray
+        Me.btnExit.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt
+        Me.btnExit.IconColor = System.Drawing.Color.LightGray
+        Me.btnExit.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnExit.IconSize = 35
+        Me.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnExit.Location = New System.Drawing.Point(0, 703)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Padding = New System.Windows.Forms.Padding(0, 0, 0, 13)
+        Me.btnExit.Size = New System.Drawing.Size(250, 46)
+        Me.btnExit.TabIndex = 5
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'btnCustomer
+        '
+        Me.btnCustomer.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnCustomer.FlatAppearance.BorderSize = 0
+        Me.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCustomer.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCustomer.ForeColor = System.Drawing.Color.LightGray
+        Me.btnCustomer.IconChar = FontAwesome.Sharp.IconChar.UserFriends
+        Me.btnCustomer.IconColor = System.Drawing.Color.LightGray
+        Me.btnCustomer.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCustomer.IconSize = 35
+        Me.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCustomer.Location = New System.Drawing.Point(0, 274)
+        Me.btnCustomer.Name = "btnCustomer"
+        Me.btnCustomer.Size = New System.Drawing.Size(250, 50)
+        Me.btnCustomer.TabIndex = 4
+        Me.btnCustomer.Text = "Customer"
+        Me.btnCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnCustomer.UseVisualStyleBackColor = True
         '
         'frmMain
         '

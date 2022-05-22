@@ -7,6 +7,8 @@
         'when main form loads hide all submenu
         hideSubMenu()
 
+        Me.btnCustomers.Visible = False
+
     End Sub
 
     'hide all enabled sub menu in the main form
@@ -57,5 +59,11 @@
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Application.Exit()
+    End Sub
+
+    Private Sub btnCustomer_Click(sender As Object, e As EventArgs) Handles btnCustomer.Click
+        hideSubMenu()
+        switchMenu(frmCustomer)
+
     End Sub
 End Class

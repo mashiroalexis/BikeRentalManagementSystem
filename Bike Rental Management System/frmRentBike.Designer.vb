@@ -37,7 +37,7 @@ Partial Class frmRentBike
         Me.Panel1.ForeColor = System.Drawing.Color.LightGray
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(800, 62)
+        Me.Panel1.Size = New System.Drawing.Size(800, 65)
         Me.Panel1.TabIndex = 0
         '
         'lblRentTitle
