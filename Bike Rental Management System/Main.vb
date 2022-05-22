@@ -26,10 +26,6 @@
         End If
     End Sub
 
-    Private Sub btnBikeMenu_Click(sender As Object, e As EventArgs) Handles btnBikeMenu.Click
-        showSubMenu(Me.pnlBikeSubMenu)
-        'hideSubMenu()
-    End Sub
 
 
     'switch forms
@@ -52,5 +48,10 @@
     Private Sub btnRent_Click(sender As Object, e As EventArgs) Handles btnRent.Click
         switchMenu(frmRentBike)
 
+    End Sub
+
+
+    Private Sub btnBikeMenu_Click_2(sender As Object, e As EventArgs) Handles btnBikeMenu.Click
+        showSubMenu(Me.pnlBikeSubMenu)
     End Sub
 End Class

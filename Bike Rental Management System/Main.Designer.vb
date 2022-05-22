@@ -23,15 +23,18 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.pnlMenu = New System.Windows.Forms.Panel()
-        Me.pnlLogo = New System.Windows.Forms.Panel()
-        Me.pnlBikeSubMenu = New System.Windows.Forms.Panel()
-        Me.btnRent = New System.Windows.Forms.Button()
-        Me.btnReturn = New System.Windows.Forms.Button()
         Me.btnCustomers = New System.Windows.Forms.Button()
-        Me.pnlChildFormContainer = New System.Windows.Forms.Panel()
+        Me.pnlBikeSubMenu = New System.Windows.Forms.Panel()
+        Me.btnReturn = New System.Windows.Forms.Button()
+        Me.btnRent = New System.Windows.Forms.Button()
         Me.btnBikeMenu = New System.Windows.Forms.Button()
+        Me.pnlLogo = New System.Windows.Forms.Panel()
+        Me.pnlChildFormContainer = New System.Windows.Forms.Panel()
+        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         Me.pnlMenu.SuspendLayout()
         Me.pnlBikeSubMenu.SuspendLayout()
+        Me.pnlChildFormContainer.SuspendLayout()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlMenu
@@ -47,56 +50,6 @@ Partial Class frmMain
         Me.pnlMenu.Name = "pnlMenu"
         Me.pnlMenu.Size = New System.Drawing.Size(250, 749)
         Me.pnlMenu.TabIndex = 0
-        '
-        'pnlLogo
-        '
-        Me.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlLogo.Location = New System.Drawing.Point(0, 0)
-        Me.pnlLogo.Name = "pnlLogo"
-        Me.pnlLogo.Size = New System.Drawing.Size(250, 100)
-        Me.pnlLogo.TabIndex = 0
-        '
-        'pnlBikeSubMenu
-        '
-        Me.pnlBikeSubMenu.Controls.Add(Me.btnReturn)
-        Me.pnlBikeSubMenu.Controls.Add(Me.btnRent)
-        Me.pnlBikeSubMenu.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlBikeSubMenu.Location = New System.Drawing.Point(0, 145)
-        Me.pnlBikeSubMenu.Name = "pnlBikeSubMenu"
-        Me.pnlBikeSubMenu.Size = New System.Drawing.Size(250, 84)
-        Me.pnlBikeSubMenu.TabIndex = 2
-        '
-        'btnRent
-        '
-        Me.btnRent.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnRent.FlatAppearance.BorderSize = 0
-        Me.btnRent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRent.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRent.ForeColor = System.Drawing.Color.LightGray
-        Me.btnRent.Location = New System.Drawing.Point(0, 0)
-        Me.btnRent.Name = "btnRent"
-        Me.btnRent.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnRent.Size = New System.Drawing.Size(250, 36)
-        Me.btnRent.TabIndex = 0
-        Me.btnRent.Text = "Rent"
-        Me.btnRent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRent.UseVisualStyleBackColor = True
-        '
-        'btnReturn
-        '
-        Me.btnReturn.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnReturn.FlatAppearance.BorderSize = 0
-        Me.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReturn.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReturn.ForeColor = System.Drawing.Color.LightGray
-        Me.btnReturn.Location = New System.Drawing.Point(0, 36)
-        Me.btnReturn.Name = "btnReturn"
-        Me.btnReturn.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnReturn.Size = New System.Drawing.Size(250, 45)
-        Me.btnReturn.TabIndex = 1
-        Me.btnReturn.Text = "Return"
-        Me.btnReturn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReturn.UseVisualStyleBackColor = True
         '
         'btnCustomers
         '
@@ -114,13 +67,47 @@ Partial Class frmMain
         Me.btnCustomers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnCustomers.UseVisualStyleBackColor = True
         '
-        'pnlChildFormContainer
+        'pnlBikeSubMenu
         '
-        Me.pnlChildFormContainer.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlChildFormContainer.Location = New System.Drawing.Point(250, 0)
-        Me.pnlChildFormContainer.Name = "pnlChildFormContainer"
-        Me.pnlChildFormContainer.Size = New System.Drawing.Size(963, 749)
-        Me.pnlChildFormContainer.TabIndex = 1
+        Me.pnlBikeSubMenu.Controls.Add(Me.btnReturn)
+        Me.pnlBikeSubMenu.Controls.Add(Me.btnRent)
+        Me.pnlBikeSubMenu.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlBikeSubMenu.Location = New System.Drawing.Point(0, 145)
+        Me.pnlBikeSubMenu.Name = "pnlBikeSubMenu"
+        Me.pnlBikeSubMenu.Size = New System.Drawing.Size(250, 84)
+        Me.pnlBikeSubMenu.TabIndex = 2
+        '
+        'btnReturn
+        '
+        Me.btnReturn.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnReturn.FlatAppearance.BorderSize = 0
+        Me.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReturn.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReturn.ForeColor = System.Drawing.Color.LightGray
+        Me.btnReturn.Location = New System.Drawing.Point(0, 36)
+        Me.btnReturn.Name = "btnReturn"
+        Me.btnReturn.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.btnReturn.Size = New System.Drawing.Size(250, 45)
+        Me.btnReturn.TabIndex = 1
+        Me.btnReturn.Text = "Return"
+        Me.btnReturn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnReturn.UseVisualStyleBackColor = True
+        '
+        'btnRent
+        '
+        Me.btnRent.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnRent.FlatAppearance.BorderSize = 0
+        Me.btnRent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRent.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRent.ForeColor = System.Drawing.Color.LightGray
+        Me.btnRent.Location = New System.Drawing.Point(0, 0)
+        Me.btnRent.Name = "btnRent"
+        Me.btnRent.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.btnRent.Size = New System.Drawing.Size(250, 36)
+        Me.btnRent.TabIndex = 0
+        Me.btnRent.Text = "Rent"
+        Me.btnRent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRent.UseVisualStyleBackColor = True
         '
         'btnBikeMenu
         '
@@ -139,6 +126,37 @@ Partial Class frmMain
         Me.btnBikeMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnBikeMenu.UseVisualStyleBackColor = True
         '
+        'pnlLogo
+        '
+        Me.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlLogo.Location = New System.Drawing.Point(0, 0)
+        Me.pnlLogo.Name = "pnlLogo"
+        Me.pnlLogo.Size = New System.Drawing.Size(250, 100)
+        Me.pnlLogo.TabIndex = 0
+        '
+        'pnlChildFormContainer
+        '
+        Me.pnlChildFormContainer.Controls.Add(Me.IconPictureBox1)
+        Me.pnlChildFormContainer.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlChildFormContainer.Location = New System.Drawing.Point(250, 0)
+        Me.pnlChildFormContainer.Name = "pnlChildFormContainer"
+        Me.pnlChildFormContainer.Size = New System.Drawing.Size(963, 749)
+        Me.pnlChildFormContainer.TabIndex = 1
+        '
+        'IconPictureBox1
+        '
+        Me.IconPictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.IconPictureBox1.ForeColor = System.Drawing.Color.LightGray
+        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.LocationArrow
+        Me.IconPictureBox1.IconColor = System.Drawing.Color.LightGray
+        Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBox1.IconSize = 350
+        Me.IconPictureBox1.Location = New System.Drawing.Point(260, 172)
+        Me.IconPictureBox1.Name = "IconPictureBox1"
+        Me.IconPictureBox1.Size = New System.Drawing.Size(359, 350)
+        Me.IconPictureBox1.TabIndex = 0
+        Me.IconPictureBox1.TabStop = False
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -154,6 +172,8 @@ Partial Class frmMain
         Me.Text = " "
         Me.pnlMenu.ResumeLayout(False)
         Me.pnlBikeSubMenu.ResumeLayout(False)
+        Me.pnlChildFormContainer.ResumeLayout(False)
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -166,4 +186,5 @@ Partial Class frmMain
     Friend WithEvents pnlLogo As Panel
     Friend WithEvents btnCustomers As Button
     Friend WithEvents pnlChildFormContainer As Panel
+    Friend WithEvents IconPictureBox1 As FontAwesome.Sharp.IconPictureBox
 End Class

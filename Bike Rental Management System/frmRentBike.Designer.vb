@@ -52,10 +52,11 @@ Partial Class frmRentBike
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.Image = Global.Bike_Rental_Management_System.My.Resources.Resources.loader
-        Me.PictureBox1.Location = New System.Drawing.Point(48, 86)
+        Me.PictureBox1.Location = New System.Drawing.Point(42, 83)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(710, 335)
+        Me.PictureBox1.Size = New System.Drawing.Size(725, 336)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False

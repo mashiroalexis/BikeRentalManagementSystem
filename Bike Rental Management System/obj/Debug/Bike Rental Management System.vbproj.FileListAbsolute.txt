@@ -15,3 +15,5 @@ C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Managemen
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike Rental Management System.xml
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike Rental Management System.pdb
 C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.frmRentBike.resources
+C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\ramon\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike Rental Management System.vbproj.CopyComplete
