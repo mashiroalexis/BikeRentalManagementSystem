@@ -7,8 +7,6 @@
         'when main form loads hide all submenu
         hideSubMenu()
 
-        Me.btnCustomers.Visible = False
-
     End Sub
 
     'hide all enabled sub menu in the main form

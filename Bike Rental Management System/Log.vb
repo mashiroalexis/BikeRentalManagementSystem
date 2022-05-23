@@ -57,5 +57,14 @@
             txtPassword.ForeColor = Color.Silver
         End If
     End Sub
+    Dim cSec As Integer
+    Private Sub pbLogo_Click(sender As Object, e As EventArgs) Handles pbLogo.Click
+        cSec += 1
+        If cSec >= 3 Then
+            cSec = 0
+            Me.Hide()
+            frmAdminAccess.Show()
+        End If
+    End Sub
 End Class
 
