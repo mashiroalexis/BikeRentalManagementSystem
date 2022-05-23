@@ -83,7 +83,7 @@ Partial Class Log
         Me.lblacc.BackColor = System.Drawing.Color.Transparent
         Me.lblacc.Font = New System.Drawing.Font("Nirmala UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblacc.ForeColor = System.Drawing.Color.LightGray
-        Me.lblacc.Location = New System.Drawing.Point(186, 409)
+        Me.lblacc.Location = New System.Drawing.Point(189, 429)
         Me.lblacc.Name = "lblacc"
         Me.lblacc.Size = New System.Drawing.Size(175, 19)
         Me.lblacc.TabIndex = 17
@@ -97,7 +97,7 @@ Partial Class Log
         Me.lblsignup.Font = New System.Drawing.Font("Nirmala UI", 7.8!, CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) _
                 Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsignup.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblsignup.Location = New System.Drawing.Point(373, 407)
+        Me.lblsignup.Location = New System.Drawing.Point(379, 428)
         Me.lblsignup.Name = "lblsignup"
         Me.lblsignup.Size = New System.Drawing.Size(61, 19)
         Me.lblsignup.TabIndex = 18
@@ -124,7 +124,7 @@ Partial Class Log
         Me.Panel1.Controls.Add(Me.btnLogin)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.lblLogo)
-        Me.Panel1.Location = New System.Drawing.Point(80, 54)
+        Me.Panel1.Location = New System.Drawing.Point(80, 74)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(459, 340)
         Me.Panel1.TabIndex = 20
@@ -186,7 +186,7 @@ Partial Class Log
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(616, 470)
+        Me.ClientSize = New System.Drawing.Size(616, 503)
         Me.Controls.Add(Me.btnminimize)
         Me.Controls.Add(Me.btnmaxmimize)
         Me.Controls.Add(Me.Panel1)
