@@ -19,12 +19,4 @@
     Private Sub Reg_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         roundCorners(Me)
     End Sub
-
-    Private Sub Reg_MouseHover(sender As Object, e As EventArgs) Handles Me.MouseHover
-        Me.lbllogin.ForeColor = Color.RoyalBlue
-    End Sub
-
-    Private Sub Reg_MouseLeave(sender As Object, e As EventArgs) Handles Me.MouseLeave
-        Me.lbllogin.ForeColor = Color.White
-    End Sub
 End Class

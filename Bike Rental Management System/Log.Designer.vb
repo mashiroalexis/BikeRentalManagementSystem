@@ -34,7 +34,9 @@ Partial Class Log
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.btnminimize = New System.Windows.Forms.Label()
         Me.btnmaxmimize = New System.Windows.Forms.Label()
-        CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -119,6 +121,8 @@ Partial Class Log
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Panel3)
+        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.txtPassword)
         Me.Panel1.Controls.Add(Me.txtUsername)
         Me.Panel1.Controls.Add(Me.btnLogin)
@@ -132,12 +136,11 @@ Partial Class Log
         '
         'txtPassword
         '
-        Me.txtPassword.BackColor = System.Drawing.Color.White
+        Me.txtPassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtPassword.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.txtPassword.Location = New System.Drawing.Point(132, 232)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtPassword.ForeColor = System.Drawing.Color.White
+        Me.txtPassword.Location = New System.Drawing.Point(117, 190)
         Me.txtPassword.Multiline = True
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(262, 35)
@@ -146,12 +149,11 @@ Partial Class Log
         '
         'txtUsername
         '
-        Me.txtUsername.BackColor = System.Drawing.Color.White
+        Me.txtUsername.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtUsername.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsername.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.txtUsername.Location = New System.Drawing.Point(132, 169)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtUsername.ForeColor = System.Drawing.Color.White
+        Me.txtUsername.Location = New System.Drawing.Point(117, 139)
         Me.txtUsername.Multiline = True
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(262, 35)
@@ -183,6 +185,22 @@ Partial Class Log
         Me.btnmaxmimize.Size = New System.Drawing.Size(22, 19)
         Me.btnmaxmimize.TabIndex = 21
         Me.btnmaxmimize.Text = "□"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.LightGray
+        Me.Panel2.Location = New System.Drawing.Point(117, 169)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(233, 1)
+        Me.Panel2.TabIndex = 23
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.LightGray
+        Me.Panel3.Location = New System.Drawing.Point(117, 220)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(233, 1)
+        Me.Panel3.TabIndex = 24
         '
         'Log
         '
@@ -220,4 +238,6 @@ Partial Class Log
     Friend WithEvents btnmaxmimize As Label
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtPassword As TextBox
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel2 As Panel
 End Class

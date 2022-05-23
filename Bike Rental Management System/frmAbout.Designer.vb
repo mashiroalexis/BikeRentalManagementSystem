@@ -24,9 +24,9 @@ Partial Class frmAbout
     Private Sub InitializeComponent()
         Me.lblAboutTitle = New System.Windows.Forms.Label()
         Me.pbCloseAboutForm = New FontAwesome.Sharp.IconPictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlAboutTitleCover = New System.Windows.Forms.Panel()
         CType(Me.pbCloseAboutForm, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
+        Me.pnlAboutTitleCover.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblAboutTitle
@@ -59,16 +59,16 @@ Partial Class frmAbout
         Me.pbCloseAboutForm.TabIndex = 3
         Me.pbCloseAboutForm.TabStop = False
         '
-        'Panel1
+        'pnlAboutTitleCover
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.lblAboutTitle)
-        Me.Panel1.Controls.Add(Me.pbCloseAboutForm)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1267, 80)
-        Me.Panel1.TabIndex = 6
+        Me.pnlAboutTitleCover.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.pnlAboutTitleCover.Controls.Add(Me.lblAboutTitle)
+        Me.pnlAboutTitleCover.Controls.Add(Me.pbCloseAboutForm)
+        Me.pnlAboutTitleCover.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlAboutTitleCover.Location = New System.Drawing.Point(0, 0)
+        Me.pnlAboutTitleCover.Name = "pnlAboutTitleCover"
+        Me.pnlAboutTitleCover.Size = New System.Drawing.Size(1267, 80)
+        Me.pnlAboutTitleCover.TabIndex = 6
         '
         'frmAbout
         '
@@ -76,17 +76,17 @@ Partial Class frmAbout
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1267, 800)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnlAboutTitleCover)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmAbout"
         Me.Text = "frmAbout"
         CType(Me.pbCloseAboutForm, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.pnlAboutTitleCover.ResumeLayout(False)
+        Me.pnlAboutTitleCover.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents lblAboutTitle As Label
     Friend WithEvents pbCloseAboutForm As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents pnlAboutTitleCover As Panel
 End Class

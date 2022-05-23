@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,10 @@ Partial Class frmMain
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.pnlMenu = New System.Windows.Forms.Panel()
+        Me.btnHome = New FontAwesome.Sharp.IconButton()
         Me.btnAbout = New FontAwesome.Sharp.IconButton()
         Me.btnExit = New FontAwesome.Sharp.IconButton()
         Me.btnCustomer = New FontAwesome.Sharp.IconButton()
@@ -43,6 +44,7 @@ Partial Class frmMain
         '
         Me.pnlMenu.AutoScroll = True
         Me.pnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.pnlMenu.Controls.Add(Me.btnHome)
         Me.pnlMenu.Controls.Add(Me.btnAbout)
         Me.pnlMenu.Controls.Add(Me.btnExit)
         Me.pnlMenu.Controls.Add(Me.btnCustomer)
@@ -51,10 +53,33 @@ Partial Class frmMain
         Me.pnlMenu.Controls.Add(Me.pnlLogo)
         Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlMenu.Location = New System.Drawing.Point(0, 0)
-        Me.pnlMenu.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pnlMenu.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlMenu.Name = "pnlMenu"
-        Me.pnlMenu.Size = New System.Drawing.Size(375, 1152)
+        Me.pnlMenu.Size = New System.Drawing.Size(333, 882)
         Me.pnlMenu.TabIndex = 0
+        '
+        'btnHome
+        '
+        Me.btnHome.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.btnHome.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnHome.FlatAppearance.BorderSize = 0
+        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHome.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHome.ForeColor = System.Drawing.Color.LightGray
+        Me.btnHome.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.btnHome.IconColor = System.Drawing.Color.LightGray
+        Me.btnHome.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnHome.IconSize = 35
+        Me.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnHome.Location = New System.Drawing.Point(0, 420)
+        Me.btnHome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(333, 62)
+        Me.btnHome.TabIndex = 7
+        Me.btnHome.Text = "Home"
+        Me.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnHome.UseVisualStyleBackColor = False
         '
         'btnAbout
         '
@@ -68,10 +93,9 @@ Partial Class frmMain
         Me.btnAbout.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnAbout.IconSize = 35
         Me.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAbout.Location = New System.Drawing.Point(0, 430)
-        Me.btnAbout.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnAbout.Location = New System.Drawing.Point(0, 343)
         Me.btnAbout.Name = "btnAbout"
-        Me.btnAbout.Size = New System.Drawing.Size(375, 96)
+        Me.btnAbout.Size = New System.Drawing.Size(333, 77)
         Me.btnAbout.TabIndex = 6
         Me.btnAbout.Text = "About"
         Me.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -90,11 +114,11 @@ Partial Class frmMain
         Me.btnExit.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnExit.IconSize = 35
         Me.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnExit.Location = New System.Drawing.Point(0, 1081)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnExit.Location = New System.Drawing.Point(0, 825)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Padding = New System.Windows.Forms.Padding(0, 0, 0, 20)
-        Me.btnExit.Size = New System.Drawing.Size(375, 71)
+        Me.btnExit.Padding = New System.Windows.Forms.Padding(0, 0, 0, 16)
+        Me.btnExit.Size = New System.Drawing.Size(333, 57)
         Me.btnExit.TabIndex = 5
         Me.btnExit.Text = "Exit"
         Me.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -113,10 +137,10 @@ Partial Class frmMain
         Me.btnCustomer.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnCustomer.IconSize = 35
         Me.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCustomer.Location = New System.Drawing.Point(0, 352)
-        Me.btnCustomer.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnCustomer.Location = New System.Drawing.Point(0, 281)
+        Me.btnCustomer.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCustomer.Name = "btnCustomer"
-        Me.btnCustomer.Size = New System.Drawing.Size(375, 78)
+        Me.btnCustomer.Size = New System.Drawing.Size(333, 62)
         Me.btnCustomer.TabIndex = 4
         Me.btnCustomer.Text = "Customer"
         Me.btnCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -128,10 +152,10 @@ Partial Class frmMain
         Me.pnlBikeSubMenu.Controls.Add(Me.btnReturn)
         Me.pnlBikeSubMenu.Controls.Add(Me.btnRent)
         Me.pnlBikeSubMenu.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlBikeSubMenu.Location = New System.Drawing.Point(0, 223)
-        Me.pnlBikeSubMenu.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pnlBikeSubMenu.Location = New System.Drawing.Point(0, 178)
+        Me.pnlBikeSubMenu.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlBikeSubMenu.Name = "pnlBikeSubMenu"
-        Me.pnlBikeSubMenu.Size = New System.Drawing.Size(375, 129)
+        Me.pnlBikeSubMenu.Size = New System.Drawing.Size(333, 103)
         Me.pnlBikeSubMenu.TabIndex = 2
         '
         'btnReturn
@@ -144,11 +168,11 @@ Partial Class frmMain
         Me.btnReturn.IconChar = FontAwesome.Sharp.IconChar.None
         Me.btnReturn.IconColor = System.Drawing.Color.Black
         Me.btnReturn.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnReturn.Location = New System.Drawing.Point(0, 55)
-        Me.btnReturn.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnReturn.Location = New System.Drawing.Point(0, 44)
+        Me.btnReturn.Margin = New System.Windows.Forms.Padding(4)
         Me.btnReturn.Name = "btnReturn"
-        Me.btnReturn.Padding = New System.Windows.Forms.Padding(65, 0, 0, 0)
-        Me.btnReturn.Size = New System.Drawing.Size(375, 69)
+        Me.btnReturn.Padding = New System.Windows.Forms.Padding(58, 0, 0, 0)
+        Me.btnReturn.Size = New System.Drawing.Size(333, 55)
         Me.btnReturn.TabIndex = 1
         Me.btnReturn.Text = "Return"
         Me.btnReturn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -165,10 +189,10 @@ Partial Class frmMain
         Me.btnRent.IconColor = System.Drawing.Color.Black
         Me.btnRent.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnRent.Location = New System.Drawing.Point(0, 0)
-        Me.btnRent.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnRent.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRent.Name = "btnRent"
-        Me.btnRent.Padding = New System.Windows.Forms.Padding(65, 0, 0, 0)
-        Me.btnRent.Size = New System.Drawing.Size(375, 55)
+        Me.btnRent.Padding = New System.Windows.Forms.Padding(58, 0, 0, 0)
+        Me.btnRent.Size = New System.Drawing.Size(333, 44)
         Me.btnRent.TabIndex = 0
         Me.btnRent.Text = "Rent"
         Me.btnRent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -186,10 +210,11 @@ Partial Class frmMain
         Me.btnBikeMenu.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnBikeMenu.IconSize = 35
         Me.btnBikeMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBikeMenu.Location = New System.Drawing.Point(0, 154)
-        Me.btnBikeMenu.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnBikeMenu.Location = New System.Drawing.Point(0, 123)
+        Me.btnBikeMenu.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBikeMenu.Name = "btnBikeMenu"
-        Me.btnBikeMenu.Size = New System.Drawing.Size(375, 69)
+        Me.btnBikeMenu.Padding = New System.Windows.Forms.Padding(12, 0, 0, 0)
+        Me.btnBikeMenu.Size = New System.Drawing.Size(333, 55)
         Me.btnBikeMenu.TabIndex = 1
         Me.btnBikeMenu.Text = "Bike"
         Me.btnBikeMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -200,19 +225,19 @@ Partial Class frmMain
         '
         Me.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlLogo.Location = New System.Drawing.Point(0, 0)
-        Me.pnlLogo.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pnlLogo.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlLogo.Name = "pnlLogo"
-        Me.pnlLogo.Size = New System.Drawing.Size(375, 154)
+        Me.pnlLogo.Size = New System.Drawing.Size(333, 123)
         Me.pnlLogo.TabIndex = 0
         '
         'pnlChildFormContainer
         '
         Me.pnlChildFormContainer.Controls.Add(Me.IconPictureBox1)
         Me.pnlChildFormContainer.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlChildFormContainer.Location = New System.Drawing.Point(375, 0)
-        Me.pnlChildFormContainer.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pnlChildFormContainer.Location = New System.Drawing.Point(333, 0)
+        Me.pnlChildFormContainer.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlChildFormContainer.Name = "pnlChildFormContainer"
-        Me.pnlChildFormContainer.Size = New System.Drawing.Size(1444, 1152)
+        Me.pnlChildFormContainer.Size = New System.Drawing.Size(1284, 882)
         Me.pnlChildFormContainer.TabIndex = 1
         '
         'IconPictureBox1
@@ -222,20 +247,20 @@ Partial Class frmMain
         Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.LocationArrow
         Me.IconPictureBox1.IconColor = System.Drawing.Color.LightGray
         Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconPictureBox1.IconSize = 539
-        Me.IconPictureBox1.Location = New System.Drawing.Point(390, 265)
-        Me.IconPictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.IconPictureBox1.IconSize = 431
+        Me.IconPictureBox1.Location = New System.Drawing.Point(347, 212)
+        Me.IconPictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.IconPictureBox1.Name = "IconPictureBox1"
-        Me.IconPictureBox1.Size = New System.Drawing.Size(539, 539)
+        Me.IconPictureBox1.Size = New System.Drawing.Size(479, 431)
         Me.IconPictureBox1.TabIndex = 0
         Me.IconPictureBox1.TabStop = False
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1819, 1152)
+        Me.ClientSize = New System.Drawing.Size(1617, 882)
         Me.Controls.Add(Me.pnlChildFormContainer)
         Me.Controls.Add(Me.pnlMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -259,6 +284,7 @@ Partial Class frmMain
     Friend WithEvents btnCustomer As FontAwesome.Sharp.IconButton
     Friend WithEvents btnExit As FontAwesome.Sharp.IconButton
     Friend WithEvents btnAbout As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnHome As FontAwesome.Sharp.IconButton
     Friend WithEvents btnBikeMenu As FontAwesome.Sharp.IconButton
     Friend WithEvents btnReturn As FontAwesome.Sharp.IconButton
     Friend WithEvents btnRent As FontAwesome.Sharp.IconButton
