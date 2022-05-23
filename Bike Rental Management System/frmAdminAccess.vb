@@ -28,7 +28,7 @@ Public Class frmAdminAccess
                 txtSystemPassword.Text = ""
                 failCounter += 1
                 If failCounter > 2 Then
-                    Me.Close()
+                    Application.Exit()
                 End If
             End If
         End If
