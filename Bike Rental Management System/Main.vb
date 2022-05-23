@@ -7,7 +7,7 @@
         'when main form loads hide all submenu
         hideSubMenu()
 
-        Me.btnCustomers.Visible = False
+
 
     End Sub
 
@@ -80,4 +80,5 @@
     Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         switchMenu(frmReturn)
     End Sub
+
 End Class

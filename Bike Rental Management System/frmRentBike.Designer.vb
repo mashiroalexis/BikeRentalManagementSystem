@@ -22,27 +22,27 @@ Partial Class frmRentBike
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlRentTitleCover = New System.Windows.Forms.Panel()
         Me.pbCloseRentForm = New FontAwesome.Sharp.IconPictureBox()
         Me.lblRentTitle = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel1.SuspendLayout()
+        Me.pnlRentTitleCover.SuspendLayout()
         CType(Me.pbCloseRentForm, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Panel1
+        'pnlRentTitleCover
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.pbCloseRentForm)
-        Me.Panel1.Controls.Add(Me.lblRentTitle)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.ForeColor = System.Drawing.Color.LightGray
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1067, 80)
-        Me.Panel1.TabIndex = 0
+        Me.pnlRentTitleCover.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.pnlRentTitleCover.Controls.Add(Me.pbCloseRentForm)
+        Me.pnlRentTitleCover.Controls.Add(Me.lblRentTitle)
+        Me.pnlRentTitleCover.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlRentTitleCover.ForeColor = System.Drawing.Color.LightGray
+        Me.pnlRentTitleCover.Location = New System.Drawing.Point(0, 0)
+        Me.pnlRentTitleCover.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlRentTitleCover.Name = "pnlRentTitleCover"
+        Me.pnlRentTitleCover.Size = New System.Drawing.Size(1067, 80)
+        Me.pnlRentTitleCover.TabIndex = 0
         '
         'pbCloseRentForm
         '
@@ -91,20 +91,20 @@ Partial Class frmRentBike
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnlRentTitleCover)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmRentBike"
         Me.Text = "frmRentBike"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.pnlRentTitleCover.ResumeLayout(False)
+        Me.pnlRentTitleCover.PerformLayout()
         CType(Me.pbCloseRentForm, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents pnlRentTitleCover As Panel
     Friend WithEvents lblRentTitle As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents pbCloseRentForm As FontAwesome.Sharp.IconPictureBox

@@ -31,7 +31,7 @@
     Private Sub txtUsername_Enter(sender As Object, e As EventArgs) Handles txtUsername.Enter
         If txtUsername.Text = "Username" Then
             txtUsername.Text = ""
-            txtUsername.ForeColor = Color.Black
+            txtUsername.ForeColor = Color.White
         End If
     End Sub
 
@@ -46,7 +46,7 @@
         If txtPassword.Text = "Password" Then
             txtPassword.Text = ""
             txtPassword.PasswordChar = "*"
-            txtPassword.ForeColor = Color.Black
+            txtPassword.ForeColor = Color.White
         End If
     End Sub
 
@@ -56,6 +56,10 @@
             txtPassword.PasswordChar = ""
             txtPassword.ForeColor = Color.Silver
         End If
+    End Sub
+
+    Private Sub txtUsername_TextChanged(sender As Object, e As EventArgs) Handles txtUsername.TextChanged
+
     End Sub
 End Class
 
