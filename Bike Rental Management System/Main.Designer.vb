@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmMain
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.pnlMenu = New System.Windows.Forms.Panel()
         Me.btnCustomers = New System.Windows.Forms.Button()
@@ -31,9 +31,10 @@ Partial Class frmMain
         Me.pnlLogo = New System.Windows.Forms.Panel()
         Me.pnlChildFormContainer = New System.Windows.Forms.Panel()
         Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
+        Me.btnHome = New FontAwesome.Sharp.IconButton()
+        Me.btnCustomer = New FontAwesome.Sharp.IconButton()
         Me.btnAbout = New FontAwesome.Sharp.IconButton()
         Me.btnExit = New FontAwesome.Sharp.IconButton()
-        Me.btnCustomer = New FontAwesome.Sharp.IconButton()
         Me.pnlMenu.SuspendLayout()
         Me.pnlBikeSubMenu.SuspendLayout()
         Me.pnlChildFormContainer.SuspendLayout()
@@ -44,9 +45,10 @@ Partial Class frmMain
         '
         Me.pnlMenu.AutoScroll = True
         Me.pnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.pnlMenu.Controls.Add(Me.btnHome)
+        Me.pnlMenu.Controls.Add(Me.btnCustomer)
         Me.pnlMenu.Controls.Add(Me.btnAbout)
         Me.pnlMenu.Controls.Add(Me.btnExit)
-        Me.pnlMenu.Controls.Add(Me.btnCustomer)
         Me.pnlMenu.Controls.Add(Me.btnCustomers)
         Me.pnlMenu.Controls.Add(Me.pnlBikeSubMenu)
         Me.pnlMenu.Controls.Add(Me.btnBikeMenu)
@@ -172,6 +174,50 @@ Partial Class frmMain
         Me.IconPictureBox1.TabIndex = 0
         Me.IconPictureBox1.TabStop = False
         '
+        'btnHome
+        '
+        Me.btnHome.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.btnHome.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnHome.FlatAppearance.BorderSize = 0
+        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHome.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHome.ForeColor = System.Drawing.Color.LightGray
+        Me.btnHome.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.btnHome.IconColor = System.Drawing.Color.LightGray
+        Me.btnHome.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnHome.IconSize = 35
+        Me.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnHome.Location = New System.Drawing.Point(0, 475)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(333, 77)
+        Me.btnHome.TabIndex = 7
+        Me.btnHome.Text = "Home"
+        Me.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnHome.UseVisualStyleBackColor = False
+        '
+        'btnCustomer
+        '
+        Me.btnCustomer.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnCustomer.FlatAppearance.BorderSize = 0
+        Me.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCustomer.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCustomer.ForeColor = System.Drawing.Color.LightGray
+        Me.btnCustomer.IconChar = FontAwesome.Sharp.IconChar.UserFriends
+        Me.btnCustomer.IconColor = System.Drawing.Color.LightGray
+        Me.btnCustomer.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCustomer.IconSize = 35
+        Me.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCustomer.Location = New System.Drawing.Point(0, 413)
+        Me.btnCustomer.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCustomer.Name = "btnCustomer"
+        Me.btnCustomer.Size = New System.Drawing.Size(333, 62)
+        Me.btnCustomer.TabIndex = 4
+        Me.btnCustomer.Text = "Customer"
+        Me.btnCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnCustomer.UseVisualStyleBackColor = True
+        '
         'btnAbout
         '
         Me.btnAbout.Dock = System.Windows.Forms.DockStyle.Top
@@ -184,7 +230,7 @@ Partial Class frmMain
         Me.btnAbout.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnAbout.IconSize = 35
         Me.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAbout.Location = New System.Drawing.Point(0, 398)
+        Me.btnAbout.Location = New System.Drawing.Point(0, 336)
         Me.btnAbout.Name = "btnAbout"
         Me.btnAbout.Size = New System.Drawing.Size(333, 77)
         Me.btnAbout.TabIndex = 6
@@ -215,28 +261,6 @@ Partial Class frmMain
         Me.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnExit.UseVisualStyleBackColor = True
-        '
-        'btnCustomer
-        '
-        Me.btnCustomer.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnCustomer.FlatAppearance.BorderSize = 0
-        Me.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCustomer.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCustomer.ForeColor = System.Drawing.Color.LightGray
-        Me.btnCustomer.IconChar = FontAwesome.Sharp.IconChar.UserFriends
-        Me.btnCustomer.IconColor = System.Drawing.Color.LightGray
-        Me.btnCustomer.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnCustomer.IconSize = 35
-        Me.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCustomer.Location = New System.Drawing.Point(0, 336)
-        Me.btnCustomer.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnCustomer.Name = "btnCustomer"
-        Me.btnCustomer.Size = New System.Drawing.Size(333, 62)
-        Me.btnCustomer.TabIndex = 4
-        Me.btnCustomer.Text = "Customer"
-        Me.btnCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnCustomer.UseVisualStyleBackColor = True
         '
         'frmMain
         '
@@ -271,4 +295,5 @@ Partial Class frmMain
     Friend WithEvents btnCustomer As FontAwesome.Sharp.IconButton
     Friend WithEvents btnExit As FontAwesome.Sharp.IconButton
     Friend WithEvents btnAbout As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnHome As FontAwesome.Sharp.IconButton
 End Class

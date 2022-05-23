@@ -71,4 +71,13 @@
         hideSubMenu()
         switchMenu(frmAbout)
     End Sub
+
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+        hideSubMenu()
+        switchMenu(frmHome)
+    End Sub
+
+    Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
+        switchMenu(frmReturn)
+    End Sub
 End Class
