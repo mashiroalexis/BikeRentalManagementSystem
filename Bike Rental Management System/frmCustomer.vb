@@ -16,7 +16,7 @@
         Me.pbCloseCustomerForm.ForeColor = System.Drawing.Color.LightGray
     End Sub
 
-    Private Sub IconPictureBox1_Click(sender As Object, e As EventArgs) 
+    Private Sub IconPictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class
