@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmCustomer
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmCustomer
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.pnlCustormerTitleContainer = New System.Windows.Forms.Panel()
         Me.pbCloseCustomerForm = New FontAwesome.Sharp.IconPictureBox()
@@ -38,8 +38,9 @@ Partial Class frmCustomer
         Me.pnlCustormerTitleContainer.Controls.Add(Me.lblRentTitle)
         Me.pnlCustormerTitleContainer.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlCustormerTitleContainer.Location = New System.Drawing.Point(0, 0)
+        Me.pnlCustormerTitleContainer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlCustormerTitleContainer.Name = "pnlCustormerTitleContainer"
-        Me.pnlCustormerTitleContainer.Size = New System.Drawing.Size(950, 65)
+        Me.pnlCustormerTitleContainer.Size = New System.Drawing.Size(1267, 80)
         Me.pnlCustormerTitleContainer.TabIndex = 0
         '
         'pbCloseCustomerForm
@@ -51,10 +52,11 @@ Partial Class frmCustomer
         Me.pbCloseCustomerForm.IconChar = FontAwesome.Sharp.IconChar.TimesCircle
         Me.pbCloseCustomerForm.IconColor = System.Drawing.Color.LightGray
         Me.pbCloseCustomerForm.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.pbCloseCustomerForm.IconSize = 50
-        Me.pbCloseCustomerForm.Location = New System.Drawing.Point(893, 10)
+        Me.pbCloseCustomerForm.IconSize = 62
+        Me.pbCloseCustomerForm.Location = New System.Drawing.Point(1191, 12)
+        Me.pbCloseCustomerForm.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbCloseCustomerForm.Name = "pbCloseCustomerForm"
-        Me.pbCloseCustomerForm.Size = New System.Drawing.Size(50, 50)
+        Me.pbCloseCustomerForm.Size = New System.Drawing.Size(67, 62)
         Me.pbCloseCustomerForm.TabIndex = 3
         Me.pbCloseCustomerForm.TabStop = False
         '
@@ -63,9 +65,10 @@ Partial Class frmCustomer
         Me.lblRentTitle.AutoSize = True
         Me.lblRentTitle.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRentTitle.ForeColor = System.Drawing.Color.LightGray
-        Me.lblRentTitle.Location = New System.Drawing.Point(12, 9)
+        Me.lblRentTitle.Location = New System.Drawing.Point(16, 11)
+        Me.lblRentTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblRentTitle.Name = "lblRentTitle"
-        Me.lblRentTitle.Size = New System.Drawing.Size(141, 37)
+        Me.lblRentTitle.Size = New System.Drawing.Size(174, 46)
         Me.lblRentTitle.TabIndex = 1
         Me.lblRentTitle.Text = "Customer"
         '
@@ -76,22 +79,24 @@ Partial Class frmCustomer
         Me.pbCustomerLogo.IconChar = FontAwesome.Sharp.IconChar.AddressBook
         Me.pbCustomerLogo.IconColor = System.Drawing.Color.LightGray
         Me.pbCustomerLogo.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.pbCustomerLogo.IconSize = 207
-        Me.pbCustomerLogo.Location = New System.Drawing.Point(357, 188)
+        Me.pbCustomerLogo.IconSize = 255
+        Me.pbCustomerLogo.Location = New System.Drawing.Point(476, 231)
+        Me.pbCustomerLogo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbCustomerLogo.Name = "pbCustomerLogo"
-        Me.pbCustomerLogo.Size = New System.Drawing.Size(211, 207)
+        Me.pbCustomerLogo.Size = New System.Drawing.Size(281, 255)
         Me.pbCustomerLogo.TabIndex = 1
         Me.pbCustomerLogo.TabStop = False
         '
         'frmCustomer
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(950, 650)
+        Me.ClientSize = New System.Drawing.Size(1267, 800)
         Me.Controls.Add(Me.pbCustomerLogo)
         Me.Controls.Add(Me.pnlCustormerTitleContainer)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmCustomer"
         Me.Text = "Customer"
         Me.pnlCustormerTitleContainer.ResumeLayout(False)

@@ -15,4 +15,8 @@
     Private Sub pbCloseCustomerForm_MouseLeave(sender As Object, e As EventArgs) Handles pbCloseCustomerForm.MouseLeave
         Me.pbCloseCustomerForm.ForeColor = System.Drawing.Color.LightGray
     End Sub
+
+    Private Sub IconPictureBox1_Click(sender As Object, e As EventArgs) 
+
+    End Sub
 End Class
