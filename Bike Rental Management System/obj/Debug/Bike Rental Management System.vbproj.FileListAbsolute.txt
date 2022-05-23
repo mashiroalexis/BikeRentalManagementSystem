@@ -37,3 +37,4 @@ C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Managemen
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike Rental Management System.exe
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike Rental Management System.xml
 C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike Rental Management System.pdb
+C:\Users\Keith\Documents\GitHub\BikeRentalManagementSystem\Bike Rental Management System\obj\Debug\Bike_Rental_Management_System.frmAbout.resources

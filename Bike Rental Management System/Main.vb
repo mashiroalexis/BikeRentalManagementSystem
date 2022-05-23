@@ -66,4 +66,9 @@
         switchMenu(frmCustomer)
 
     End Sub
+
+    Private Sub btnAbout_Click(sender As Object, e As EventArgs) Handles btnAbout.Click
+        hideSubMenu()
+        switchMenu(frmAbout)
+    End Sub
 End Class
