@@ -64,7 +64,7 @@ Partial Class Log
         '
         'btnLogin
         '
-        Me.btnLogin.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnLogin.BackColor = System.Drawing.Color.RoyalBlue
         Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
