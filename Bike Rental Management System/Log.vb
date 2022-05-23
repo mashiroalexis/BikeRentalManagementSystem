@@ -1,5 +1,4 @@
 ﻿Public Class Log
-
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Me.Hide()
         Splash.Show()
@@ -13,10 +12,6 @@
 
     End Sub
 
-    Private Sub txtLogin_TextChanged(sender As Object, e As EventArgs) Handles txtLogin.TextChanged
-
-
-    End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles lblsignup.Click
         Me.Hide()
@@ -24,8 +19,43 @@
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lblclose.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles btnclose.Click
         Me.Close()
 
     End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles btnminimize.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub txtUsername_Enter(sender As Object, e As EventArgs) Handles txtUsername.Enter
+        If txtUsername.Text = "Username" Then
+            txtUsername.Text = ""
+            txtUsername.ForeColor = Color.Black
+        End If
+    End Sub
+
+    Private Sub txtUsername_Leave(sender As Object, e As EventArgs) Handles txtUsername.Leave
+        If txtUsername.Text = "" Then
+            txtUsername.Text = "Username"
+            txtUsername.ForeColor = Color.Silver
+        End If
+    End Sub
+
+    Private Sub txtPassword_Enter(sender As Object, e As EventArgs) Handles txtPassword.Enter
+        If txtPassword.Text = "Password" Then
+            txtPassword.Text = ""
+            txtPassword.PasswordChar = "*"
+            txtPassword.ForeColor = Color.Black
+        End If
+    End Sub
+
+    Private Sub txtPassword_Leave(sender As Object, e As EventArgs) Handles txtPassword.Leave
+        If txtPassword.Text = "" Then
+            txtPassword.Text = "Password"
+            txtPassword.PasswordChar = ""
+            txtPassword.ForeColor = Color.Silver
+        End If
+    End Sub
 End Class
+
