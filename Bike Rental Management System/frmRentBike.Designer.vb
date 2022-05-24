@@ -41,7 +41,7 @@ Partial Class frmRentBike
         Me.pnlRentTitleCover.Location = New System.Drawing.Point(0, 0)
         Me.pnlRentTitleCover.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlRentTitleCover.Name = "pnlRentTitleCover"
-        Me.pnlRentTitleCover.Size = New System.Drawing.Size(1067, 80)
+        Me.pnlRentTitleCover.Size = New System.Drawing.Size(1284, 80)
         Me.pnlRentTitleCover.TabIndex = 0
         '
         'pbCloseRentForm
@@ -54,7 +54,7 @@ Partial Class frmRentBike
         Me.pbCloseRentForm.IconColor = System.Drawing.Color.LightGray
         Me.pbCloseRentForm.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.pbCloseRentForm.IconSize = 62
-        Me.pbCloseRentForm.Location = New System.Drawing.Point(987, 11)
+        Me.pbCloseRentForm.Location = New System.Drawing.Point(1204, 11)
         Me.pbCloseRentForm.Margin = New System.Windows.Forms.Padding(4)
         Me.pbCloseRentForm.Name = "pbCloseRentForm"
         Me.pbCloseRentForm.Size = New System.Drawing.Size(67, 62)
@@ -76,10 +76,10 @@ Partial Class frmRentBike
         '
         Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.Image = Global.Bike_Rental_Management_System.My.Resources.Resources.loader
-        Me.PictureBox1.Location = New System.Drawing.Point(56, 102)
+        Me.PictureBox1.Location = New System.Drawing.Point(387, 285)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(967, 414)
+        Me.PictureBox1.Size = New System.Drawing.Size(547, 414)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -89,7 +89,7 @@ Partial Class frmRentBike
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.ClientSize = New System.Drawing.Size(1284, 882)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pnlRentTitleCover)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
