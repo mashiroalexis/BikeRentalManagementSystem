@@ -15,4 +15,29 @@
         dtpRentdate.Format = DateTimePickerFormat.Custom
         dtpRentdate.CustomFormat = "dd/MM/yyyy"
     End Sub
+
+    Private Sub btnAddNewRent_Click(sender As Object, e As EventArgs) Handles btnAddNewRent.Click
+        Dim i As Integer
+        For i = 0 To (clbAvailableBikes.Items.Count - 1)
+            clbAvailableBikes.SetItemChecked(i, False)
+        Next
+
+        MsgBox("Added Successfully!", vbInformation, "")
+        txtNoofBikesRented.Text = ""
+        txtCustomername.Text = ""
+        txtHoursrented.Text = ""
+        txtfee.Text = ""
+
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        Dim i As Integer
+        For i = 0 To (clbAvailableBikes.Items.Count - 1)
+            clbAvailableBikes.SetItemChecked(i, False)
+        Next
+        txtNoofBikesRented.Text = ""
+        txtCustomername.Text = ""
+        txtHoursrented.Text = ""
+        txtfee.Text = ""
+    End Sub
 End Class
