@@ -17,5 +17,10 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         MsgBox("Added Successfully!", vbInformation, "")
+
+        txtFullName.Text = ""
+        txtAddress.Text = ""
+        txtContactNumber.Text = ""
+        txtEmailAddress.Text = ""
     End Sub
 End Class

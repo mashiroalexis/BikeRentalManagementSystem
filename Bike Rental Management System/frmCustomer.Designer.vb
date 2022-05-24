@@ -28,6 +28,8 @@ Partial Class frmCustomer
         Me.btnAddNewCust = New FontAwesome.Sharp.IconButton()
         Me.btnDelete = New FontAwesome.Sharp.IconButton()
         Me.btnEdit = New FontAwesome.Sharp.IconButton()
+        Me.lblCustomersList = New System.Windows.Forms.Label()
+        Me.pnlCustomersList = New System.Windows.Forms.Panel()
         Me.pnlCustormerTitleContainer.SuspendLayout()
         CType(Me.pbCloseCustomerForm, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -75,19 +77,19 @@ Partial Class frmCustomer
         '
         'btnAddNewCust
         '
-        Me.btnAddNewCust.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnAddNewCust.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.btnAddNewCust.FlatAppearance.BorderSize = 0
         Me.btnAddNewCust.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAddNewCust.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddNewCust.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddNewCust.ForeColor = System.Drawing.Color.LightGray
         Me.btnAddNewCust.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.btnAddNewCust.IconColor = System.Drawing.Color.LightGray
         Me.btnAddNewCust.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnAddNewCust.IconSize = 35
         Me.btnAddNewCust.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAddNewCust.Location = New System.Drawing.Point(816, 81)
+        Me.btnAddNewCust.Location = New System.Drawing.Point(777, 668)
         Me.btnAddNewCust.Name = "btnAddNewCust"
-        Me.btnAddNewCust.Size = New System.Drawing.Size(131, 61)
+        Me.btnAddNewCust.Size = New System.Drawing.Size(129, 61)
         Me.btnAddNewCust.TabIndex = 1
         Me.btnAddNewCust.Text = "Add"
         Me.btnAddNewCust.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -96,19 +98,19 @@ Partial Class frmCustomer
         '
         'btnDelete
         '
-        Me.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.btnDelete.FlatAppearance.BorderSize = 0
         Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelete.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.ForeColor = System.Drawing.Color.LightGray
         Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt
         Me.btnDelete.IconColor = System.Drawing.Color.LightGray
         Me.btnDelete.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnDelete.IconSize = 35
         Me.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDelete.Location = New System.Drawing.Point(1109, 81)
+        Me.btnDelete.Location = New System.Drawing.Point(1064, 668)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(149, 61)
+        Me.btnDelete.Size = New System.Drawing.Size(155, 61)
         Me.btnDelete.TabIndex = 2
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -117,24 +119,48 @@ Partial Class frmCustomer
         '
         'btnEdit
         '
-        Me.btnEdit.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnEdit.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.btnEdit.FlatAppearance.BorderSize = 0
         Me.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEdit.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEdit.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEdit.ForeColor = System.Drawing.Color.LightGray
         Me.btnEdit.IconChar = FontAwesome.Sharp.IconChar.Edit
         Me.btnEdit.IconColor = System.Drawing.Color.LightGray
         Me.btnEdit.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnEdit.IconSize = 35
         Me.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEdit.Location = New System.Drawing.Point(964, 81)
+        Me.btnEdit.Location = New System.Drawing.Point(926, 668)
         Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Size = New System.Drawing.Size(139, 61)
+        Me.btnEdit.Size = New System.Drawing.Size(132, 61)
         Me.btnEdit.TabIndex = 3
         Me.btnEdit.Text = "Edit"
         Me.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnEdit.UseVisualStyleBackColor = True
+        '
+        'lblCustomersList
+        '
+        Me.lblCustomersList.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.lblCustomersList.AutoSize = True
+        Me.lblCustomersList.BackColor = System.Drawing.Color.Transparent
+        Me.lblCustomersList.Font = New System.Drawing.Font("Nirmala UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCustomersList.ForeColor = System.Drawing.Color.LightGray
+        Me.lblCustomersList.Location = New System.Drawing.Point(534, 104)
+        Me.lblCustomersList.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCustomersList.Name = "lblCustomersList"
+        Me.lblCustomersList.Size = New System.Drawing.Size(182, 32)
+        Me.lblCustomersList.TabIndex = 4
+        Me.lblCustomersList.Text = "Customers List"
+        '
+        'pnlCustomersList
+        '
+        Me.pnlCustomersList.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.pnlCustomersList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pnlCustomersList.ForeColor = System.Drawing.Color.LightGray
+        Me.pnlCustomersList.Location = New System.Drawing.Point(65, 162)
+        Me.pnlCustomersList.Name = "pnlCustomersList"
+        Me.pnlCustomersList.Size = New System.Drawing.Size(1154, 496)
+        Me.pnlCustomersList.TabIndex = 5
         '
         'frmCustomer
         '
@@ -142,6 +168,8 @@ Partial Class frmCustomer
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1267, 800)
+        Me.Controls.Add(Me.pnlCustomersList)
+        Me.Controls.Add(Me.lblCustomersList)
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnAddNewCust)
@@ -154,6 +182,7 @@ Partial Class frmCustomer
         Me.pnlCustormerTitleContainer.PerformLayout()
         CType(Me.pbCloseCustomerForm, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -163,4 +192,6 @@ Partial Class frmCustomer
     Friend WithEvents btnAddNewCust As FontAwesome.Sharp.IconButton
     Friend WithEvents btnDelete As FontAwesome.Sharp.IconButton
     Friend WithEvents btnEdit As FontAwesome.Sharp.IconButton
+    Friend WithEvents lblCustomersList As Label
+    Friend WithEvents pnlCustomersList As Panel
 End Class

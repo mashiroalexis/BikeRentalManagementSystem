@@ -23,6 +23,7 @@ Partial Class frmAddCustomer
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.pnlAddNewTitleCover = New System.Windows.Forms.Panel()
+        Me.lblAddCustomerTitle = New System.Windows.Forms.Label()
         Me.pbCloseAddCustomerForm = New FontAwesome.Sharp.IconPictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtFullName = New System.Windows.Forms.TextBox()
@@ -37,7 +38,6 @@ Partial Class frmAddCustomer
         Me.txtEmailAddress = New System.Windows.Forms.TextBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.lblAddCustomerTitle = New System.Windows.Forms.Label()
         Me.pnlAddNewTitleCover.SuspendLayout()
         CType(Me.pbCloseAddCustomerForm, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -52,6 +52,18 @@ Partial Class frmAddCustomer
         Me.pnlAddNewTitleCover.Name = "pnlAddNewTitleCover"
         Me.pnlAddNewTitleCover.Size = New System.Drawing.Size(611, 80)
         Me.pnlAddNewTitleCover.TabIndex = 0
+        '
+        'lblAddCustomerTitle
+        '
+        Me.lblAddCustomerTitle.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblAddCustomerTitle.AutoSize = True
+        Me.lblAddCustomerTitle.Font = New System.Drawing.Font("Nirmala UI", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAddCustomerTitle.ForeColor = System.Drawing.Color.LightGray
+        Me.lblAddCustomerTitle.Location = New System.Drawing.Point(84, 28)
+        Me.lblAddCustomerTitle.Name = "lblAddCustomerTitle"
+        Me.lblAddCustomerTitle.Size = New System.Drawing.Size(294, 35)
+        Me.lblAddCustomerTitle.TabIndex = 14
+        Me.lblAddCustomerTitle.Text = "Customer's Information"
         '
         'pbCloseAddCustomerForm
         '
@@ -200,20 +212,8 @@ Partial Class frmAddCustomer
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(463, 42)
         Me.Button1.TabIndex = 13
-        Me.Button1.Text = "Submit"
+        Me.Button1.Text = "Add"
         Me.Button1.UseVisualStyleBackColor = False
-        '
-        'lblAddCustomerTitle
-        '
-        Me.lblAddCustomerTitle.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblAddCustomerTitle.AutoSize = True
-        Me.lblAddCustomerTitle.Font = New System.Drawing.Font("Nirmala UI", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAddCustomerTitle.ForeColor = System.Drawing.Color.LightGray
-        Me.lblAddCustomerTitle.Location = New System.Drawing.Point(84, 28)
-        Me.lblAddCustomerTitle.Name = "lblAddCustomerTitle"
-        Me.lblAddCustomerTitle.Size = New System.Drawing.Size(294, 35)
-        Me.lblAddCustomerTitle.TabIndex = 14
-        Me.lblAddCustomerTitle.Text = "Customer's Information"
         '
         'frmAddCustomer
         '

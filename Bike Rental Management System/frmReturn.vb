@@ -3,11 +3,7 @@
         Me.Close()
     End Sub
 
-    Private Sub pbCloseReturnForm_MouseHover(sender As Object, e As EventArgs) Handles pbCloseReturnForm.MouseHover
-        pbCloseReturnForm.ForeColor = Color.WhiteSmoke
-    End Sub
+    Private Sub frmReturn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    Private Sub pbCloseReturnForm_MouseLeave(sender As Object, e As EventArgs) Handles pbCloseReturnForm.MouseLeave
-        pbCloseReturnForm.ForeColor = Color.LightGray
     End Sub
 End Class
