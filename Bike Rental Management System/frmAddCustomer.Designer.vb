@@ -57,11 +57,11 @@ Partial Class frmAddCustomer
         '
         Me.lblAddCustomerTitle.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblAddCustomerTitle.AutoSize = True
-        Me.lblAddCustomerTitle.Font = New System.Drawing.Font("Nirmala UI", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAddCustomerTitle.Font = New System.Drawing.Font("Nirmala UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAddCustomerTitle.ForeColor = System.Drawing.Color.LightGray
         Me.lblAddCustomerTitle.Location = New System.Drawing.Point(84, 28)
         Me.lblAddCustomerTitle.Name = "lblAddCustomerTitle"
-        Me.lblAddCustomerTitle.Size = New System.Drawing.Size(294, 35)
+        Me.lblAddCustomerTitle.Size = New System.Drawing.Size(287, 32)
         Me.lblAddCustomerTitle.TabIndex = 14
         Me.lblAddCustomerTitle.Text = "Customer's Information"
         '

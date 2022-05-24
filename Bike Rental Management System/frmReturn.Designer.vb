@@ -133,6 +133,8 @@ Partial Class frmReturn
         '
         Me.pnlRentalList.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.pnlRentalList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pnlRentalList.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlRentalList.ForeColor = System.Drawing.Color.LightGray
         Me.pnlRentalList.Location = New System.Drawing.Point(605, 137)
         Me.pnlRentalList.Name = "pnlRentalList"
         Me.pnlRentalList.Size = New System.Drawing.Size(645, 320)
@@ -142,11 +144,11 @@ Partial Class frmReturn
         '
         Me.lblRentalsList.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblRentalsList.AutoSize = True
-        Me.lblRentalsList.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRentalsList.Font = New System.Drawing.Font("Nirmala UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRentalsList.ForeColor = System.Drawing.Color.LightGray
         Me.lblRentalsList.Location = New System.Drawing.Point(856, 95)
         Me.lblRentalsList.Name = "lblRentalsList"
-        Me.lblRentalsList.Size = New System.Drawing.Size(120, 28)
+        Me.lblRentalsList.Size = New System.Drawing.Size(144, 32)
         Me.lblRentalsList.TabIndex = 28
         Me.lblRentalsList.Text = "Rentals List"
         '
@@ -154,11 +156,11 @@ Partial Class frmReturn
         '
         Me.lblReturnList.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblReturnList.AutoSize = True
-        Me.lblReturnList.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblReturnList.Font = New System.Drawing.Font("Nirmala UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblReturnList.ForeColor = System.Drawing.Color.LightGray
-        Me.lblReturnList.Location = New System.Drawing.Point(856, 490)
+        Me.lblReturnList.Location = New System.Drawing.Point(862, 487)
         Me.lblReturnList.Name = "lblReturnList"
-        Me.lblReturnList.Size = New System.Drawing.Size(114, 28)
+        Me.lblReturnList.Size = New System.Drawing.Size(138, 32)
         Me.lblReturnList.TabIndex = 30
         Me.lblReturnList.Text = "Return List"
         '
@@ -247,7 +249,7 @@ Partial Class frmReturn
         Me.btnOK.FlatAppearance.BorderSize = 0
         Me.btnOK.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOK.ForeColor = System.Drawing.Color.LightGray
-        Me.btnOK.Location = New System.Drawing.Point(400, 810)
+        Me.btnOK.Location = New System.Drawing.Point(416, 810)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(94, 41)
         Me.btnOK.TabIndex = 47
