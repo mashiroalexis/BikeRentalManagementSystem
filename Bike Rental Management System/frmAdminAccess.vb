@@ -14,7 +14,7 @@ Public Class frmAdminAccess
             Me.Hide()
             Log.Show()
         ElseIf Asc(e.KeyChar) = 13 Then
-            Dim con As SqlConnection = New SqlConnection("Data Source=ALEXIS\SQLEXPRESS;Initial Catalog=BikeRentalManagementSystem;Integrated Security=True")
+            Dim con As SqlConnection = New SqlConnection("Data Source=ASPIRE\SQLEXPRESS;Initial Catalog=BikeRentalManagementDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")
             Dim cmd As SqlCommand = New SqlCommand("SELECT * FROM tblSystemAccess where access = '" + Me.txtSystemPassword.Text + "'", con)
             Dim sda As SqlDataAdapter = New SqlDataAdapter(cmd)
             Dim dt As DataTable = New DataTable()
