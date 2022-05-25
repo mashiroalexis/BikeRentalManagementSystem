@@ -50,11 +50,50 @@ Public Class frmCustomer
         rdr = cmd.ExecuteReader()
         dgvCustomers.Rows.Clear()
         While (rdr.Read() = True)
-            dgvCustomers.Rows.Add(rdr(0), rdr(1), rdr(2), rdr(3))
+            dgvCustomers.Rows.Add(rdr(0), rdr(1), rdr(2), rdr(3), rdr(4))
         End While
         con.Close()
 
     End Sub
 
+    Private Sub dgvCustomers_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCustomers.CellContentClick
 
+    End Sub
+
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        Me.Hide()
+        switchMenu(frmEditCostumer)
+    End Sub
+
+    'switch forms
+    Dim activeChildForm As Form = Nothing
+    Private Sub switchMenu(panel As Form)
+        If activeChildForm IsNot Nothing Then
+            activeChildForm.Close()
+        End If
+
+        frmMain.pnlChildFormContainer.Controls.Clear()
+        panel.TopLevel = False
+        panel.Dock = DockStyle.Fill
+        panel.FormBorderStyle = FormBorderStyle.None
+        frmMain.pnlChildFormContainer.Controls.Add(panel)
+        frmMain.pnlChildFormContainer.Tag = panel
+        panel.BringToFront()
+        panel.Show()
+    End Sub
+
+    Private Sub dgvCustomers_MouseClick(sender As Object, e As MouseEventArgs) Handles dgvCustomers.MouseClick
+        Try
+            If dgvCustomers.Rows.Count > 0 Then
+                Dim dr As DataGridViewRow = dgvCustomers.SelectedRows(0)
+                frmEditCostumer.txtCustomerID.Text = dr.Cells(0).Value.ToString()
+                frmEditCostumer.txtFullName.Text = dr.Cells(1).Value.ToString()
+                frmEditCostumer.txtAddress.Text = dr.Cells(2).Value.ToString()
+                frmEditCostumer.txtContactNumber.Text = dr.Cells(3).Value.ToString()
+                frmEditCostumer.txtEmailAddress.Text = dr.Cells(4).Value.ToString()
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
 End Class
