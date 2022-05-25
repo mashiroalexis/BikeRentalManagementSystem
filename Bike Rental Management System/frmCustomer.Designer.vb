@@ -118,6 +118,7 @@ Partial Class frmCustomer
         '
         Me.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvCustomers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.customerId, Me.fname, Me.address, Me.contactNo, Me.email})
+        Me.dgvCustomers.Cursor = System.Windows.Forms.Cursors.Hand
         Me.dgvCustomers.Location = New System.Drawing.Point(109, 64)
         Me.dgvCustomers.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dgvCustomers.Name = "dgvCustomers"

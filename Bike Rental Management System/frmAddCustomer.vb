@@ -56,7 +56,7 @@ Public Class frmAddCustomer
             MessageBox.Show("New customer record saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Me.Hide()
         Catch ex As Exception
-
+            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End Try
     End Sub
 End Class

@@ -26,7 +26,7 @@ Partial Class frmEditCostumer
         Me.pbCloseCustomerEditForm = New FontAwesome.Sharp.IconPictureBox()
         Me.pbCloseCustomerForm = New FontAwesome.Sharp.IconPictureBox()
         Me.lblCustomerEditTitle = New System.Windows.Forms.Label()
-        Me.btlSaveCustomer = New System.Windows.Forms.Button()
+        Me.btnUpdateCustomer = New System.Windows.Forms.Button()
         Me.lblEmailAdd = New System.Windows.Forms.Label()
         Me.txtEmailAddress = New System.Windows.Forms.TextBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -100,20 +100,20 @@ Partial Class frmEditCostumer
         Me.lblCustomerEditTitle.TabIndex = 1
         Me.lblCustomerEditTitle.Text = "Edit Costumer Information"
         '
-        'btlSaveCustomer
+        'btnUpdateCustomer
         '
-        Me.btlSaveCustomer.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btlSaveCustomer.BackColor = System.Drawing.Color.RoyalBlue
-        Me.btlSaveCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btlSaveCustomer.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btlSaveCustomer.ForeColor = System.Drawing.Color.Snow
-        Me.btlSaveCustomer.Location = New System.Drawing.Point(58, 407)
-        Me.btlSaveCustomer.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.btlSaveCustomer.Name = "btlSaveCustomer"
-        Me.btlSaveCustomer.Size = New System.Drawing.Size(347, 34)
-        Me.btlSaveCustomer.TabIndex = 86
-        Me.btlSaveCustomer.Text = "Save"
-        Me.btlSaveCustomer.UseVisualStyleBackColor = False
+        Me.btnUpdateCustomer.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnUpdateCustomer.BackColor = System.Drawing.Color.RoyalBlue
+        Me.btnUpdateCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdateCustomer.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdateCustomer.ForeColor = System.Drawing.Color.Snow
+        Me.btnUpdateCustomer.Location = New System.Drawing.Point(58, 407)
+        Me.btnUpdateCustomer.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.btnUpdateCustomer.Name = "btnUpdateCustomer"
+        Me.btnUpdateCustomer.Size = New System.Drawing.Size(347, 34)
+        Me.btnUpdateCustomer.TabIndex = 86
+        Me.btnUpdateCustomer.Text = "Save"
+        Me.btnUpdateCustomer.UseVisualStyleBackColor = False
         '
         'lblEmailAdd
         '
@@ -275,7 +275,7 @@ Partial Class frmEditCostumer
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(476, 665)
         Me.Controls.Add(Me.txtCustomerID)
-        Me.Controls.Add(Me.btlSaveCustomer)
+        Me.Controls.Add(Me.btnUpdateCustomer)
         Me.Controls.Add(Me.lblEmailAdd)
         Me.Controls.Add(Me.txtEmailAddress)
         Me.Controls.Add(Me.Panel4)
@@ -305,7 +305,7 @@ Partial Class frmEditCostumer
     Friend WithEvents pbCloseCustomerForm As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents lblCustomerEditTitle As Label
     Friend WithEvents pbCloseCustomerEditForm As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents btlSaveCustomer As Button
+    Friend WithEvents btnUpdateCustomer As Button
     Friend WithEvents lblEmailAdd As Label
     Friend WithEvents txtEmailAddress As TextBox
     Friend WithEvents Panel4 As Panel
