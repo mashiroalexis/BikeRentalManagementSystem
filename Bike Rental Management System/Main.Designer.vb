@@ -23,7 +23,6 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.pnlMenu = New System.Windows.Forms.Panel()
-        Me.btnHome = New FontAwesome.Sharp.IconButton()
         Me.btnAbout = New FontAwesome.Sharp.IconButton()
         Me.btnExit = New FontAwesome.Sharp.IconButton()
         Me.btnCustomer = New FontAwesome.Sharp.IconButton()
@@ -44,7 +43,6 @@ Partial Class frmMain
         '
         Me.pnlMenu.AutoScroll = True
         Me.pnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.pnlMenu.Controls.Add(Me.btnHome)
         Me.pnlMenu.Controls.Add(Me.btnAbout)
         Me.pnlMenu.Controls.Add(Me.btnExit)
         Me.pnlMenu.Controls.Add(Me.btnCustomer)
@@ -57,29 +55,6 @@ Partial Class frmMain
         Me.pnlMenu.Name = "pnlMenu"
         Me.pnlMenu.Size = New System.Drawing.Size(333, 882)
         Me.pnlMenu.TabIndex = 0
-        '
-        'btnHome
-        '
-        Me.btnHome.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.btnHome.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnHome.FlatAppearance.BorderSize = 0
-        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHome.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHome.ForeColor = System.Drawing.Color.LightGray
-        Me.btnHome.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.btnHome.IconColor = System.Drawing.Color.LightGray
-        Me.btnHome.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnHome.IconSize = 35
-        Me.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnHome.Location = New System.Drawing.Point(0, 420)
-        Me.btnHome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(333, 62)
-        Me.btnHome.TabIndex = 7
-        Me.btnHome.Text = "Home"
-        Me.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnHome.UseVisualStyleBackColor = False
         '
         'btnAbout
         '
@@ -284,7 +259,6 @@ Partial Class frmMain
     Friend WithEvents btnCustomer As FontAwesome.Sharp.IconButton
     Friend WithEvents btnExit As FontAwesome.Sharp.IconButton
     Friend WithEvents btnAbout As FontAwesome.Sharp.IconButton
-    Friend WithEvents btnHome As FontAwesome.Sharp.IconButton
     Friend WithEvents btnBikeMenu As FontAwesome.Sharp.IconButton
     Friend WithEvents btnReturn As FontAwesome.Sharp.IconButton
     Friend WithEvents btnRent As FontAwesome.Sharp.IconButton
