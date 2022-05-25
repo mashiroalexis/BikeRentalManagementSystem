@@ -53,7 +53,7 @@ Public Class frmAddCustomer
             txtAddress.Text = ""
             txtContactNumber.Text = ""
             txtEmailAddress.Text = ""
-            MessageBox.Show("New customer record saved!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("New customer record saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Me.Hide()
         Catch ex As Exception
 
