@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 Public Class frmAddCustomer
     Private Sub frmAddCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        roundCorners(Me)
+
     End Sub
 
     Private Sub pbCloseAddCustomerForm_Click(sender As Object, e As EventArgs) Handles pbCloseAddCustomerForm.Click
@@ -17,8 +17,7 @@ Public Class frmAddCustomer
         pbCloseAddCustomerForm.ForeColor = Color.LightGray
     End Sub
 
-    Private Sub btlAddCustomer_Click(sender As Object, e As EventArgs) Handles btlAddCustomer.Click
-
+    Private Sub btnAddCustomer_Click_1(sender As Object, e As EventArgs) Handles btnAddCustomer.Click
         Try
             ' this is for checking if the customer already exists before adding new custoemr
             Dim rdr As SqlDataReader = Nothing
@@ -54,7 +53,8 @@ Public Class frmAddCustomer
             txtContactNumber.Text = ""
             txtEmailAddress.Text = ""
             MessageBox.Show("New customer record saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Me.Hide()
+            Me.Close()
+            switchFormsInMain(frmCustomer)
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End Try

@@ -26,7 +26,8 @@ Public Class frmCustomer
     End Sub
 
     Private Sub btnAddNewCust_Click(sender As Object, e As EventArgs) Handles btnAddNewCust.Click
-        frmAddCustomer.Show()
+        switchMenu(frmAddCustomer)
+        Me.Close()
 
     End Sub
 
@@ -39,6 +40,7 @@ Public Class frmCustomer
     End Sub
 
     Private Sub frmCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'MessageBox.Show("I am loaded", "Information", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         loadCustomerGrid()
     End Sub
 
@@ -62,8 +64,9 @@ Public Class frmCustomer
 
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
-        Me.Hide()
         switchMenu(frmEditCostumer)
+        Me.Close()
+
     End Sub
 
     'switch forms
@@ -96,5 +99,14 @@ Public Class frmCustomer
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+    End Sub
+
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        Dim dr As DataGridViewRow = dgvCustomers.SelectedRows(0)
+        frmDeleteCustomer.txtCustomerId.Text = dr.Cells(0).Value.ToString()
+        Me.Close()
+        switchMenu(frmDeleteCustomer)
+
+
     End Sub
 End Class

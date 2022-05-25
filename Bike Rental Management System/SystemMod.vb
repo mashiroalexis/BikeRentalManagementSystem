@@ -39,4 +39,25 @@
     Public Function getConnectionString() As String
         Return systemDatabaseConnectionString
     End Function
+
+    ' 
+    ' 
+    ' 
+    Dim activeChildForm As Form = Nothing
+    Public Sub switchFormsInMain(frmChild As Form)
+        If activeChildForm IsNot Nothing Then
+            activeChildForm.Close()
+        End If
+
+        frmMain.pnlChildFormContainer.Controls.Clear()
+        frmChild.TopLevel = False
+        frmChild.Dock = DockStyle.Fill
+        frmChild.FormBorderStyle = FormBorderStyle.None
+        frmMain.pnlChildFormContainer.Controls.Add(frmChild)
+        frmMain.pnlChildFormContainer.Tag = frmChild
+        frmChild.BringToFront()
+        frmChild.Activate()
+        frmChild.Show()
+    End Sub
+
 End Module

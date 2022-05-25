@@ -16,6 +16,9 @@ Public Class frmEditCostumer
             cmd.ExecuteNonQuery()
             con.Close()
             MessageBox.Show("Customer record updated!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            frmCustomer.Show()
+            Me.Hide()
+            switchFormsInMain(frmCustomer)
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End Try

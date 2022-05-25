@@ -86,6 +86,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BikeRentalManagementSystemDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmDeleteCustomer.Designer.vb">
+      <DependentUpon>frmDeleteCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmEditCostumer.Designer.vb">
       <DependentUpon>frmEditCostumer.vb</DependentUpon>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCustomer.resx">
       <DependentUpon>frmCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteCustomer.resx">
+      <DependentUpon>frmDeleteCustomer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditCostumer.resx">
       <DependentUpon>frmEditCostumer.vb</DependentUpon>
