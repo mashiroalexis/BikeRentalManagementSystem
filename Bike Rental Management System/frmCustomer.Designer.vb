@@ -32,14 +32,14 @@ Partial Class frmCustomer
         Me.lblCustomersList = New System.Windows.Forms.Label()
         Me.pnlCustomersList = New System.Windows.Forms.Panel()
         Me.dgvCustomers = New System.Windows.Forms.DataGridView()
-        Me.BikeRentalManagementSystemDataSet = New Bike_Rental_Management_System.BikeRentalManagementSystemDataSet()
-        Me.BikeRentalManagementSystemDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TblSystemAccessBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TblSystemAccessTableAdapter = New Bike_Rental_Management_System.BikeRentalManagementSystemDataSetTableAdapters.tblSystemAccessTableAdapter()
         Me.fname = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.address = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.contactNo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BikeRentalManagementSystemDataSet = New Bike_Rental_Management_System.BikeRentalManagementSystemDataSet()
+        Me.BikeRentalManagementSystemDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TblSystemAccessBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TblSystemAccessTableAdapter = New Bike_Rental_Management_System.BikeRentalManagementSystemDataSetTableAdapters.tblSystemAccessTableAdapter()
         Me.pnlCustormerTitleContainer.SuspendLayout()
         CType(Me.pbCloseCustomerForm, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlCustomersList.SuspendLayout()
@@ -56,9 +56,9 @@ Partial Class frmCustomer
         Me.pnlCustormerTitleContainer.Controls.Add(Me.lblCustomerTitle)
         Me.pnlCustormerTitleContainer.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlCustormerTitleContainer.Location = New System.Drawing.Point(0, 0)
-        Me.pnlCustormerTitleContainer.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pnlCustormerTitleContainer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlCustormerTitleContainer.Name = "pnlCustormerTitleContainer"
-        Me.pnlCustormerTitleContainer.Size = New System.Drawing.Size(1425, 100)
+        Me.pnlCustormerTitleContainer.Size = New System.Drawing.Size(1267, 80)
         Me.pnlCustormerTitleContainer.TabIndex = 0
         '
         'pbCloseCustomerForm
@@ -70,11 +70,11 @@ Partial Class frmCustomer
         Me.pbCloseCustomerForm.IconChar = FontAwesome.Sharp.IconChar.TimesCircle
         Me.pbCloseCustomerForm.IconColor = System.Drawing.Color.LightGray
         Me.pbCloseCustomerForm.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.pbCloseCustomerForm.IconSize = 75
-        Me.pbCloseCustomerForm.Location = New System.Drawing.Point(1340, 15)
-        Me.pbCloseCustomerForm.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pbCloseCustomerForm.IconSize = 62
+        Me.pbCloseCustomerForm.Location = New System.Drawing.Point(1191, 12)
+        Me.pbCloseCustomerForm.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbCloseCustomerForm.Name = "pbCloseCustomerForm"
-        Me.pbCloseCustomerForm.Size = New System.Drawing.Size(75, 78)
+        Me.pbCloseCustomerForm.Size = New System.Drawing.Size(67, 62)
         Me.pbCloseCustomerForm.TabIndex = 3
         Me.pbCloseCustomerForm.TabStop = False
         '
@@ -83,10 +83,10 @@ Partial Class frmCustomer
         Me.lblCustomerTitle.AutoSize = True
         Me.lblCustomerTitle.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCustomerTitle.ForeColor = System.Drawing.Color.LightGray
-        Me.lblCustomerTitle.Location = New System.Drawing.Point(18, 14)
+        Me.lblCustomerTitle.Location = New System.Drawing.Point(16, 11)
         Me.lblCustomerTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCustomerTitle.Name = "lblCustomerTitle"
-        Me.lblCustomerTitle.Size = New System.Drawing.Size(210, 55)
+        Me.lblCustomerTitle.Size = New System.Drawing.Size(174, 46)
         Me.lblCustomerTitle.TabIndex = 1
         Me.lblCustomerTitle.Text = "Customer"
         '
@@ -102,10 +102,9 @@ Partial Class frmCustomer
         Me.btnAddNewCust.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnAddNewCust.IconSize = 35
         Me.btnAddNewCust.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAddNewCust.Location = New System.Drawing.Point(874, 862)
-        Me.btnAddNewCust.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnAddNewCust.Location = New System.Drawing.Point(777, 690)
         Me.btnAddNewCust.Name = "btnAddNewCust"
-        Me.btnAddNewCust.Size = New System.Drawing.Size(145, 76)
+        Me.btnAddNewCust.Size = New System.Drawing.Size(129, 61)
         Me.btnAddNewCust.TabIndex = 1
         Me.btnAddNewCust.Text = "Add"
         Me.btnAddNewCust.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -124,10 +123,9 @@ Partial Class frmCustomer
         Me.btnDelete.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnDelete.IconSize = 35
         Me.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDelete.Location = New System.Drawing.Point(1197, 862)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnDelete.Location = New System.Drawing.Point(1064, 690)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(174, 76)
+        Me.btnDelete.Size = New System.Drawing.Size(155, 61)
         Me.btnDelete.TabIndex = 2
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -146,10 +144,9 @@ Partial Class frmCustomer
         Me.btnEdit.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnEdit.IconSize = 35
         Me.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEdit.Location = New System.Drawing.Point(1042, 862)
-        Me.btnEdit.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnEdit.Location = New System.Drawing.Point(926, 690)
         Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Size = New System.Drawing.Size(148, 76)
+        Me.btnEdit.Size = New System.Drawing.Size(132, 61)
         Me.btnEdit.TabIndex = 3
         Me.btnEdit.Text = "Edit"
         Me.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -163,10 +160,10 @@ Partial Class frmCustomer
         Me.lblCustomersList.BackColor = System.Drawing.Color.Transparent
         Me.lblCustomersList.Font = New System.Drawing.Font("Nirmala UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCustomersList.ForeColor = System.Drawing.Color.LightGray
-        Me.lblCustomersList.Location = New System.Drawing.Point(600, 144)
+        Me.lblCustomersList.Location = New System.Drawing.Point(533, 115)
         Me.lblCustomersList.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCustomersList.Name = "lblCustomersList"
-        Me.lblCustomersList.Size = New System.Drawing.Size(208, 38)
+        Me.lblCustomersList.Size = New System.Drawing.Size(182, 32)
         Me.lblCustomersList.TabIndex = 4
         Me.lblCustomersList.Text = "Customers List"
         '
@@ -176,41 +173,22 @@ Partial Class frmCustomer
         Me.pnlCustomersList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.pnlCustomersList.Controls.Add(Me.dgvCustomers)
         Me.pnlCustomersList.ForeColor = System.Drawing.Color.LightGray
-        Me.pnlCustomersList.Location = New System.Drawing.Point(72, 216)
-        Me.pnlCustomersList.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.pnlCustomersList.Location = New System.Drawing.Point(64, 173)
         Me.pnlCustomersList.Name = "pnlCustomersList"
-        Me.pnlCustomersList.Size = New System.Drawing.Size(1298, 619)
+        Me.pnlCustomersList.Size = New System.Drawing.Size(1154, 496)
         Me.pnlCustomersList.TabIndex = 5
         '
         'dgvCustomers
         '
         Me.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvCustomers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fname, Me.address, Me.contactNo, Me.email})
-        Me.dgvCustomers.Location = New System.Drawing.Point(163, 110)
+        Me.dgvCustomers.Location = New System.Drawing.Point(145, 88)
+        Me.dgvCustomers.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgvCustomers.Name = "dgvCustomers"
         Me.dgvCustomers.RowHeadersWidth = 62
         Me.dgvCustomers.RowTemplate.Height = 28
-        Me.dgvCustomers.Size = New System.Drawing.Size(902, 383)
+        Me.dgvCustomers.Size = New System.Drawing.Size(802, 306)
         Me.dgvCustomers.TabIndex = 0
-        '
-        'BikeRentalManagementSystemDataSet
-        '
-        Me.BikeRentalManagementSystemDataSet.DataSetName = "BikeRentalManagementSystemDataSet"
-        Me.BikeRentalManagementSystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'BikeRentalManagementSystemDataSetBindingSource
-        '
-        Me.BikeRentalManagementSystemDataSetBindingSource.DataSource = Me.BikeRentalManagementSystemDataSet
-        Me.BikeRentalManagementSystemDataSetBindingSource.Position = 0
-        '
-        'TblSystemAccessBindingSource
-        '
-        Me.TblSystemAccessBindingSource.DataMember = "tblSystemAccess"
-        Me.TblSystemAccessBindingSource.DataSource = Me.BikeRentalManagementSystemDataSetBindingSource
-        '
-        'TblSystemAccessTableAdapter
-        '
-        Me.TblSystemAccessTableAdapter.ClearBeforeFill = True
         '
         'fname
         '
@@ -240,12 +218,31 @@ Partial Class frmCustomer
         Me.email.Name = "email"
         Me.email.Width = 150
         '
+        'BikeRentalManagementSystemDataSet
+        '
+        Me.BikeRentalManagementSystemDataSet.DataSetName = "BikeRentalManagementSystemDataSet"
+        Me.BikeRentalManagementSystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'BikeRentalManagementSystemDataSetBindingSource
+        '
+        Me.BikeRentalManagementSystemDataSetBindingSource.DataSource = Me.BikeRentalManagementSystemDataSet
+        Me.BikeRentalManagementSystemDataSetBindingSource.Position = 0
+        '
+        'TblSystemAccessBindingSource
+        '
+        Me.TblSystemAccessBindingSource.DataMember = "tblSystemAccess"
+        Me.TblSystemAccessBindingSource.DataSource = Me.BikeRentalManagementSystemDataSetBindingSource
+        '
+        'TblSystemAccessTableAdapter
+        '
+        Me.TblSystemAccessTableAdapter.ClearBeforeFill = True
+        '
         'frmCustomer
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1425, 1000)
+        Me.ClientSize = New System.Drawing.Size(1267, 800)
         Me.Controls.Add(Me.pnlCustomersList)
         Me.Controls.Add(Me.lblCustomersList)
         Me.Controls.Add(Me.btnEdit)
@@ -253,7 +250,7 @@ Partial Class frmCustomer
         Me.Controls.Add(Me.btnAddNewCust)
         Me.Controls.Add(Me.pnlCustormerTitleContainer)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmCustomer"
         Me.Text = "Customer"
         Me.pnlCustormerTitleContainer.ResumeLayout(False)

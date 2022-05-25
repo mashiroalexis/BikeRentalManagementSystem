@@ -50,11 +50,13 @@ Public Class frmCustomer
         rdr = cmd.ExecuteReader()
         dgvCustomers.Rows.Clear()
         While (rdr.Read() = True)
-            dgvCustomers.Rows.Add(rdr(0), rdr(1), rdr(2), rdr(3))
+            dgvCustomers.Rows.Add(rdr(1), rdr(2), rdr(3), rdr(4))
         End While
         con.Close()
 
     End Sub
 
+    Private Sub dgvCustomers_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCustomers.CellContentClick
 
+    End Sub
 End Class
