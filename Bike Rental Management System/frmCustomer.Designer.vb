@@ -37,6 +37,7 @@ Partial Class frmCustomer
         Me.btnDelete = New FontAwesome.Sharp.IconButton()
         Me.btnAddNewCust = New FontAwesome.Sharp.IconButton()
         Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.customerId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.fname = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.address = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.contactNo = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -57,9 +58,8 @@ Partial Class frmCustomer
         Me.pnlCustormerTitleContainer.Controls.Add(Me.lblCustomerTitle)
         Me.pnlCustormerTitleContainer.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlCustormerTitleContainer.Location = New System.Drawing.Point(0, 0)
-        Me.pnlCustormerTitleContainer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlCustormerTitleContainer.Name = "pnlCustormerTitleContainer"
-        Me.pnlCustormerTitleContainer.Size = New System.Drawing.Size(1267, 80)
+        Me.pnlCustormerTitleContainer.Size = New System.Drawing.Size(950, 65)
         Me.pnlCustormerTitleContainer.TabIndex = 0
         '
         'pbCloseCustomerForm
@@ -71,11 +71,10 @@ Partial Class frmCustomer
         Me.pbCloseCustomerForm.IconChar = FontAwesome.Sharp.IconChar.TimesCircle
         Me.pbCloseCustomerForm.IconColor = System.Drawing.Color.LightGray
         Me.pbCloseCustomerForm.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.pbCloseCustomerForm.IconSize = 62
-        Me.pbCloseCustomerForm.Location = New System.Drawing.Point(1191, 12)
-        Me.pbCloseCustomerForm.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pbCloseCustomerForm.IconSize = 50
+        Me.pbCloseCustomerForm.Location = New System.Drawing.Point(893, 10)
         Me.pbCloseCustomerForm.Name = "pbCloseCustomerForm"
-        Me.pbCloseCustomerForm.Size = New System.Drawing.Size(67, 62)
+        Me.pbCloseCustomerForm.Size = New System.Drawing.Size(50, 50)
         Me.pbCloseCustomerForm.TabIndex = 3
         Me.pbCloseCustomerForm.TabStop = False
         '
@@ -84,54 +83,67 @@ Partial Class frmCustomer
         Me.lblCustomerTitle.AutoSize = True
         Me.lblCustomerTitle.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCustomerTitle.ForeColor = System.Drawing.Color.LightGray
-        Me.lblCustomerTitle.Location = New System.Drawing.Point(16, 11)
-        Me.lblCustomerTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCustomerTitle.Location = New System.Drawing.Point(12, 9)
         Me.lblCustomerTitle.Name = "lblCustomerTitle"
-        Me.lblCustomerTitle.Size = New System.Drawing.Size(174, 46)
+        Me.lblCustomerTitle.Size = New System.Drawing.Size(141, 37)
         Me.lblCustomerTitle.TabIndex = 1
         Me.lblCustomerTitle.Text = "Customer"
         '
-        'btnAddNewCust
+        'lblCustomersList
         '
-        Me.btnAddNewCust.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnAddNewCust.FlatAppearance.BorderSize = 0
-        Me.btnAddNewCust.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAddNewCust.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddNewCust.ForeColor = System.Drawing.Color.LightGray
-        Me.btnAddNewCust.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
-        Me.btnAddNewCust.IconColor = System.Drawing.Color.LightGray
-        Me.btnAddNewCust.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnAddNewCust.IconSize = 35
-        Me.btnAddNewCust.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAddNewCust.Location = New System.Drawing.Point(777, 690)
-        Me.btnAddNewCust.Name = "btnAddNewCust"
-        Me.btnAddNewCust.Size = New System.Drawing.Size(129, 61)
-        Me.btnAddNewCust.TabIndex = 1
-        Me.btnAddNewCust.Text = "Add"
-        Me.btnAddNewCust.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAddNewCust.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnAddNewCust.UseVisualStyleBackColor = True
+        Me.lblCustomersList.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblCustomersList.AutoSize = True
+        Me.lblCustomersList.BackColor = System.Drawing.Color.Transparent
+        Me.lblCustomersList.Font = New System.Drawing.Font("Nirmala UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCustomersList.ForeColor = System.Drawing.Color.LightGray
+        Me.lblCustomersList.Location = New System.Drawing.Point(400, 93)
+        Me.lblCustomersList.Name = "lblCustomersList"
+        Me.lblCustomersList.Size = New System.Drawing.Size(141, 25)
+        Me.lblCustomersList.TabIndex = 4
+        Me.lblCustomersList.Text = "Customers List"
         '
-        'btnDelete
+        'pnlCustomersList
         '
-        Me.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnDelete.FlatAppearance.BorderSize = 0
-        Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelete.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.ForeColor = System.Drawing.Color.LightGray
-        Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt
-        Me.btnDelete.IconColor = System.Drawing.Color.LightGray
-        Me.btnDelete.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnDelete.IconSize = 35
-        Me.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDelete.Location = New System.Drawing.Point(1064, 690)
-        Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(155, 61)
-        Me.btnDelete.TabIndex = 2
-        Me.btnDelete.Text = "Delete"
-        Me.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnDelete.UseVisualStyleBackColor = True
+        Me.pnlCustomersList.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.pnlCustomersList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pnlCustomersList.Controls.Add(Me.dgvCustomers)
+        Me.pnlCustomersList.ForeColor = System.Drawing.Color.LightGray
+        Me.pnlCustomersList.Location = New System.Drawing.Point(48, 141)
+        Me.pnlCustomersList.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlCustomersList.Name = "pnlCustomersList"
+        Me.pnlCustomersList.Size = New System.Drawing.Size(866, 404)
+        Me.pnlCustomersList.TabIndex = 5
+        '
+        'dgvCustomers
+        '
+        Me.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCustomers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.customerId, Me.fname, Me.address, Me.contactNo, Me.email})
+        Me.dgvCustomers.Location = New System.Drawing.Point(109, 72)
+        Me.dgvCustomers.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgvCustomers.Name = "dgvCustomers"
+        Me.dgvCustomers.RowHeadersWidth = 62
+        Me.dgvCustomers.RowTemplate.Height = 28
+        Me.dgvCustomers.Size = New System.Drawing.Size(602, 249)
+        Me.dgvCustomers.TabIndex = 0
+        '
+        'BikeRentalManagementSystemDataSet
+        '
+        Me.BikeRentalManagementSystemDataSet.DataSetName = "BikeRentalManagementSystemDataSet"
+        Me.BikeRentalManagementSystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'BikeRentalManagementSystemDataSetBindingSource
+        '
+        Me.BikeRentalManagementSystemDataSetBindingSource.DataSource = Me.BikeRentalManagementSystemDataSet
+        Me.BikeRentalManagementSystemDataSetBindingSource.Position = 0
+        '
+        'TblSystemAccessBindingSource
+        '
+        Me.TblSystemAccessBindingSource.DataMember = "tblSystemAccess"
+        Me.TblSystemAccessBindingSource.DataSource = Me.BikeRentalManagementSystemDataSetBindingSource
+        '
+        'TblSystemAccessTableAdapter
+        '
+        Me.TblSystemAccessTableAdapter.ClearBeforeFill = True
         '
         'btnEdit
         '
@@ -145,51 +157,69 @@ Partial Class frmCustomer
         Me.btnEdit.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnEdit.IconSize = 35
         Me.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEdit.Location = New System.Drawing.Point(926, 690)
+        Me.btnEdit.Location = New System.Drawing.Point(694, 561)
+        Me.btnEdit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Size = New System.Drawing.Size(132, 61)
+        Me.btnEdit.Size = New System.Drawing.Size(99, 50)
         Me.btnEdit.TabIndex = 3
         Me.btnEdit.Text = "Edit"
         Me.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnEdit.UseVisualStyleBackColor = True
         '
-        'lblCustomersList
+        'btnDelete
         '
-        Me.lblCustomersList.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblCustomersList.AutoSize = True
-        Me.lblCustomersList.BackColor = System.Drawing.Color.Transparent
-        Me.lblCustomersList.Font = New System.Drawing.Font("Nirmala UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCustomersList.ForeColor = System.Drawing.Color.LightGray
-        Me.lblCustomersList.Location = New System.Drawing.Point(533, 115)
-        Me.lblCustomersList.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblCustomersList.Name = "lblCustomersList"
-        Me.lblCustomersList.Size = New System.Drawing.Size(182, 32)
-        Me.lblCustomersList.TabIndex = 4
-        Me.lblCustomersList.Text = "Customers List"
+        Me.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnDelete.FlatAppearance.BorderSize = 0
+        Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelete.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.ForeColor = System.Drawing.Color.LightGray
+        Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt
+        Me.btnDelete.IconColor = System.Drawing.Color.LightGray
+        Me.btnDelete.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnDelete.IconSize = 35
+        Me.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDelete.Location = New System.Drawing.Point(798, 561)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(116, 50)
+        Me.btnDelete.TabIndex = 2
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnDelete.UseVisualStyleBackColor = True
         '
-        'pnlCustomersList
+        'btnAddNewCust
         '
-        Me.pnlCustomersList.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.pnlCustomersList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.pnlCustomersList.Controls.Add(Me.dgvCustomers)
-        Me.pnlCustomersList.ForeColor = System.Drawing.Color.LightGray
-        Me.pnlCustomersList.Location = New System.Drawing.Point(64, 173)
-        Me.pnlCustomersList.Name = "pnlCustomersList"
-        Me.pnlCustomersList.Size = New System.Drawing.Size(1154, 496)
-        Me.pnlCustomersList.TabIndex = 5
+        Me.btnAddNewCust.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnAddNewCust.FlatAppearance.BorderSize = 0
+        Me.btnAddNewCust.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddNewCust.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddNewCust.ForeColor = System.Drawing.Color.LightGray
+        Me.btnAddNewCust.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.btnAddNewCust.IconColor = System.Drawing.Color.LightGray
+        Me.btnAddNewCust.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnAddNewCust.IconSize = 35
+        Me.btnAddNewCust.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAddNewCust.Location = New System.Drawing.Point(583, 561)
+        Me.btnAddNewCust.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAddNewCust.Name = "btnAddNewCust"
+        Me.btnAddNewCust.Size = New System.Drawing.Size(97, 50)
+        Me.btnAddNewCust.TabIndex = 1
+        Me.btnAddNewCust.Text = "Add"
+        Me.btnAddNewCust.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAddNewCust.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnAddNewCust.UseVisualStyleBackColor = True
         '
-        'dgvCustomers
+        'id
         '
-        Me.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvCustomers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fname, Me.address, Me.contactNo, Me.email})
-        Me.dgvCustomers.Location = New System.Drawing.Point(145, 88)
-        Me.dgvCustomers.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.dgvCustomers.Name = "dgvCustomers"
-        Me.dgvCustomers.RowHeadersWidth = 62
-        Me.dgvCustomers.RowTemplate.Height = 28
-        Me.dgvCustomers.Size = New System.Drawing.Size(802, 306)
-        Me.dgvCustomers.TabIndex = 0
+        Me.id.Name = "id"
+        '
+        'customerId
+        '
+        Me.customerId.HeaderText = "ID"
+        Me.customerId.Name = "customerId"
+        Me.customerId.Visible = False
         '
         'fname
         '
@@ -219,31 +249,12 @@ Partial Class frmCustomer
         Me.email.Name = "email"
         Me.email.Width = 150
         '
-        'BikeRentalManagementSystemDataSet
-        '
-        Me.BikeRentalManagementSystemDataSet.DataSetName = "BikeRentalManagementSystemDataSet"
-        Me.BikeRentalManagementSystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'BikeRentalManagementSystemDataSetBindingSource
-        '
-        Me.BikeRentalManagementSystemDataSetBindingSource.DataSource = Me.BikeRentalManagementSystemDataSet
-        Me.BikeRentalManagementSystemDataSetBindingSource.Position = 0
-        '
-        'TblSystemAccessBindingSource
-        '
-        Me.TblSystemAccessBindingSource.DataMember = "tblSystemAccess"
-        Me.TblSystemAccessBindingSource.DataSource = Me.BikeRentalManagementSystemDataSetBindingSource
-        '
-        'TblSystemAccessTableAdapter
-        '
-        Me.TblSystemAccessTableAdapter.ClearBeforeFill = True
-        '
         'frmCustomer
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1267, 800)
+        Me.ClientSize = New System.Drawing.Size(950, 650)
         Me.Controls.Add(Me.pnlCustomersList)
         Me.Controls.Add(Me.lblCustomersList)
         Me.Controls.Add(Me.btnEdit)
@@ -251,7 +262,6 @@ Partial Class frmCustomer
         Me.Controls.Add(Me.btnAddNewCust)
         Me.Controls.Add(Me.pnlCustormerTitleContainer)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmCustomer"
         Me.Text = "Customer"
         Me.pnlCustormerTitleContainer.ResumeLayout(False)
@@ -281,6 +291,7 @@ Partial Class frmCustomer
     Friend WithEvents TblSystemAccessTableAdapter As BikeRentalManagementSystemDataSetTableAdapters.tblSystemAccessTableAdapter
     Friend WithEvents dgvCustomers As DataGridView
     Friend WithEvents id As DataGridViewTextBoxColumn
+    Friend WithEvents customerId As DataGridViewTextBoxColumn
     Friend WithEvents fname As DataGridViewTextBoxColumn
     Friend WithEvents address As DataGridViewTextBoxColumn
     Friend WithEvents contactNo As DataGridViewTextBoxColumn
