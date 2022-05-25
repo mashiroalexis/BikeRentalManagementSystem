@@ -1,4 +1,8 @@
-﻿Public Class frmCustomer
+﻿Imports System.Data
+Imports System.Data.SqlClient
+
+
+Public Class frmCustomer
     Private Sub pbCustomerLogo_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -35,7 +39,22 @@
     End Sub
 
     Private Sub frmCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        loadCustomerGrid()
+    End Sub
+
+    Private Sub loadCustomerGrid()
+        Dim rdr As SqlDataReader = Nothing
+        Dim con As SqlConnection = New SqlConnection(getConnectionString)
+        Dim cmd As SqlCommand = New SqlCommand("SELECT * FROM tblCustomer", con)
+        con.Open()
+        rdr = cmd.ExecuteReader()
+        dgvCustomers.Rows.Clear()
+        While (rdr.Read() = True)
+            dgvCustomers.Rows.Add(rdr(0), rdr(1), rdr(2), rdr(3))
+        End While
+        con.Close()
 
     End Sub
+
 
 End Class

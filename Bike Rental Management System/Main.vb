@@ -69,9 +69,11 @@
         switchMenu(frmAbout)
     End Sub
 
-
     Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         switchMenu(frmReturn)
     End Sub
 
+    Private Sub pnlChildFormContainer_Paint(sender As Object, e As PaintEventArgs) Handles pnlChildFormContainer.Paint
+
+    End Sub
 End Class
