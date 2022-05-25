@@ -22,11 +22,15 @@ Partial Class frmAbout
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAbout))
         Me.lblAboutTitle = New System.Windows.Forms.Label()
         Me.pbCloseAboutForm = New FontAwesome.Sharp.IconPictureBox()
         Me.pnlAboutTitleCover = New System.Windows.Forms.Panel()
+        Me.pbDeveloper = New System.Windows.Forms.PictureBox()
+        Me.lblTitleDeveloper = New System.Windows.Forms.Label()
         CType(Me.pbCloseAboutForm, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlAboutTitleCover.SuspendLayout()
+        CType(Me.pbDeveloper, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblAboutTitle
@@ -70,12 +74,37 @@ Partial Class frmAbout
         Me.pnlAboutTitleCover.Size = New System.Drawing.Size(1267, 80)
         Me.pnlAboutTitleCover.TabIndex = 6
         '
+        'pbDeveloper
+        '
+        Me.pbDeveloper.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.pbDeveloper.Image = CType(resources.GetObject("pbDeveloper.Image"), System.Drawing.Image)
+        Me.pbDeveloper.Location = New System.Drawing.Point(12, 98)
+        Me.pbDeveloper.Name = "pbDeveloper"
+        Me.pbDeveloper.Size = New System.Drawing.Size(323, 299)
+        Me.pbDeveloper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbDeveloper.TabIndex = 7
+        Me.pbDeveloper.TabStop = False
+        '
+        'lblTitleDeveloper
+        '
+        Me.lblTitleDeveloper.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblTitleDeveloper.AutoSize = True
+        Me.lblTitleDeveloper.Font = New System.Drawing.Font("Nirmala UI", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitleDeveloper.ForeColor = System.Drawing.Color.LightGray
+        Me.lblTitleDeveloper.Location = New System.Drawing.Point(80, 411)
+        Me.lblTitleDeveloper.Name = "lblTitleDeveloper"
+        Me.lblTitleDeveloper.Size = New System.Drawing.Size(188, 35)
+        Me.lblTitleDeveloper.TabIndex = 8
+        Me.lblTitleDeveloper.Text = "The Developer"
+        '
         'frmAbout
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1267, 800)
+        Me.Controls.Add(Me.lblTitleDeveloper)
+        Me.Controls.Add(Me.pbDeveloper)
         Me.Controls.Add(Me.pnlAboutTitleCover)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmAbout"
@@ -83,10 +112,14 @@ Partial Class frmAbout
         CType(Me.pbCloseAboutForm, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlAboutTitleCover.ResumeLayout(False)
         Me.pnlAboutTitleCover.PerformLayout()
+        CType(Me.pbDeveloper, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents lblAboutTitle As Label
     Friend WithEvents pbCloseAboutForm As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents pnlAboutTitleCover As Panel
+    Friend WithEvents pbDeveloper As PictureBox
+    Friend WithEvents lblTitleDeveloper As Label
 End Class
