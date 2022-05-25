@@ -21,10 +21,47 @@
 
     Private Sub lblTitleDeveloper_Click(sender As Object, e As EventArgs) Handles lblTitleDeveloper.Click
         pnlDevMessage.Visible = True
-        pbFacebook.Visible = False
-        pbInstagram.Visible = False
-        pbTwitter.Visible = False
+        pbInsta.Visible = False
+        pbFB.Visible = False
+        pbTwt.Visible = False
         pbDev.Visible = False
         lblTitleDeveloper.Visible = False
+    End Sub
+
+
+    Private Sub pbFB_Click(sender As Object, e As EventArgs) Handles pbFB.Click
+
+    End Sub
+
+    Private Sub pbFB_MouseHover(sender As Object, e As EventArgs) Handles pbFB.MouseHover
+        pbFB.ForeColor = Color.WhiteSmoke
+    End Sub
+
+    Private Sub pbFB_MouseLeave(sender As Object, e As EventArgs) Handles pbFB.MouseLeave
+        pbFB.ForeColor = Color.LightGray
+    End Sub
+
+    Private Sub pbInsta_Click(sender As Object, e As EventArgs) Handles pbInsta.Click
+
+    End Sub
+
+    Private Sub pbInsta_MouseHover(sender As Object, e As EventArgs) Handles pbInsta.MouseHover
+        pbInsta.ForeColor = Color.WhiteSmoke
+    End Sub
+
+    Private Sub pbInsta_MouseLeave(sender As Object, e As EventArgs) Handles pbInsta.MouseLeave
+        pbInsta.ForeColor = Color.LightGray
+    End Sub
+
+    Private Sub pbTwt_Click(sender As Object, e As EventArgs) Handles pbTwt.Click
+
+    End Sub
+
+    Private Sub pbTwt_MouseHover(sender As Object, e As EventArgs) Handles pbTwt.MouseHover
+        pbTwt.ForeColor = Color.WhiteSmoke
+    End Sub
+
+    Private Sub pbTwt_MouseLeave(sender As Object, e As EventArgs) Handles pbTwt.MouseLeave
+        pbTwt.ForeColor = Color.LightGray
     End Sub
 End Class
