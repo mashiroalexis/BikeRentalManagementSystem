@@ -118,11 +118,13 @@ Partial Class frmCustomer
         '
         Me.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvCustomers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.customerId, Me.fname, Me.address, Me.contactNo, Me.email})
-        Me.dgvCustomers.Location = New System.Drawing.Point(109, 72)
+        Me.dgvCustomers.Location = New System.Drawing.Point(109, 64)
         Me.dgvCustomers.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dgvCustomers.Name = "dgvCustomers"
+        Me.dgvCustomers.RowHeadersVisible = False
         Me.dgvCustomers.RowHeadersWidth = 62
         Me.dgvCustomers.RowTemplate.Height = 28
+        Me.dgvCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvCustomers.Size = New System.Drawing.Size(602, 249)
         Me.dgvCustomers.TabIndex = 0
         '
