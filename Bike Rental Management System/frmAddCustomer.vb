@@ -1,4 +1,6 @@
-﻿Public Class frmAddCustomer
+﻿Imports System.Data
+Imports System.Data.SqlClient
+Public Class frmAddCustomer
     Private Sub frmAddCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         roundCorners(Me)
     End Sub
@@ -15,12 +17,46 @@
         pbCloseAddCustomerForm.ForeColor = Color.LightGray
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MsgBox("Added Successfully!", vbInformation, "")
+    Private Sub btlAddCustomer_Click(sender As Object, e As EventArgs) Handles btlAddCustomer.Click
 
-        txtFullName.Text = ""
-        txtAddress.Text = ""
-        txtContactNumber.Text = ""
-        txtEmailAddress.Text = ""
+        Try
+            ' this is for checking if the customer already exists before adding new custoemr
+            Dim rdr As SqlDataReader = Nothing
+            Dim con As SqlConnection = New SqlConnection(getConnectionString())
+            con.Open()
+            Dim cmd As SqlCommand = New SqlCommand("SELECT contactNo FROM tblCustomer where contactNo = '" + txtContactNumber.Text + "'", con)
+            rdr = cmd.ExecuteReader()
+            If rdr.Read() Then
+                MessageBox.Show("Customer already exists!", "Error", MessageBoxButtons.OK, MessageBoxIcon.[Error])
+                If rdr IsNot Nothing Then
+                    rdr.Close()
+                End If
+                Return
+            End If
+            con.Close()
+            ' save new customer to database
+            Dim fullName As String = txtFullName.Text
+            Dim address As String = txtAddress.Text
+            Dim contactNo As String = txtContactNumber.Text
+            Dim email As String = txtEmailAddress.Text
+
+            con = New SqlConnection(getConnectionString())
+            cmd = New SqlCommand("INSERT INTO tblCustomer VALUES(@fullName, @address, @contactNo, @email)", con)
+            cmd.Parameters.AddWithValue("@fullName", fullName)
+            cmd.Parameters.AddWithValue("@address", address)
+            cmd.Parameters.AddWithValue("@contactNo", contactNo)
+            cmd.Parameters.AddWithValue("@email", email)
+            con.Open()
+            cmd.ExecuteNonQuery()
+            con.Close()
+            txtFullName.Text = ""
+            txtAddress.Text = ""
+            txtContactNumber.Text = ""
+            txtEmailAddress.Text = ""
+            MessageBox.Show("New customer record saved!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Me.Hide()
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class
