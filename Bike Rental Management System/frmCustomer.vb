@@ -60,6 +60,7 @@ Public Class frmCustomer
 
     End Sub
 
+
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         Me.Hide()
         switchMenu(frmEditCostumer)
