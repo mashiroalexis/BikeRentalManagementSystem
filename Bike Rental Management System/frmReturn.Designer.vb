@@ -45,9 +45,12 @@ Partial Class frmReturn
         Me.lblFee = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.txtFee = New System.Windows.Forms.TextBox()
-        Me.dtpReturnDate = New System.Windows.Forms.DateTimePicker()
-        Me.lblReturnDate = New System.Windows.Forms.Label()
+        Me.dtpRentTime = New System.Windows.Forms.DateTimePicker()
+        Me.lblRentTime = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.dtpReturnTime = New System.Windows.Forms.DateTimePicker()
+        Me.lblReturnTime = New System.Windows.Forms.Label()
+        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.pnlReturnTitleCover.SuspendLayout()
         CType(Me.pbCloseReturnForm, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -97,7 +100,7 @@ Partial Class frmReturn
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BackColor = System.Drawing.Color.LightGray
-        Me.Panel2.Location = New System.Drawing.Point(86, 211)
+        Me.Panel2.Location = New System.Drawing.Point(86, 187)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(312, 1)
@@ -110,7 +113,7 @@ Partial Class frmReturn
         Me.txtNoOfBikesRented.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtNoOfBikesRented.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNoOfBikesRented.ForeColor = System.Drawing.Color.White
-        Me.txtNoOfBikesRented.Location = New System.Drawing.Point(86, 179)
+        Me.txtNoOfBikesRented.Location = New System.Drawing.Point(86, 155)
         Me.txtNoOfBikesRented.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNoOfBikesRented.Multiline = True
         Me.txtNoOfBikesRented.Name = "txtNoOfBikesRented"
@@ -123,7 +126,7 @@ Partial Class frmReturn
         Me.lblNoOfBikesRented.AutoSize = True
         Me.lblNoOfBikesRented.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNoOfBikesRented.ForeColor = System.Drawing.Color.LightGray
-        Me.lblNoOfBikesRented.Location = New System.Drawing.Point(81, 137)
+        Me.lblNoOfBikesRented.Location = New System.Drawing.Point(81, 113)
         Me.lblNoOfBikesRented.Name = "lblNoOfBikesRented"
         Me.lblNoOfBikesRented.Size = New System.Drawing.Size(186, 25)
         Me.lblNoOfBikesRented.TabIndex = 26
@@ -179,7 +182,7 @@ Partial Class frmReturn
         Me.lblCustomerName.AutoSize = True
         Me.lblCustomerName.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCustomerName.ForeColor = System.Drawing.Color.LightGray
-        Me.lblCustomerName.Location = New System.Drawing.Point(81, 254)
+        Me.lblCustomerName.Location = New System.Drawing.Point(81, 230)
         Me.lblCustomerName.Name = "lblCustomerName"
         Me.lblCustomerName.Size = New System.Drawing.Size(155, 25)
         Me.lblCustomerName.TabIndex = 33
@@ -189,7 +192,7 @@ Partial Class frmReturn
         '
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel1.BackColor = System.Drawing.Color.LightGray
-        Me.Panel1.Location = New System.Drawing.Point(86, 328)
+        Me.Panel1.Location = New System.Drawing.Point(86, 304)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(312, 1)
@@ -202,7 +205,7 @@ Partial Class frmReturn
         Me.txtCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtCustomerName.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCustomerName.ForeColor = System.Drawing.Color.White
-        Me.txtCustomerName.Location = New System.Drawing.Point(86, 296)
+        Me.txtCustomerName.Location = New System.Drawing.Point(86, 272)
         Me.txtCustomerName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtCustomerName.Multiline = True
         Me.txtCustomerName.Name = "txtCustomerName"
@@ -215,7 +218,7 @@ Partial Class frmReturn
         Me.lblRentDate.AutoSize = True
         Me.lblRentDate.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRentDate.ForeColor = System.Drawing.Color.LightGray
-        Me.lblRentDate.Location = New System.Drawing.Point(81, 473)
+        Me.lblRentDate.Location = New System.Drawing.Point(81, 449)
         Me.lblRentDate.Name = "lblRentDate"
         Me.lblRentDate.Size = New System.Drawing.Size(98, 25)
         Me.lblRentDate.TabIndex = 36
@@ -225,7 +228,7 @@ Partial Class frmReturn
         '
         Me.Panel3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel3.BackColor = System.Drawing.Color.LightGray
-        Me.Panel3.Location = New System.Drawing.Point(86, 547)
+        Me.Panel3.Location = New System.Drawing.Point(86, 523)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(312, 1)
@@ -237,7 +240,7 @@ Partial Class frmReturn
         Me.dtpRentDate.CalendarMonthBackground = System.Drawing.SystemColors.Info
         Me.dtpRentDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpRentDate.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpRentDate.Location = New System.Drawing.Point(86, 508)
+        Me.dtpRentDate.Location = New System.Drawing.Point(86, 484)
         Me.dtpRentDate.Name = "dtpRentDate"
         Me.dtpRentDate.Size = New System.Drawing.Size(312, 34)
         Me.dtpRentDate.TabIndex = 37
@@ -249,9 +252,9 @@ Partial Class frmReturn
         Me.btnOK.FlatAppearance.BorderSize = 0
         Me.btnOK.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOK.ForeColor = System.Drawing.Color.LightGray
-        Me.btnOK.Location = New System.Drawing.Point(416, 810)
+        Me.btnOK.Location = New System.Drawing.Point(443, 834)
         Me.btnOK.Name = "btnOK"
-        Me.btnOK.Size = New System.Drawing.Size(94, 41)
+        Me.btnOK.Size = New System.Drawing.Size(78, 41)
         Me.btnOK.TabIndex = 47
         Me.btnOK.Text = "OK"
         Me.btnOK.UseVisualStyleBackColor = False
@@ -262,7 +265,7 @@ Partial Class frmReturn
         Me.lblHoursRented.AutoSize = True
         Me.lblHoursRented.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHoursRented.ForeColor = System.Drawing.Color.LightGray
-        Me.lblHoursRented.Location = New System.Drawing.Point(81, 370)
+        Me.lblHoursRented.Location = New System.Drawing.Point(81, 346)
         Me.lblHoursRented.Name = "lblHoursRented"
         Me.lblHoursRented.Size = New System.Drawing.Size(142, 25)
         Me.lblHoursRented.TabIndex = 50
@@ -272,7 +275,7 @@ Partial Class frmReturn
         '
         Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel5.BackColor = System.Drawing.Color.LightGray
-        Me.Panel5.Location = New System.Drawing.Point(86, 444)
+        Me.Panel5.Location = New System.Drawing.Point(86, 420)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(312, 1)
@@ -285,7 +288,7 @@ Partial Class frmReturn
         Me.txtHoursRented.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtHoursRented.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHoursRented.ForeColor = System.Drawing.Color.White
-        Me.txtHoursRented.Location = New System.Drawing.Point(86, 412)
+        Me.txtHoursRented.Location = New System.Drawing.Point(86, 388)
         Me.txtHoursRented.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtHoursRented.Multiline = True
         Me.txtHoursRented.Name = "txtHoursRented"
@@ -298,7 +301,7 @@ Partial Class frmReturn
         Me.lblFee.AutoSize = True
         Me.lblFee.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFee.ForeColor = System.Drawing.Color.LightGray
-        Me.lblFee.Location = New System.Drawing.Point(81, 701)
+        Me.lblFee.Location = New System.Drawing.Point(81, 754)
         Me.lblFee.Name = "lblFee"
         Me.lblFee.Size = New System.Drawing.Size(42, 25)
         Me.lblFee.TabIndex = 53
@@ -308,7 +311,7 @@ Partial Class frmReturn
         '
         Me.Panel6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel6.BackColor = System.Drawing.Color.LightGray
-        Me.Panel6.Location = New System.Drawing.Point(86, 775)
+        Me.Panel6.Location = New System.Drawing.Point(86, 828)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(312, 1)
@@ -321,45 +324,78 @@ Partial Class frmReturn
         Me.txtFee.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtFee.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFee.ForeColor = System.Drawing.Color.White
-        Me.txtFee.Location = New System.Drawing.Point(86, 743)
+        Me.txtFee.Location = New System.Drawing.Point(86, 796)
         Me.txtFee.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtFee.Multiline = True
         Me.txtFee.Name = "txtFee"
         Me.txtFee.Size = New System.Drawing.Size(312, 34)
         Me.txtFee.TabIndex = 51
         '
-        'dtpReturnDate
+        'dtpRentTime
         '
-        Me.dtpReturnDate.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.dtpReturnDate.CalendarMonthBackground = System.Drawing.SystemColors.Info
-        Me.dtpReturnDate.CustomFormat = "dd/MM/yyyy"
-        Me.dtpReturnDate.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpReturnDate.Location = New System.Drawing.Point(86, 621)
-        Me.dtpReturnDate.Name = "dtpReturnDate"
-        Me.dtpReturnDate.Size = New System.Drawing.Size(312, 34)
-        Me.dtpReturnDate.TabIndex = 56
+        Me.dtpRentTime.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.dtpRentTime.CalendarMonthBackground = System.Drawing.SystemColors.Info
+        Me.dtpRentTime.CustomFormat = "dd/MM/yyyy"
+        Me.dtpRentTime.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpRentTime.Location = New System.Drawing.Point(86, 597)
+        Me.dtpRentTime.Name = "dtpRentTime"
+        Me.dtpRentTime.Size = New System.Drawing.Size(312, 34)
+        Me.dtpRentTime.TabIndex = 56
         '
-        'lblReturnDate
+        'lblRentTime
         '
-        Me.lblReturnDate.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblReturnDate.AutoSize = True
-        Me.lblReturnDate.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblReturnDate.ForeColor = System.Drawing.Color.LightGray
-        Me.lblReturnDate.Location = New System.Drawing.Point(81, 586)
-        Me.lblReturnDate.Name = "lblReturnDate"
-        Me.lblReturnDate.Size = New System.Drawing.Size(118, 25)
-        Me.lblReturnDate.TabIndex = 55
-        Me.lblReturnDate.Text = "Return Date"
+        Me.lblRentTime.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblRentTime.AutoSize = True
+        Me.lblRentTime.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRentTime.ForeColor = System.Drawing.Color.LightGray
+        Me.lblRentTime.Location = New System.Drawing.Point(81, 562)
+        Me.lblRentTime.Name = "lblRentTime"
+        Me.lblRentTime.Size = New System.Drawing.Size(100, 25)
+        Me.lblRentTime.TabIndex = 55
+        Me.lblRentTime.Text = "Rent Time"
         '
         'Panel4
         '
         Me.Panel4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel4.BackColor = System.Drawing.Color.LightGray
-        Me.Panel4.Location = New System.Drawing.Point(86, 660)
+        Me.Panel4.Location = New System.Drawing.Point(86, 636)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(312, 1)
         Me.Panel4.TabIndex = 54
+        '
+        'dtpReturnTime
+        '
+        Me.dtpReturnTime.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.dtpReturnTime.CalendarMonthBackground = System.Drawing.SystemColors.Info
+        Me.dtpReturnTime.CustomFormat = "dd/MM/yyyy"
+        Me.dtpReturnTime.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpReturnTime.Location = New System.Drawing.Point(86, 698)
+        Me.dtpReturnTime.Name = "dtpReturnTime"
+        Me.dtpReturnTime.Size = New System.Drawing.Size(312, 34)
+        Me.dtpReturnTime.TabIndex = 59
+        '
+        'lblReturnTime
+        '
+        Me.lblReturnTime.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblReturnTime.AutoSize = True
+        Me.lblReturnTime.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblReturnTime.ForeColor = System.Drawing.Color.LightGray
+        Me.lblReturnTime.Location = New System.Drawing.Point(81, 663)
+        Me.lblReturnTime.Name = "lblReturnTime"
+        Me.lblReturnTime.Size = New System.Drawing.Size(120, 25)
+        Me.lblReturnTime.TabIndex = 58
+        Me.lblReturnTime.Text = "Return Time"
+        '
+        'Panel7
+        '
+        Me.Panel7.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel7.BackColor = System.Drawing.Color.LightGray
+        Me.Panel7.Location = New System.Drawing.Point(86, 737)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(312, 1)
+        Me.Panel7.TabIndex = 57
         '
         'frmReturn
         '
@@ -367,8 +403,11 @@ Partial Class frmReturn
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1284, 882)
-        Me.Controls.Add(Me.dtpReturnDate)
-        Me.Controls.Add(Me.lblReturnDate)
+        Me.Controls.Add(Me.dtpReturnTime)
+        Me.Controls.Add(Me.lblReturnTime)
+        Me.Controls.Add(Me.Panel7)
+        Me.Controls.Add(Me.dtpRentTime)
+        Me.Controls.Add(Me.lblRentTime)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.lblFee)
         Me.Controls.Add(Me.Panel6)
@@ -425,7 +464,10 @@ Partial Class frmReturn
     Friend WithEvents lblFee As Label
     Friend WithEvents Panel6 As Panel
     Friend WithEvents txtFee As TextBox
-    Friend WithEvents dtpReturnDate As DateTimePicker
-    Friend WithEvents lblReturnDate As Label
+    Friend WithEvents dtpRentTime As DateTimePicker
+    Friend WithEvents lblRentTime As Label
     Friend WithEvents Panel4 As Panel
+    Friend WithEvents dtpReturnTime As DateTimePicker
+    Friend WithEvents lblReturnTime As Label
+    Friend WithEvents Panel7 As Panel
 End Class

@@ -222,11 +222,11 @@ Partial Class frmMain
         Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.LocationArrow
         Me.IconPictureBox1.IconColor = System.Drawing.Color.LightGray
         Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconPictureBox1.IconSize = 431
-        Me.IconPictureBox1.Location = New System.Drawing.Point(347, 212)
+        Me.IconPictureBox1.IconSize = 536
+        Me.IconPictureBox1.Location = New System.Drawing.Point(357, 222)
         Me.IconPictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.IconPictureBox1.Name = "IconPictureBox1"
-        Me.IconPictureBox1.Size = New System.Drawing.Size(479, 431)
+        Me.IconPictureBox1.Size = New System.Drawing.Size(637, 536)
         Me.IconPictureBox1.TabIndex = 0
         Me.IconPictureBox1.TabStop = False
         '

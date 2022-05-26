@@ -40,4 +40,17 @@
         txtHoursrented.Text = ""
         txtfee.Text = ""
     End Sub
+
+    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles dtpRenttime.ValueChanged
+        dtpRenttime.Format = DateTimePickerFormat.Custom
+        dtpRenttime.CustomFormat = "hh:mm tt"
+        dtpRenttime.ShowUpDown = True
+    End Sub
+
+    Private Sub dtpReturntime_ValueChanged(sender As Object, e As EventArgs) Handles dtpReturntime.ValueChanged
+        dtpReturntime.Format = DateTimePickerFormat.Custom
+        dtpReturntime.CustomFormat = "hh:mm tt"
+        dtpReturntime.ShowUpDown = True
+    End Sub
+
 End Class

@@ -4,7 +4,7 @@
     '   teporary fix for connection string storage
     '   use this everytime you need to use a database connection
     '
-    Dim systemDatabaseConnectionString As String = "Data Source=ALEXIS\SQLEXPRESS;Initial Catalog=BikeRentalManagementSystem;Integrated Security=True"
+    Dim systemDatabaseConnectionString As String = "Data Source=ASPIRE\SQLEXPRESS;Initial Catalog=BikeRentalManagementDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
 
 
     Public Sub roundCorners(obj As Form)

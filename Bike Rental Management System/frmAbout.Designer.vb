@@ -104,11 +104,11 @@ Partial Class frmAbout
         '
         Me.lblAboutMessage.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblAboutMessage.AutoSize = True
-        Me.lblAboutMessage.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAboutMessage.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAboutMessage.ForeColor = System.Drawing.Color.LightGray
-        Me.lblAboutMessage.Location = New System.Drawing.Point(43, 185)
+        Me.lblAboutMessage.Location = New System.Drawing.Point(46, 194)
         Me.lblAboutMessage.Name = "lblAboutMessage"
-        Me.lblAboutMessage.Size = New System.Drawing.Size(893, 140)
+        Me.lblAboutMessage.Size = New System.Drawing.Size(870, 125)
         Me.lblAboutMessage.TabIndex = 10
         Me.lblAboutMessage.Text = resources.GetString("lblAboutMessage.Text")
         '
@@ -141,7 +141,7 @@ Partial Class frmAbout
         '
         Me.pnlDevMessage.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.pnlDevMessage.Controls.Add(Me.Label1)
-        Me.pnlDevMessage.Location = New System.Drawing.Point(0, 404)
+        Me.pnlDevMessage.Location = New System.Drawing.Point(0, 399)
         Me.pnlDevMessage.Name = "pnlDevMessage"
         Me.pnlDevMessage.Size = New System.Drawing.Size(1267, 300)
         Me.pnlDevMessage.TabIndex = 15
@@ -154,7 +154,7 @@ Partial Class frmAbout
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.LightGray
-        Me.Label1.Location = New System.Drawing.Point(46, 87)
+        Me.Label1.Location = New System.Drawing.Point(46, 84)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(915, 100)
