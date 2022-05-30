@@ -62,8 +62,15 @@ Public Class frmRentBike
         Dim days As TimeSpan = result.Duration
         Dim hrs As Double = Math.Round(result.TotalHours)
         Dim rentPrice As Integer = 0
+        Dim noOfBikesRented As Integer = 0
+
+        If Val(txtCustomerId.Text) < 1 Then
+            MessageBox.Show("Select a customer first!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
 
         If hrs < 1 Then
+            txtHoursrented.Text = 0
             MessageBox.Show("Minimum 1hr to rent a bike", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
 
@@ -72,8 +79,10 @@ Public Class frmRentBike
             If clbAvailableBikes.GetItemCheckState(i) Then
                 rentPrice += 50
                 txtFee.Text = rentPrice * hrs
+                noOfBikesRented += 1
             End If
         Next
+        txtNoofBikesRented.Text = noOfBikesRented
     End Sub
 
     Private Sub clbAvailableBikes_SelectedIndexChanged(sender As Object, e As EventArgs) Handles clbAvailableBikes.SelectedIndexChanged
@@ -105,5 +114,11 @@ Public Class frmRentBike
             clbAvailableBikes.Items.Add(rdr(1))
         End While
         con.Close()
+    End Sub
+
+
+
+    Private Sub txtCustomername_MouseClick(sender As Object, e As MouseEventArgs) Handles txtCustomername.MouseClick
+        switchFormsInMain(frmSelectCustomer)
     End Sub
 End Class

@@ -41,8 +41,6 @@ Partial Class frmRentBike
         Me.lblfee = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.txtFee = New System.Windows.Forms.TextBox()
-        Me.btnClear = New FontAwesome.Sharp.IconButton()
-        Me.btnAddNewRent = New FontAwesome.Sharp.IconButton()
         Me.pnlRentallist = New System.Windows.Forms.Panel()
         Me.lblRentalsList = New System.Windows.Forms.Label()
         Me.clbAvailableBikes = New System.Windows.Forms.CheckedListBox()
@@ -55,6 +53,9 @@ Partial Class frmRentBike
         Me.Button1 = New System.Windows.Forms.Button()
         Me.dtp1 = New System.Windows.Forms.DateTimePicker()
         Me.dtp2 = New System.Windows.Forms.DateTimePicker()
+        Me.btnClear = New FontAwesome.Sharp.IconButton()
+        Me.btnAddNewRent = New FontAwesome.Sharp.IconButton()
+        Me.txtCustomerId = New System.Windows.Forms.TextBox()
         Me.pnlRentTitleCover.SuspendLayout()
         CType(Me.pbCloseRentForm, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -143,8 +144,10 @@ Partial Class frmRentBike
         Me.txtNoofBikesRented.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNoofBikesRented.Multiline = True
         Me.txtNoofBikesRented.Name = "txtNoofBikesRented"
+        Me.txtNoofBikesRented.ReadOnly = True
         Me.txtNoofBikesRented.Size = New System.Drawing.Size(180, 29)
         Me.txtNoofBikesRented.TabIndex = 27
+        Me.txtNoofBikesRented.Text = "0"
         '
         'lblCustomername
         '
@@ -180,6 +183,7 @@ Partial Class frmRentBike
         Me.txtCustomername.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCustomername.Multiline = True
         Me.txtCustomername.Name = "txtCustomername"
+        Me.txtCustomername.ReadOnly = True
         Me.txtCustomername.Size = New System.Drawing.Size(180, 29)
         Me.txtCustomername.TabIndex = 30
         '
@@ -255,8 +259,10 @@ Partial Class frmRentBike
         Me.txtHoursrented.Margin = New System.Windows.Forms.Padding(2)
         Me.txtHoursrented.Multiline = True
         Me.txtHoursrented.Name = "txtHoursrented"
+        Me.txtHoursrented.ReadOnly = True
         Me.txtHoursrented.Size = New System.Drawing.Size(180, 28)
         Me.txtHoursrented.TabIndex = 51
+        Me.txtHoursrented.Text = "0"
         '
         'lblfee
         '
@@ -292,52 +298,9 @@ Partial Class frmRentBike
         Me.txtFee.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFee.Multiline = True
         Me.txtFee.Name = "txtFee"
+        Me.txtFee.ReadOnly = True
         Me.txtFee.Size = New System.Drawing.Size(180, 28)
         Me.txtFee.TabIndex = 54
-        '
-        'btnClear
-        '
-        Me.btnClear.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnClear.FlatAppearance.BorderSize = 0
-        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClear.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.ForeColor = System.Drawing.Color.LightGray
-        Me.btnClear.IconChar = FontAwesome.Sharp.IconChar.Eraser
-        Me.btnClear.IconColor = System.Drawing.Color.LightGray
-        Me.btnClear.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnClear.IconSize = 35
-        Me.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnClear.Location = New System.Drawing.Point(574, 403)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(116, 50)
-        Me.btnClear.TabIndex = 58
-        Me.btnClear.Text = "Clear"
-        Me.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnClear.UseVisualStyleBackColor = True
-        '
-        'btnAddNewRent
-        '
-        Me.btnAddNewRent.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnAddNewRent.FlatAppearance.BorderSize = 0
-        Me.btnAddNewRent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAddNewRent.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddNewRent.ForeColor = System.Drawing.Color.LightGray
-        Me.btnAddNewRent.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
-        Me.btnAddNewRent.IconColor = System.Drawing.Color.LightGray
-        Me.btnAddNewRent.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnAddNewRent.IconSize = 35
-        Me.btnAddNewRent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAddNewRent.Location = New System.Drawing.Point(310, 403)
-        Me.btnAddNewRent.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnAddNewRent.Name = "btnAddNewRent"
-        Me.btnAddNewRent.Size = New System.Drawing.Size(108, 50)
-        Me.btnAddNewRent.TabIndex = 57
-        Me.btnAddNewRent.Text = "Add"
-        Me.btnAddNewRent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAddNewRent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnAddNewRent.UseVisualStyleBackColor = True
         '
         'pnlRentallist
         '
@@ -486,12 +449,72 @@ Partial Class frmRentBike
         Me.dtp2.Size = New System.Drawing.Size(181, 29)
         Me.dtp2.TabIndex = 70
         '
+        'btnClear
+        '
+        Me.btnClear.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnClear.FlatAppearance.BorderSize = 0
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.Color.LightGray
+        Me.btnClear.IconChar = FontAwesome.Sharp.IconChar.Eraser
+        Me.btnClear.IconColor = System.Drawing.Color.LightGray
+        Me.btnClear.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnClear.IconSize = 35
+        Me.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnClear.Location = New System.Drawing.Point(574, 403)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(116, 50)
+        Me.btnClear.TabIndex = 58
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
+        'btnAddNewRent
+        '
+        Me.btnAddNewRent.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnAddNewRent.FlatAppearance.BorderSize = 0
+        Me.btnAddNewRent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddNewRent.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddNewRent.ForeColor = System.Drawing.Color.LightGray
+        Me.btnAddNewRent.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.btnAddNewRent.IconColor = System.Drawing.Color.LightGray
+        Me.btnAddNewRent.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnAddNewRent.IconSize = 35
+        Me.btnAddNewRent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAddNewRent.Location = New System.Drawing.Point(310, 403)
+        Me.btnAddNewRent.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAddNewRent.Name = "btnAddNewRent"
+        Me.btnAddNewRent.Size = New System.Drawing.Size(108, 50)
+        Me.btnAddNewRent.TabIndex = 57
+        Me.btnAddNewRent.Text = "Add"
+        Me.btnAddNewRent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAddNewRent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnAddNewRent.UseVisualStyleBackColor = True
+        '
+        'txtCustomerId
+        '
+        Me.txtCustomerId.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtCustomerId.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.txtCustomerId.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtCustomerId.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCustomerId.ForeColor = System.Drawing.Color.White
+        Me.txtCustomerId.Location = New System.Drawing.Point(837, 92)
+        Me.txtCustomerId.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtCustomerId.Multiline = True
+        Me.txtCustomerId.Name = "txtCustomerId"
+        Me.txtCustomerId.Size = New System.Drawing.Size(64, 28)
+        Me.txtCustomerId.TabIndex = 71
+        Me.txtCustomerId.Visible = False
+        '
         'frmRentBike
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(963, 717)
+        Me.Controls.Add(Me.txtCustomerId)
         Me.Controls.Add(Me.dtp2)
         Me.Controls.Add(Me.dtp1)
         Me.Controls.Add(Me.Button1)
@@ -567,4 +590,5 @@ Partial Class frmRentBike
     Friend WithEvents Button1 As Button
     Friend WithEvents dtp1 As DateTimePicker
     Friend WithEvents dtp2 As DateTimePicker
+    Friend WithEvents txtCustomerId As TextBox
 End Class
