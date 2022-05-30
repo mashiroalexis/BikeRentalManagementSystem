@@ -1,4 +1,6 @@
-﻿Public Class frmRentBike
+﻿Imports System.Data
+Imports System.Data.SqlClient
+Public Class frmRentBike
     Private Sub pbCloseRentForm_Click(sender As Object, e As EventArgs) Handles pbCloseRentForm.Click
         Me.Close()
     End Sub
@@ -26,7 +28,7 @@
         txtNoofBikesRented.Text = ""
         txtCustomername.Text = ""
         txtHoursrented.Text = ""
-        txtfee.Text = ""
+        txtFee.Text = ""
 
     End Sub
 
@@ -38,7 +40,7 @@
         txtNoofBikesRented.Text = ""
         txtCustomername.Text = ""
         txtHoursrented.Text = ""
-        txtfee.Text = ""
+        txtFee.Text = ""
     End Sub
 
     Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles dtpRenttime.ValueChanged
@@ -59,11 +61,49 @@
         Dim result As TimeSpan = d2.Subtract(d1)
         Dim days As TimeSpan = result.Duration
         Dim hrs As Double = Math.Round(result.TotalHours)
+        Dim rentPrice As Integer = 0
 
         If hrs < 1 Then
             MessageBox.Show("Minimum 1hr to rent a bike", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
 
         txtHoursrented.Text = hrs.ToString
+        For i As Integer = 0 To clbAvailableBikes.Items.Count - 1
+            If clbAvailableBikes.GetItemCheckState(i) Then
+                rentPrice += 50
+                txtFee.Text = rentPrice * hrs
+            End If
+        Next
+    End Sub
+
+    Private Sub clbAvailableBikes_SelectedIndexChanged(sender As Object, e As EventArgs) Handles clbAvailableBikes.SelectedIndexChanged
+
+
+    End Sub
+
+    Private Sub clbAvailableBikes_MouseClick(sender As Object, e As MouseEventArgs) Handles clbAvailableBikes.MouseClick
+
+    End Sub
+
+    Private Sub clbAvailableBikes_ItemCheck(sender As Object, e As ItemCheckEventArgs) Handles clbAvailableBikes.ItemCheck
+
+    End Sub
+
+    Private Sub frmRentBike_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        loadBikesList()
+    End Sub
+
+    Private Sub loadBikesList()
+        Dim rdr As SqlDataReader = Nothing
+        Dim con As SqlConnection = New SqlConnection(getConnectionString)
+        Dim cmd As SqlCommand = New SqlCommand("SELECT * FROM tblBike", con)
+        con.Open()
+        rdr = cmd.ExecuteReader()
+
+        clbAvailableBikes.Items.Clear()
+        While (rdr.Read() = True)
+            clbAvailableBikes.Items.Add(rdr(1))
+        End While
+        con.Close()
     End Sub
 End Class
