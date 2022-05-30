@@ -58,7 +58,12 @@
         Dim d2 As DateTime = dtp2.Value
         Dim result As TimeSpan = d2.Subtract(d1)
         Dim days As TimeSpan = result.Duration
-        txtHoursrented.Text = Format(result.TotalHours, "#hh:mm#")
-        MessageBox.Show(days.TotalHours)
+        Dim hrs As Double = Math.Round(result.TotalHours)
+
+        If hrs < 1 Then
+            MessageBox.Show("Minimum 1hr to rent a bike", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+
+        txtHoursrented.Text = hrs.ToString
     End Sub
 End Class
