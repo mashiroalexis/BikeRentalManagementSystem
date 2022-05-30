@@ -1,0 +1,2 @@
+id,customerId,startRentTime,returnRentTime,hrsRented,fee,noBikeRented,returned
+4,11,May 31 2022  1:02AM,May 31 2022  6:02AM,5         ,250,1,0
