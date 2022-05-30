@@ -53,4 +53,11 @@
         dtpReturntime.ShowUpDown = True
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim d1 As DateTime = dtp1.Value
+        Dim d2 As DateTime = dtp2.Value
+        Dim result As TimeSpan = d2.Subtract(d1)
+        Dim days As TimeSpan = result.Duration
+        MessageBox.Show(days.ToString)
+    End Sub
 End Class
