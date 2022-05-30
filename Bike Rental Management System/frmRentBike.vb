@@ -58,6 +58,7 @@
         Dim d2 As DateTime = dtp2.Value
         Dim result As TimeSpan = d2.Subtract(d1)
         Dim days As TimeSpan = result.Duration
-        MessageBox.Show(days.ToString)
+        txtHoursrented.Text = Format(result.TotalHours, "#hh:mm#")
+        MessageBox.Show(days.TotalHours)
     End Sub
 End Class
