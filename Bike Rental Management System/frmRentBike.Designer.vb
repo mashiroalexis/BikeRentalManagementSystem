@@ -22,6 +22,9 @@ Partial Class frmRentBike
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnlRentTitleCover = New System.Windows.Forms.Panel()
         Me.pbCloseRentForm = New FontAwesome.Sharp.IconPictureBox()
         Me.lblRentTitle = New System.Windows.Forms.Label()
@@ -42,6 +45,7 @@ Partial Class frmRentBike
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.txtFee = New System.Windows.Forms.TextBox()
         Me.pnlRentallist = New System.Windows.Forms.Panel()
+        Me.dgvRentalList = New System.Windows.Forms.DataGridView()
         Me.lblRentalsList = New System.Windows.Forms.Label()
         Me.clbAvailableBikes = New System.Windows.Forms.CheckedListBox()
         Me.dtpRenttime = New System.Windows.Forms.DateTimePicker()
@@ -56,7 +60,6 @@ Partial Class frmRentBike
         Me.btnClear = New FontAwesome.Sharp.IconButton()
         Me.btnAddNewRent = New FontAwesome.Sharp.IconButton()
         Me.txtCustomerId = New System.Windows.Forms.TextBox()
-        Me.dgvRentalList = New System.Windows.Forms.DataGridView()
         Me.customerId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.fname = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.rentDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -325,6 +328,49 @@ Partial Class frmRentBike
         Me.pnlRentallist.Size = New System.Drawing.Size(840, 211)
         Me.pnlRentallist.TabIndex = 59
         '
+        'dgvRentalList
+        '
+        Me.dgvRentalList.AllowUserToAddRows = False
+        Me.dgvRentalList.AllowUserToDeleteRows = False
+        Me.dgvRentalList.AllowUserToResizeColumns = False
+        Me.dgvRentalList.AllowUserToResizeRows = False
+        Me.dgvRentalList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvRentalList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.dgvRentalList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvRentalList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.customerId, Me.fname, Me.rentDate, Me.returnDate, Me.hrsRented, Me.fee, Me.noOfBikeRented})
+        Me.dgvRentalList.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.ScrollBar
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvRentalList.DefaultCellStyle = DataGridViewCellStyle5
+        Me.dgvRentalList.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvRentalList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2
+        Me.dgvRentalList.GridColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.dgvRentalList.Location = New System.Drawing.Point(0, 0)
+        Me.dgvRentalList.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgvRentalList.MultiSelect = False
+        Me.dgvRentalList.Name = "dgvRentalList"
+        Me.dgvRentalList.ReadOnly = True
+        Me.dgvRentalList.RowHeadersVisible = False
+        Me.dgvRentalList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        Me.dgvRentalList.RowsDefaultCellStyle = DataGridViewCellStyle6
+        Me.dgvRentalList.RowTemplate.Height = 28
+        Me.dgvRentalList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvRentalList.Size = New System.Drawing.Size(836, 207)
+        Me.dgvRentalList.TabIndex = 3
+        '
         'lblRentalsList
         '
         Me.lblRentalsList.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -485,6 +531,7 @@ Partial Class frmRentBike
         'btnAddNewRent
         '
         Me.btnAddNewRent.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnAddNewRent.Enabled = False
         Me.btnAddNewRent.FlatAppearance.BorderSize = 0
         Me.btnAddNewRent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAddNewRent.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -519,31 +566,11 @@ Partial Class frmRentBike
         Me.txtCustomerId.TabIndex = 71
         Me.txtCustomerId.Visible = False
         '
-        'dgvRentalList
-        '
-        Me.dgvRentalList.AllowUserToAddRows = False
-        Me.dgvRentalList.AllowUserToDeleteRows = False
-        Me.dgvRentalList.AllowUserToOrderColumns = True
-        Me.dgvRentalList.AllowUserToResizeColumns = False
-        Me.dgvRentalList.AllowUserToResizeRows = False
-        Me.dgvRentalList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvRentalList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.customerId, Me.fname, Me.rentDate, Me.returnDate, Me.hrsRented, Me.fee, Me.noOfBikeRented})
-        Me.dgvRentalList.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.dgvRentalList.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvRentalList.Location = New System.Drawing.Point(0, 0)
-        Me.dgvRentalList.Margin = New System.Windows.Forms.Padding(2)
-        Me.dgvRentalList.Name = "dgvRentalList"
-        Me.dgvRentalList.RowHeadersVisible = False
-        Me.dgvRentalList.RowHeadersWidth = 62
-        Me.dgvRentalList.RowTemplate.Height = 28
-        Me.dgvRentalList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvRentalList.Size = New System.Drawing.Size(836, 207)
-        Me.dgvRentalList.TabIndex = 3
-        '
         'customerId
         '
         Me.customerId.HeaderText = "ID"
         Me.customerId.Name = "customerId"
+        Me.customerId.ReadOnly = True
         Me.customerId.Visible = False
         '
         'fname
@@ -551,32 +578,38 @@ Partial Class frmRentBike
         Me.fname.HeaderText = "Name"
         Me.fname.MinimumWidth = 8
         Me.fname.Name = "fname"
+        Me.fname.ReadOnly = True
         Me.fname.Width = 150
         '
         'rentDate
         '
         Me.rentDate.HeaderText = "Rent Date"
         Me.rentDate.Name = "rentDate"
+        Me.rentDate.ReadOnly = True
         '
         'returnDate
         '
         Me.returnDate.HeaderText = "Return Date"
         Me.returnDate.Name = "returnDate"
+        Me.returnDate.ReadOnly = True
         '
         'hrsRented
         '
         Me.hrsRented.HeaderText = "Hour(s) Rented"
         Me.hrsRented.Name = "hrsRented"
+        Me.hrsRented.ReadOnly = True
         '
         'fee
         '
         Me.fee.HeaderText = "Fee"
         Me.fee.Name = "fee"
+        Me.fee.ReadOnly = True
         '
         'noOfBikeRented
         '
         Me.noOfBikeRented.HeaderText = "Qty"
         Me.noOfBikeRented.Name = "noOfBikeRented"
+        Me.noOfBikeRented.ReadOnly = True
         '
         'frmRentBike
         '

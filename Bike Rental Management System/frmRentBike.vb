@@ -44,7 +44,7 @@ Public Class frmRentBike
                     con.Close()
                 End If
             Next
-
+            loadRentals()
             MessageBox.Show("Bike(s) Rented!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
@@ -53,10 +53,10 @@ Public Class frmRentBike
         For i As Integer = 0 To clbAvailableBikes.Items.Count - 1
             clbAvailableBikes.SetItemChecked(i, False)
         Next
-        txtNoofBikesRented.Text = ""
+        txtNoofBikesRented.Text = 0
         txtCustomername.Text = ""
-        txtHoursrented.Text = ""
-        txtFee.Text = ""
+        txtHoursrented.Text = 0
+        txtFee.Text = 0
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
@@ -110,6 +110,12 @@ Public Class frmRentBike
             End If
         Next
         txtNoofBikesRented.Text = noOfBikesRented
+        If txtNoofBikesRented.Text > 0 Then
+            btnAddNewRent.Enabled = True
+        Else
+            btnAddNewRent.Enabled = False
+            MessageBox.Show("Select a bike to rent", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
     End Sub
 
 
