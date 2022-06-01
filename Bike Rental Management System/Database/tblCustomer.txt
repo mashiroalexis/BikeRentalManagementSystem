@@ -9,3 +9,4 @@ id,name,brand,price,qty
 8,Bike 8    ,,30,5
 9,Bike 9    ,,35,5
 10,Bike 10   ,,35,5
+id,fullName,address,contactNo,email
