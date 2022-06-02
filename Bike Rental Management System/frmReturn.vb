@@ -48,8 +48,8 @@ Public Class frmReturn
     Private Sub loadRentals()
         Try
             Dim rdr As SqlDataReader = Nothing
-            Dim con As SqlConnection = New SqlConnection(getConnectionString)
-            Dim cmd As SqlCommand = New SqlCommand("SELECT * FROM tblRent", con)
+            Dim con As SqlConnection = New SqlConnection(getConnectionString())
+            Dim cmd As SqlCommand = New SqlCommand("SELECT * FROM tblRent where returned = 0", con)
             Dim customerFullName As String
             con.Open()
             rdr = cmd.ExecuteReader()
@@ -103,5 +103,29 @@ Public Class frmReturn
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+    End Sub
+
+    Private Sub btnOK_Click(sender As Object, e As EventArgs) Handles btnOK.Click
+        Dim con As SqlConnection = New SqlConnection(getConnectionString())
+        Dim cmd As SqlCommand = New SqlCommand("UPDATE tblRent SET returned = 1 where id = @id", con)
+        cmd.Parameters.AddWithValue("@id", txtRentId.Text)
+        con.Open()
+        cmd.ExecuteNonQuery()
+        con.Close()
+        loadRentals()
+        loadReturnedList()
+        clearForm()
+        MessageBox.Show("Rented bikes were returned!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+    End Sub
+
+    Private Sub clearForm()
+        txtRentId.Text = Nothing
+        txtNoOfBikesRented.Text = Nothing
+        txtCustomerName.Text = Nothing
+        txtHoursRented.Text = Nothing
+        dtpRentTime.Value = DateTime.Now
+        dtpReturnTime.Value = DateTime.Now
+        txtFee.Text = Nothing
     End Sub
 End Class

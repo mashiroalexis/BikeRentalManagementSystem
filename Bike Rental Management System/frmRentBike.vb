@@ -110,7 +110,7 @@ Public Class frmRentBike
         Try
             Dim rdr As SqlDataReader = Nothing
             Dim con As SqlConnection = New SqlConnection(getConnectionString)
-            Dim cmd As SqlCommand = New SqlCommand("SELECT * FROM tblRent", con)
+            Dim cmd As SqlCommand = New SqlCommand("SELECT * FROM tblRent where returned = 0", con)
             Dim customerFullName As String
             con.Open()
             rdr = cmd.ExecuteReader()

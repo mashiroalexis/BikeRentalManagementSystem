@@ -31,9 +31,12 @@
     Dim activeChildForm As Form = Nothing
 
     Private Sub switchMenu(panel As Form)
-        If activeChildForm IsNot Nothing Then
+
+        If activeChildForm IsNot Nothing And activeChildForm IsNot panel Then
             activeChildForm.Close()
         End If
+
+        activeChildForm = panel
 
         pnlChildFormContainer.Controls.Clear()
         panel.TopLevel = False
@@ -47,6 +50,7 @@
 
     Private Sub btnRent_Click(sender As Object, e As EventArgs) Handles btnRent.Click
         switchMenu(frmRentBike)
+        'switchFormsInMain(frmRentBike)
 
     End Sub
 

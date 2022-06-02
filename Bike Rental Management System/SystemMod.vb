@@ -45,10 +45,10 @@
     ' 
     Dim activeChildForm As Form = Nothing
     Public Sub switchFormsInMain(frmChild As Form)
-        If activeChildForm IsNot Nothing Then
+        If activeChildForm IsNot Nothing And activeChildForm IsNot frmChild Then
             activeChildForm.Close()
         End If
-
+        activeChildForm = frmChild
         frmMain.pnlChildFormContainer.Controls.Clear()
         frmChild.TopLevel = False
         frmChild.Dock = DockStyle.Fill
