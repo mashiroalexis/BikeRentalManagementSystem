@@ -1,0 +1,12 @@
+id,name,brand,price,qty
+1,Bike 1    ,          ,25,5
+2,Bike 2    ,,25,5
+3,Bike 3    ,,50,5
+4,Bike 4    ,,20,5
+5,Bike 5    ,,25,5
+6,Bike 6    ,,25,5
+7,Bike 7    ,,15,5
+8,Bike 8    ,,30,5
+9,Bike 9    ,,35,5
+10,Bike 10   ,,35,5
+id,fullName,address,contactNo,email

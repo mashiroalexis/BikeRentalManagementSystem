@@ -51,6 +51,10 @@ Public Class frmCustomer
         rdr = cmd.ExecuteReader()
         dgvCustomers.Rows.Clear()
         While (rdr.Read() = True)
+            MessageBox.Show(rdr(1).ToString)
+            If rdr(1).ToString = Nothing Then
+                Continue While
+            End If
             dgvCustomers.Rows.Add(rdr(0), rdr(1), rdr(2), rdr(3), rdr(4))
         End While
         con.Close()
@@ -88,7 +92,11 @@ Public Class frmCustomer
     Private Sub dgvCustomers_MouseClick(sender As Object, e As MouseEventArgs) Handles dgvCustomers.MouseClick
         Try
             If dgvCustomers.Rows.Count > 0 Then
+
                 Dim dr As DataGridViewRow = dgvCustomers.SelectedRows(0)
+                If dr.Cells(0).Value Is Nothing Then
+                    Return
+                End If
                 frmEditCostumer.txtCustomerID.Text = dr.Cells(0).Value.ToString()
                 frmEditCostumer.txtFullName.Text = dr.Cells(1).Value.ToString()
                 frmEditCostumer.txtAddress.Text = dr.Cells(2).Value.ToString()

@@ -1,0 +1,2 @@
+id,bikeId,rentId
+6,4,4

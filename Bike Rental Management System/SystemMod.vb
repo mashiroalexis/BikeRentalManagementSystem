@@ -4,7 +4,7 @@
     '   teporary fix for connection string storage
     '   use this everytime you need to use a database connection
     '
-    Dim systemDatabaseConnectionString As String = "Data Source=ASPIRE\SQLEXPRESS;Initial Catalog=BikeRentalManagementDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+    Dim systemDatabaseConnectionString As String = "Data Source=ALEXIS\SQLEXPRESS;Initial Catalog=BikeRentalManagementSystem;Integrated Security=True"
 
 
     Public Sub roundCorners(obj As Form)
@@ -59,5 +59,22 @@
         frmChild.Activate()
         frmChild.Show()
     End Sub
+
+    Public Function countTimeDiff(time1 As Date, time2 As Date) As Double
+        Dim timeHour As Double
+        Dim timeMins As Double
+        Dim timeSec As Double
+        Dim completeTime As Double
+
+        timeHour = DateDiff(DateInterval.Hour, time1, time2)
+        timeMins = DateDiff(DateInterval.Minute, time1, time2)
+        timeSec = DateDiff(DateInterval.Second, time1, time2)
+
+
+        completeTime = Date.Now.ToString(timeHour & ":" & timeMins & ":" & timeSec)
+
+        Return completeTime
+    End Function
+
 
 End Module

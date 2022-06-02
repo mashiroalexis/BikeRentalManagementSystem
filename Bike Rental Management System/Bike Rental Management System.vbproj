@@ -134,6 +134,12 @@
     <Compile Include="frmReturn.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmSelectCustomer.Designer.vb">
+      <DependentUpon>frmSelectCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Log.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmReturn.resx">
       <DependentUpon>frmReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectCustomer.resx">
+      <DependentUpon>frmSelectCustomer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log.resx">
       <DependentUpon>Log.vb</DependentUpon>
