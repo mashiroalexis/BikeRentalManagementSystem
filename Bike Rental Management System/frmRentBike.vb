@@ -19,13 +19,13 @@ Public Class frmRentBike
     End Sub
 
     Private Sub btnAddNewRent_Click(sender As Object, e As EventArgs) Handles btnAddNewRent.Click
-        Try
-            Dim con As SqlConnection = New SqlConnection(getConnectionString())
+        'Try
+        Dim con As SqlConnection = New SqlConnection(getConnectionString())
             Dim cmd As SqlCommand = New SqlCommand("INSERT INTO tblRent VALUES(@customerId, @startRentTime, @returnRentTime, @hrsRented, @fee, @noBikeRented, @returned); Select Scope_Identity()", con)
             cmd.Parameters.AddWithValue("@customerId", txtCustomerId.Text)
-            cmd.Parameters.AddWithValue("@startRentTime", dtp1.Value)
-            cmd.Parameters.AddWithValue("@returnRentTime", dtp2.Value)
-            cmd.Parameters.AddWithValue("@hrsRented", txtHoursrented.Text)
+        cmd.Parameters.AddWithValue("@startRentTime", dtp1.Value.ToString)
+        cmd.Parameters.AddWithValue("@returnRentTime", dtp2.Value.ToString)
+        cmd.Parameters.AddWithValue("@hrsRented", txtHoursrented.Text)
             cmd.Parameters.AddWithValue("@fee", txtFee.Text)
             cmd.Parameters.AddWithValue("@noBikeRented", txtNoofBikesRented.Text)
             cmd.Parameters.AddWithValue("@returned", 0)
@@ -46,9 +46,9 @@ Public Class frmRentBike
             Next
             loadRentals()
             MessageBox.Show("Bike(s) Rented!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Catch ex As Exception
-            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-        End Try
+        'Catch ex As Exception
+        'MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        ' End Try
 
         For i As Integer = 0 To clbAvailableBikes.Items.Count - 1
             clbAvailableBikes.SetItemChecked(i, False)
