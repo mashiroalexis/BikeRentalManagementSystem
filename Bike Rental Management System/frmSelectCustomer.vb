@@ -21,10 +21,6 @@ Public Class frmSelectCustomer
         switchFormsInMain(frmRentBike)
     End Sub
 
-    Private Sub dgvCustomerList_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCustomerList.CellContentClick
-
-    End Sub
-
     Private Sub dgvCustomerList_MouseClick(sender As Object, e As MouseEventArgs) Handles dgvCustomerList.MouseClick
 
     End Sub

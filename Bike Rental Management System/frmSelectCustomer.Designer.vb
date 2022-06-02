@@ -22,6 +22,9 @@ Partial Class frmSelectCustomer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnlSelectCustomerTitleContainer = New System.Windows.Forms.Panel()
         Me.lblCustomerTitle = New System.Windows.Forms.Label()
         Me.dgvCustomerList = New System.Windows.Forms.DataGridView()
@@ -42,20 +45,21 @@ Partial Class frmSelectCustomer
         Me.pnlSelectCustomerTitleContainer.Controls.Add(Me.lblCustomerTitle)
         Me.pnlSelectCustomerTitleContainer.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlSelectCustomerTitleContainer.Location = New System.Drawing.Point(0, 0)
-        Me.pnlSelectCustomerTitleContainer.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pnlSelectCustomerTitleContainer.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlSelectCustomerTitleContainer.Name = "pnlSelectCustomerTitleContainer"
-        Me.pnlSelectCustomerTitleContainer.Size = New System.Drawing.Size(1546, 100)
+        Me.pnlSelectCustomerTitleContainer.Size = New System.Drawing.Size(1284, 80)
         Me.pnlSelectCustomerTitleContainer.TabIndex = 0
         '
         'lblCustomerTitle
         '
+        Me.lblCustomerTitle.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblCustomerTitle.AutoSize = True
         Me.lblCustomerTitle.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCustomerTitle.ForeColor = System.Drawing.Color.LightGray
-        Me.lblCustomerTitle.Location = New System.Drawing.Point(75, 11)
+        Me.lblCustomerTitle.Location = New System.Drawing.Point(13, 18)
         Me.lblCustomerTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCustomerTitle.Name = "lblCustomerTitle"
-        Me.lblCustomerTitle.Size = New System.Drawing.Size(225, 37)
+        Me.lblCustomerTitle.Size = New System.Drawing.Size(277, 46)
         Me.lblCustomerTitle.TabIndex = 4
         Me.lblCustomerTitle.Text = "Select Customer"
         '
@@ -66,51 +70,78 @@ Partial Class frmSelectCustomer
         Me.dgvCustomerList.AllowUserToOrderColumns = True
         Me.dgvCustomerList.AllowUserToResizeColumns = False
         Me.dgvCustomerList.AllowUserToResizeRows = False
+        Me.dgvCustomerList.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.dgvCustomerList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dgvCustomerList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Nirmala UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvCustomerList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgvCustomerList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvCustomerList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.customerId, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
         Me.dgvCustomerList.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.dgvCustomerList.Location = New System.Drawing.Point(297, 135)
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Nirmala UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvCustomerList.DefaultCellStyle = DataGridViewCellStyle5
+        Me.dgvCustomerList.Location = New System.Drawing.Point(83, 190)
+        Me.dgvCustomerList.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgvCustomerList.Name = "dgvCustomerList"
         Me.dgvCustomerList.RowHeadersVisible = False
-        Me.dgvCustomerList.RowHeadersWidth = 62
-        Me.dgvCustomerList.RowTemplate.Height = 28
+        Me.dgvCustomerList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        Me.dgvCustomerList.RowsDefaultCellStyle = DataGridViewCellStyle6
+        Me.dgvCustomerList.RowTemplate.Height = 35
         Me.dgvCustomerList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvCustomerList.Size = New System.Drawing.Size(904, 543)
+        Me.dgvCustomerList.Size = New System.Drawing.Size(1104, 482)
         Me.dgvCustomerList.TabIndex = 2
         '
         'customerId
         '
         Me.customerId.HeaderText = "ID"
+        Me.customerId.MinimumWidth = 6
         Me.customerId.Name = "customerId"
         Me.customerId.Visible = False
+        Me.customerId.Width = 69
         '
         'DataGridViewTextBoxColumn1
         '
         Me.DataGridViewTextBoxColumn1.HeaderText = "Name"
         Me.DataGridViewTextBoxColumn1.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.Width = 150
+        Me.DataGridViewTextBoxColumn1.Width = 111
         '
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.HeaderText = "Address"
         Me.DataGridViewTextBoxColumn2.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 150
+        Me.DataGridViewTextBoxColumn2.Width = 134
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.HeaderText = "Contact Number"
         Me.DataGridViewTextBoxColumn3.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Width = 150
+        Me.DataGridViewTextBoxColumn3.Width = 228
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.HeaderText = "Email"
         Me.DataGridViewTextBoxColumn4.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.Width = 150
+        Me.DataGridViewTextBoxColumn4.Width = 104
         '
         'btnSelectCustomer
         '
@@ -125,9 +156,10 @@ Partial Class frmSelectCustomer
         Me.btnSelectCustomer.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnSelectCustomer.IconSize = 35
         Me.btnSelectCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSelectCustomer.Location = New System.Drawing.Point(842, 708)
+        Me.btnSelectCustomer.Location = New System.Drawing.Point(700, 686)
+        Me.btnSelectCustomer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnSelectCustomer.Name = "btnSelectCustomer"
-        Me.btnSelectCustomer.Size = New System.Drawing.Size(146, 77)
+        Me.btnSelectCustomer.Size = New System.Drawing.Size(152, 62)
         Me.btnSelectCustomer.TabIndex = 3
         Me.btnSelectCustomer.Text = "Select"
         Me.btnSelectCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -147,9 +179,10 @@ Partial Class frmSelectCustomer
         Me.btnBack.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnBack.IconSize = 35
         Me.btnBack.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBack.Location = New System.Drawing.Point(516, 708)
+        Me.btnBack.Location = New System.Drawing.Point(411, 686)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(146, 77)
+        Me.btnBack.Size = New System.Drawing.Size(130, 62)
         Me.btnBack.TabIndex = 4
         Me.btnBack.Text = "Back"
         Me.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -158,16 +191,16 @@ Partial Class frmSelectCustomer
         '
         'frmSelectCustomer
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1546, 845)
+        Me.ClientSize = New System.Drawing.Size(1284, 882)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnSelectCustomer)
         Me.Controls.Add(Me.dgvCustomerList)
         Me.Controls.Add(Me.pnlSelectCustomerTitleContainer)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmSelectCustomer"
         Me.Text = "Select Customer"
         Me.pnlSelectCustomerTitleContainer.ResumeLayout(False)
