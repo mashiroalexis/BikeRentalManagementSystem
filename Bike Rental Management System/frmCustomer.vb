@@ -39,7 +39,6 @@ Public Class frmCustomer
     End Sub
 
     Private Sub frmCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'MessageBox.Show("I am loaded", "Information", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         loadCustomerGrid()
     End Sub
 
@@ -51,7 +50,6 @@ Public Class frmCustomer
         rdr = cmd.ExecuteReader()
         dgvCustomers.Rows.Clear()
         While (rdr.Read() = True)
-            MessageBox.Show(rdr(1).ToString)
             If rdr(1).ToString = Nothing Then
                 Continue While
             End If
