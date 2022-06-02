@@ -29,6 +29,7 @@
 
     'switch forms
     Dim activeChildForm As Form = Nothing
+
     Private Sub switchMenu(panel As Form)
         If activeChildForm IsNot Nothing Then
             activeChildForm.Close()

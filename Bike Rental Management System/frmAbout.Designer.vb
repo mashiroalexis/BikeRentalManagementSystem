@@ -106,9 +106,9 @@ Partial Class frmAbout
         Me.lblAboutMessage.AutoSize = True
         Me.lblAboutMessage.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAboutMessage.ForeColor = System.Drawing.Color.LightGray
-        Me.lblAboutMessage.Location = New System.Drawing.Point(46, 194)
+        Me.lblAboutMessage.Location = New System.Drawing.Point(58, 194)
         Me.lblAboutMessage.Name = "lblAboutMessage"
-        Me.lblAboutMessage.Size = New System.Drawing.Size(870, 125)
+        Me.lblAboutMessage.Size = New System.Drawing.Size(858, 125)
         Me.lblAboutMessage.TabIndex = 10
         Me.lblAboutMessage.Text = resources.GetString("lblAboutMessage.Text")
         '
@@ -122,9 +122,9 @@ Partial Class frmAbout
         Me.lblAboutUs.Location = New System.Drawing.Point(535, 98)
         Me.lblAboutUs.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAboutUs.Name = "lblAboutUs"
-        Me.lblAboutUs.Size = New System.Drawing.Size(169, 46)
+        Me.lblAboutUs.Size = New System.Drawing.Size(180, 46)
         Me.lblAboutUs.TabIndex = 4
-        Me.lblAboutUs.Text = "About Us"
+        Me.lblAboutUs.Text = "About Me"
         '
         'pbDev
         '

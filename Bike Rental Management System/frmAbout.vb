@@ -64,4 +64,12 @@
     Private Sub pbTwt_MouseLeave(sender As Object, e As EventArgs) Handles pbTwt.MouseLeave
         pbTwt.ForeColor = Color.LightGray
     End Sub
+
+    Private Sub frmAbout_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub lblAboutMessage_Click(sender As Object, e As EventArgs) Handles lblAboutMessage.Click
+
+    End Sub
 End Class

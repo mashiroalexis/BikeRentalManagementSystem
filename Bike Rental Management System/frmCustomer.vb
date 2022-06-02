@@ -9,7 +9,6 @@ Public Class frmCustomer
 
     Private Sub pbCloseCustomerForm_Click(sender As Object, e As EventArgs) Handles pbCloseCustomerForm.Click
         Me.Close()
-
     End Sub
 
     Private Sub pbCloseCustomerForm_MouseHover(sender As Object, e As EventArgs) Handles pbCloseCustomerForm.MouseHover

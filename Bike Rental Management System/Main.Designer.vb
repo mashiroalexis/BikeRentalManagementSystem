@@ -32,11 +32,12 @@ Partial Class frmMain
         Me.btnBikeMenu = New FontAwesome.Sharp.IconButton()
         Me.pnlLogo = New System.Windows.Forms.Panel()
         Me.pnlChildFormContainer = New System.Windows.Forms.Panel()
-        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
+        Me.pnlMainTitleCover = New System.Windows.Forms.Panel()
+        Me.lblMainTitle = New System.Windows.Forms.Label()
         Me.pnlMenu.SuspendLayout()
         Me.pnlBikeSubMenu.SuspendLayout()
         Me.pnlChildFormContainer.SuspendLayout()
-        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlMainTitleCover.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnlMenu
@@ -207,7 +208,8 @@ Partial Class frmMain
         '
         'pnlChildFormContainer
         '
-        Me.pnlChildFormContainer.Controls.Add(Me.IconPictureBox1)
+        Me.pnlChildFormContainer.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.pnlChildFormContainer.Controls.Add(Me.pnlMainTitleCover)
         Me.pnlChildFormContainer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlChildFormContainer.Location = New System.Drawing.Point(333, 0)
         Me.pnlChildFormContainer.Margin = New System.Windows.Forms.Padding(4)
@@ -215,20 +217,29 @@ Partial Class frmMain
         Me.pnlChildFormContainer.Size = New System.Drawing.Size(1284, 882)
         Me.pnlChildFormContainer.TabIndex = 1
         '
-        'IconPictureBox1
+        'pnlMainTitleCover
         '
-        Me.IconPictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.IconPictureBox1.ForeColor = System.Drawing.Color.LightGray
-        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.LocationArrow
-        Me.IconPictureBox1.IconColor = System.Drawing.Color.LightGray
-        Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconPictureBox1.IconSize = 536
-        Me.IconPictureBox1.Location = New System.Drawing.Point(357, 222)
-        Me.IconPictureBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.IconPictureBox1.Name = "IconPictureBox1"
-        Me.IconPictureBox1.Size = New System.Drawing.Size(637, 536)
-        Me.IconPictureBox1.TabIndex = 0
-        Me.IconPictureBox1.TabStop = False
+        Me.pnlMainTitleCover.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.pnlMainTitleCover.Controls.Add(Me.lblMainTitle)
+        Me.pnlMainTitleCover.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlMainTitleCover.ForeColor = System.Drawing.Color.LightGray
+        Me.pnlMainTitleCover.Location = New System.Drawing.Point(0, 0)
+        Me.pnlMainTitleCover.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlMainTitleCover.Name = "pnlMainTitleCover"
+        Me.pnlMainTitleCover.Size = New System.Drawing.Size(1284, 80)
+        Me.pnlMainTitleCover.TabIndex = 1
+        '
+        'lblMainTitle
+        '
+        Me.lblMainTitle.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.lblMainTitle.AutoSize = True
+        Me.lblMainTitle.Font = New System.Drawing.Font("Nirmala UI", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMainTitle.Location = New System.Drawing.Point(8, 20)
+        Me.lblMainTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMainTitle.Name = "lblMainTitle"
+        Me.lblMainTitle.Size = New System.Drawing.Size(400, 35)
+        Me.lblMainTitle.TabIndex = 1
+        Me.lblMainTitle.Text = "Bike Rental Management System"
         '
         'frmMain
         '
@@ -246,7 +257,8 @@ Partial Class frmMain
         Me.pnlMenu.ResumeLayout(False)
         Me.pnlBikeSubMenu.ResumeLayout(False)
         Me.pnlChildFormContainer.ResumeLayout(False)
-        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlMainTitleCover.ResumeLayout(False)
+        Me.pnlMainTitleCover.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -255,11 +267,12 @@ Partial Class frmMain
     Friend WithEvents pnlBikeSubMenu As Panel
     Friend WithEvents pnlLogo As Panel
     Friend WithEvents pnlChildFormContainer As Panel
-    Friend WithEvents IconPictureBox1 As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents btnCustomer As FontAwesome.Sharp.IconButton
     Friend WithEvents btnExit As FontAwesome.Sharp.IconButton
     Friend WithEvents btnAbout As FontAwesome.Sharp.IconButton
     Friend WithEvents btnBikeMenu As FontAwesome.Sharp.IconButton
     Friend WithEvents btnReturn As FontAwesome.Sharp.IconButton
     Friend WithEvents btnRent As FontAwesome.Sharp.IconButton
+    Friend WithEvents pnlMainTitleCover As Panel
+    Friend WithEvents lblMainTitle As Label
 End Class
