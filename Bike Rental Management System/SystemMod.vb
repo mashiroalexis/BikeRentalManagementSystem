@@ -4,7 +4,7 @@
     '   teporary fix for connection string storage
     '   use this everytime you need to use a database connection
     '
-    Dim systemDatabaseConnectionString As String = "Data Source=ALEXIS\SQLEXPRESS;Initial Catalog=BikeRentalManagementSystem;Integrated Security=True"
+    'Dim systemDatabaseConnectionString As String = "Data Source=ALEXIS\SQLEXPRESS;Initial Catalog=BikeRentalManagementSystem;Integrated Security=True"
 
 
     Public Sub roundCorners(obj As Form)
@@ -36,9 +36,9 @@
 
     End Sub
 
-    Public Function getConnectionString() As String
-        Return systemDatabaseConnectionString
-    End Function
+    'Public Function getConnectionString() As String
+    ' Return systemDatabaseConnectionString
+    ' End Function
 
     ' 
     ' 

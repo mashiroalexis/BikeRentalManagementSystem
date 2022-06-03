@@ -79,15 +79,16 @@ Public Class frmReturn
 
     End Sub
 
-    Private Sub dgvRentalList_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvRentalList.CellContentClick
-
-    End Sub
 
     Private Sub dgvRentalList_MouseClick(sender As Object, e As MouseEventArgs) Handles dgvRentalList.MouseClick
         Try
             If dgvRentalList.Rows.Count > 0 Then
 
                 Dim dr As DataGridViewRow = dgvRentalList.SelectedRows(0)
+                Dim curDate As DateTime = Now
+                Dim res As TimeSpan = Nothing
+                Dim timePenalty As Integer = 0
+                Dim penaltyFee As Integer = 0
                 If dr.Cells(0).Value Is Nothing Then
                     Return
                 End If
@@ -97,8 +98,17 @@ Public Class frmReturn
                 dtpRentTime.Value = dr.Cells(2).Value.ToString()
                 dtpReturnTime.Value = varDptReturn
                 txtHoursRented.Text = dr.Cells(4).Value.ToString()
-                txtFee.Text = dr.Cells(5).Value.ToString()
                 txtNoOfBikesRented.Text = dr.Cells(6).Value.ToString()
+                timePenalty = curDate.Subtract(varDptReturn).TotalHours
+                If curDate > varDptReturn Then
+                    penaltyFee = dr.Cells(6).Value * 70
+                    penaltyFee *= timePenalty
+                    txtPenaltyCharged.Text = penaltyFee
+                    txtFee.Text = dr.Cells(5).Value + penaltyFee
+                Else
+                    txtFee.Text = dr.Cells(5).Value.ToString()
+                    txtPenaltyCharged.Text = 0
+                End If
             End If
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
