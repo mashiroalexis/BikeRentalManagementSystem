@@ -22,9 +22,9 @@ Partial Class frmRentBike
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnlRentTitleCover = New System.Windows.Forms.Panel()
         Me.pbCloseRentForm = New FontAwesome.Sharp.IconPictureBox()
         Me.lblRentTitle = New System.Windows.Forms.Label()
@@ -62,6 +62,9 @@ Partial Class frmRentBike
         Me.btnAddNewRent = New FontAwesome.Sharp.IconButton()
         Me.txtCustomerId = New System.Windows.Forms.TextBox()
         Me.btnCalculate = New FontAwesome.Sharp.IconButton()
+        Me.btnAddOneHour = New FontAwesome.Sharp.IconButton()
+        Me.btnAddTwoHours = New FontAwesome.Sharp.IconButton()
+        Me.btnAddThreeHours = New FontAwesome.Sharp.IconButton()
         Me.pnlRentTitleCover.SuspendLayout()
         CType(Me.pbCloseRentForm, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlRentallist.SuspendLayout()
@@ -76,9 +79,8 @@ Partial Class frmRentBike
         Me.pnlRentTitleCover.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlRentTitleCover.ForeColor = System.Drawing.Color.LightGray
         Me.pnlRentTitleCover.Location = New System.Drawing.Point(0, 0)
-        Me.pnlRentTitleCover.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlRentTitleCover.Name = "pnlRentTitleCover"
-        Me.pnlRentTitleCover.Size = New System.Drawing.Size(1284, 80)
+        Me.pnlRentTitleCover.Size = New System.Drawing.Size(963, 65)
         Me.pnlRentTitleCover.TabIndex = 0
         '
         'pbCloseRentForm
@@ -90,11 +92,10 @@ Partial Class frmRentBike
         Me.pbCloseRentForm.IconChar = FontAwesome.Sharp.IconChar.TimesCircle
         Me.pbCloseRentForm.IconColor = System.Drawing.Color.LightGray
         Me.pbCloseRentForm.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.pbCloseRentForm.IconSize = 62
-        Me.pbCloseRentForm.Location = New System.Drawing.Point(1204, 11)
-        Me.pbCloseRentForm.Margin = New System.Windows.Forms.Padding(4)
+        Me.pbCloseRentForm.IconSize = 50
+        Me.pbCloseRentForm.Location = New System.Drawing.Point(903, 9)
         Me.pbCloseRentForm.Name = "pbCloseRentForm"
-        Me.pbCloseRentForm.Size = New System.Drawing.Size(67, 62)
+        Me.pbCloseRentForm.Size = New System.Drawing.Size(50, 50)
         Me.pbCloseRentForm.TabIndex = 4
         Me.pbCloseRentForm.TabStop = False
         '
@@ -102,10 +103,9 @@ Partial Class frmRentBike
         '
         Me.lblRentTitle.AutoSize = True
         Me.lblRentTitle.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRentTitle.Location = New System.Drawing.Point(16, 11)
-        Me.lblRentTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblRentTitle.Location = New System.Drawing.Point(12, 9)
         Me.lblRentTitle.Name = "lblRentTitle"
-        Me.lblRentTitle.Size = New System.Drawing.Size(93, 46)
+        Me.lblRentTitle.Size = New System.Drawing.Size(76, 37)
         Me.lblRentTitle.TabIndex = 0
         Me.lblRentTitle.Text = "Rent"
         '
@@ -115,9 +115,10 @@ Partial Class frmRentBike
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.LightGray
-        Me.Label1.Location = New System.Drawing.Point(165, 125)
+        Me.Label1.Location = New System.Drawing.Point(124, 102)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(143, 25)
+        Me.Label1.Size = New System.Drawing.Size(114, 20)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Available Bikes"
         '
@@ -127,9 +128,10 @@ Partial Class frmRentBike
         Me.lblNoOfBikesRented.AutoSize = True
         Me.lblNoOfBikesRented.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNoOfBikesRented.ForeColor = System.Drawing.Color.LightGray
-        Me.lblNoOfBikesRented.Location = New System.Drawing.Point(467, 124)
+        Me.lblNoOfBikesRented.Location = New System.Drawing.Point(350, 101)
+        Me.lblNoOfBikesRented.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblNoOfBikesRented.Name = "lblNoOfBikesRented"
-        Me.lblNoOfBikesRented.Size = New System.Drawing.Size(186, 25)
+        Me.lblNoOfBikesRented.Size = New System.Drawing.Size(148, 20)
         Me.lblNoOfBikesRented.TabIndex = 29
         Me.lblNoOfBikesRented.Text = "No. of Bikes Rented"
         '
@@ -137,10 +139,10 @@ Partial Class frmRentBike
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BackColor = System.Drawing.Color.LightGray
-        Me.Panel2.Location = New System.Drawing.Point(473, 188)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel2.Location = New System.Drawing.Point(355, 153)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(240, 1)
+        Me.Panel2.Size = New System.Drawing.Size(180, 1)
         Me.Panel2.TabIndex = 28
         '
         'txtNoofBikesRented
@@ -150,12 +152,12 @@ Partial Class frmRentBike
         Me.txtNoofBikesRented.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtNoofBikesRented.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNoofBikesRented.ForeColor = System.Drawing.Color.White
-        Me.txtNoofBikesRented.Location = New System.Drawing.Point(473, 156)
-        Me.txtNoofBikesRented.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNoofBikesRented.Location = New System.Drawing.Point(355, 127)
+        Me.txtNoofBikesRented.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtNoofBikesRented.Multiline = True
         Me.txtNoofBikesRented.Name = "txtNoofBikesRented"
         Me.txtNoofBikesRented.ReadOnly = True
-        Me.txtNoofBikesRented.Size = New System.Drawing.Size(240, 36)
+        Me.txtNoofBikesRented.Size = New System.Drawing.Size(180, 29)
         Me.txtNoofBikesRented.TabIndex = 27
         Me.txtNoofBikesRented.Text = "0"
         '
@@ -165,9 +167,10 @@ Partial Class frmRentBike
         Me.lblCustomername.AutoSize = True
         Me.lblCustomername.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCustomername.ForeColor = System.Drawing.Color.LightGray
-        Me.lblCustomername.Location = New System.Drawing.Point(905, 124)
+        Me.lblCustomername.Location = New System.Drawing.Point(679, 101)
+        Me.lblCustomername.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCustomername.Name = "lblCustomername"
-        Me.lblCustomername.Size = New System.Drawing.Size(155, 25)
+        Me.lblCustomername.Size = New System.Drawing.Size(123, 20)
         Me.lblCustomername.TabIndex = 32
         Me.lblCustomername.Text = "Customer Name"
         '
@@ -175,10 +178,10 @@ Partial Class frmRentBike
         '
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel1.BackColor = System.Drawing.Color.LightGray
-        Me.Panel1.Location = New System.Drawing.Point(910, 188)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel1.Location = New System.Drawing.Point(682, 153)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(240, 1)
+        Me.Panel1.Size = New System.Drawing.Size(180, 1)
         Me.Panel1.TabIndex = 31
         '
         'txtCustomername
@@ -188,12 +191,12 @@ Partial Class frmRentBike
         Me.txtCustomername.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtCustomername.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCustomername.ForeColor = System.Drawing.Color.White
-        Me.txtCustomername.Location = New System.Drawing.Point(910, 156)
-        Me.txtCustomername.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtCustomername.Location = New System.Drawing.Point(682, 127)
+        Me.txtCustomername.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtCustomername.Multiline = True
         Me.txtCustomername.Name = "txtCustomername"
         Me.txtCustomername.ReadOnly = True
-        Me.txtCustomername.Size = New System.Drawing.Size(240, 36)
+        Me.txtCustomername.Size = New System.Drawing.Size(180, 29)
         Me.txtCustomername.TabIndex = 30
         '
         'lblHoursrented
@@ -202,9 +205,10 @@ Partial Class frmRentBike
         Me.lblHoursrented.AutoSize = True
         Me.lblHoursrented.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHoursrented.ForeColor = System.Drawing.Color.LightGray
-        Me.lblHoursrented.Location = New System.Drawing.Point(339, 388)
+        Me.lblHoursrented.Location = New System.Drawing.Point(254, 315)
+        Me.lblHoursrented.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblHoursrented.Name = "lblHoursrented"
-        Me.lblHoursrented.Size = New System.Drawing.Size(142, 25)
+        Me.lblHoursrented.Size = New System.Drawing.Size(112, 20)
         Me.lblHoursrented.TabIndex = 53
         Me.lblHoursrented.Text = "Hour/s Rented"
         '
@@ -212,10 +216,10 @@ Partial Class frmRentBike
         '
         Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel5.BackColor = System.Drawing.Color.LightGray
-        Me.Panel5.Location = New System.Drawing.Point(344, 462)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel5.Location = New System.Drawing.Point(258, 375)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(240, 1)
+        Me.Panel5.Size = New System.Drawing.Size(180, 1)
         Me.Panel5.TabIndex = 52
         '
         'txtHoursrented
@@ -225,12 +229,12 @@ Partial Class frmRentBike
         Me.txtHoursrented.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtHoursrented.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHoursrented.ForeColor = System.Drawing.Color.White
-        Me.txtHoursrented.Location = New System.Drawing.Point(344, 430)
-        Me.txtHoursrented.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtHoursrented.Location = New System.Drawing.Point(258, 349)
+        Me.txtHoursrented.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtHoursrented.Multiline = True
         Me.txtHoursrented.Name = "txtHoursrented"
         Me.txtHoursrented.ReadOnly = True
-        Me.txtHoursrented.Size = New System.Drawing.Size(240, 34)
+        Me.txtHoursrented.Size = New System.Drawing.Size(180, 28)
         Me.txtHoursrented.TabIndex = 51
         Me.txtHoursrented.Text = "0"
         '
@@ -240,9 +244,10 @@ Partial Class frmRentBike
         Me.lblfee.AutoSize = True
         Me.lblfee.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblfee.ForeColor = System.Drawing.Color.LightGray
-        Me.lblfee.Location = New System.Drawing.Point(795, 388)
+        Me.lblfee.Location = New System.Drawing.Point(596, 315)
+        Me.lblfee.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblfee.Name = "lblfee"
-        Me.lblfee.Size = New System.Drawing.Size(42, 25)
+        Me.lblfee.Size = New System.Drawing.Size(33, 20)
         Me.lblfee.TabIndex = 56
         Me.lblfee.Text = "Fee"
         '
@@ -250,10 +255,10 @@ Partial Class frmRentBike
         '
         Me.Panel4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel4.BackColor = System.Drawing.Color.LightGray
-        Me.Panel4.Location = New System.Drawing.Point(799, 462)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel4.Location = New System.Drawing.Point(599, 375)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(240, 1)
+        Me.Panel4.Size = New System.Drawing.Size(180, 1)
         Me.Panel4.TabIndex = 55
         '
         'txtFee
@@ -263,12 +268,12 @@ Partial Class frmRentBike
         Me.txtFee.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtFee.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFee.ForeColor = System.Drawing.Color.White
-        Me.txtFee.Location = New System.Drawing.Point(799, 430)
-        Me.txtFee.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtFee.Location = New System.Drawing.Point(599, 349)
+        Me.txtFee.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtFee.Multiline = True
         Me.txtFee.Name = "txtFee"
         Me.txtFee.ReadOnly = True
-        Me.txtFee.Size = New System.Drawing.Size(240, 34)
+        Me.txtFee.Size = New System.Drawing.Size(180, 28)
         Me.txtFee.TabIndex = 54
         '
         'pnlRentallist
@@ -277,10 +282,10 @@ Partial Class frmRentBike
         Me.pnlRentallist.Controls.Add(Me.dgvRentalList)
         Me.pnlRentallist.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pnlRentallist.ForeColor = System.Drawing.Color.LightGray
-        Me.pnlRentallist.Location = New System.Drawing.Point(114, 612)
-        Me.pnlRentallist.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnlRentallist.Location = New System.Drawing.Point(86, 497)
+        Me.pnlRentallist.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnlRentallist.Name = "pnlRentallist"
-        Me.pnlRentallist.Size = New System.Drawing.Size(1058, 249)
+        Me.pnlRentallist.Size = New System.Drawing.Size(794, 203)
         Me.pnlRentallist.TabIndex = 59
         '
         'dgvRentalList
@@ -292,40 +297,40 @@ Partial Class frmRentBike
         Me.dgvRentalList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dgvRentalList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dgvRentalList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
-        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle22.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvRentalList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle22
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvRentalList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.dgvRentalList.ColumnHeadersHeight = 65
         Me.dgvRentalList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.customerId, Me.fname, Me.rentDate, Me.returnDate, Me.hrsRented, Me.fee, Me.noOfBikeRented})
         Me.dgvRentalList.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle23.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle23.ForeColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.ScrollBar
-        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvRentalList.DefaultCellStyle = DataGridViewCellStyle23
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.ScrollBar
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvRentalList.DefaultCellStyle = DataGridViewCellStyle8
         Me.dgvRentalList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvRentalList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2
         Me.dgvRentalList.GridColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.dgvRentalList.Location = New System.Drawing.Point(0, 0)
-        Me.dgvRentalList.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dgvRentalList.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dgvRentalList.MultiSelect = False
         Me.dgvRentalList.Name = "dgvRentalList"
         Me.dgvRentalList.ReadOnly = True
         Me.dgvRentalList.RowHeadersVisible = False
         Me.dgvRentalList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader
-        DataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black
-        Me.dgvRentalList.RowsDefaultCellStyle = DataGridViewCellStyle24
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black
+        Me.dgvRentalList.RowsDefaultCellStyle = DataGridViewCellStyle9
         Me.dgvRentalList.RowTemplate.Height = 28
         Me.dgvRentalList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvRentalList.Size = New System.Drawing.Size(1054, 245)
+        Me.dgvRentalList.Size = New System.Drawing.Size(790, 199)
         Me.dgvRentalList.TabIndex = 3
         '
         'customerId
@@ -335,7 +340,7 @@ Partial Class frmRentBike
         Me.customerId.Name = "customerId"
         Me.customerId.ReadOnly = True
         Me.customerId.Visible = False
-        Me.customerId.Width = 125
+        Me.customerId.Width = 48
         '
         'fname
         '
@@ -343,7 +348,7 @@ Partial Class frmRentBike
         Me.fname.MinimumWidth = 8
         Me.fname.Name = "fname"
         Me.fname.ReadOnly = True
-        Me.fname.Width = 85
+        Me.fname.Width = 70
         '
         'rentDate
         '
@@ -351,7 +356,7 @@ Partial Class frmRentBike
         Me.rentDate.MinimumWidth = 6
         Me.rentDate.Name = "rentDate"
         Me.rentDate.ReadOnly = True
-        Me.rentDate.Width = 106
+        Me.rentDate.Width = 88
         '
         'returnDate
         '
@@ -359,7 +364,7 @@ Partial Class frmRentBike
         Me.returnDate.MinimumWidth = 6
         Me.returnDate.Name = "returnDate"
         Me.returnDate.ReadOnly = True
-        Me.returnDate.Width = 120
+        Me.returnDate.Width = 99
         '
         'hrsRented
         '
@@ -367,7 +372,7 @@ Partial Class frmRentBike
         Me.hrsRented.MinimumWidth = 6
         Me.hrsRented.Name = "hrsRented"
         Me.hrsRented.ReadOnly = True
-        Me.hrsRented.Width = 140
+        Me.hrsRented.Width = 115
         '
         'fee
         '
@@ -375,7 +380,7 @@ Partial Class frmRentBike
         Me.fee.MinimumWidth = 6
         Me.fee.Name = "fee"
         Me.fee.ReadOnly = True
-        Me.fee.Width = 65
+        Me.fee.Width = 55
         '
         'noOfBikeRented
         '
@@ -383,7 +388,7 @@ Partial Class frmRentBike
         Me.noOfBikeRented.MinimumWidth = 6
         Me.noOfBikeRented.Name = "noOfBikeRented"
         Me.noOfBikeRented.ReadOnly = True
-        Me.noOfBikeRented.Width = 66
+        Me.noOfBikeRented.Width = 57
         '
         'lblRentalsList
         '
@@ -391,9 +396,10 @@ Partial Class frmRentBike
         Me.lblRentalsList.AutoSize = True
         Me.lblRentalsList.Font = New System.Drawing.Font("Nirmala UI", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRentalsList.ForeColor = System.Drawing.Color.LightGray
-        Me.lblRentalsList.Location = New System.Drawing.Point(588, 565)
+        Me.lblRentalsList.Location = New System.Drawing.Point(441, 459)
+        Me.lblRentalsList.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblRentalsList.Name = "lblRentalsList"
-        Me.lblRentalsList.Size = New System.Drawing.Size(148, 35)
+        Me.lblRentalsList.Size = New System.Drawing.Size(120, 28)
         Me.lblRentalsList.TabIndex = 60
         Me.lblRentalsList.Text = "Rentals List"
         '
@@ -406,10 +412,10 @@ Partial Class frmRentBike
         Me.clbAvailableBikes.ForeColor = System.Drawing.Color.LightGray
         Me.clbAvailableBikes.FormattingEnabled = True
         Me.clbAvailableBikes.Items.AddRange(New Object() {"BIKE 1", "BIKE 2", "BIKE 3", "BIKE 4", "BIKE 5", "BIKE 6", "BIKE 7", "BIKE 8", "BIKE 9", "BIKE 10"})
-        Me.clbAvailableBikes.Location = New System.Drawing.Point(169, 155)
-        Me.clbAvailableBikes.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.clbAvailableBikes.Location = New System.Drawing.Point(127, 126)
+        Me.clbAvailableBikes.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.clbAvailableBikes.Name = "clbAvailableBikes"
-        Me.clbAvailableBikes.Size = New System.Drawing.Size(181, 160)
+        Me.clbAvailableBikes.Size = New System.Drawing.Size(137, 114)
         Me.clbAvailableBikes.TabIndex = 61
         '
         'lblRenttime
@@ -418,9 +424,10 @@ Partial Class frmRentBike
         Me.lblRenttime.AutoSize = True
         Me.lblRenttime.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRenttime.ForeColor = System.Drawing.Color.LightGray
-        Me.lblRenttime.Location = New System.Drawing.Point(467, 257)
+        Me.lblRenttime.Location = New System.Drawing.Point(350, 209)
+        Me.lblRenttime.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblRenttime.Name = "lblRenttime"
-        Me.lblRenttime.Size = New System.Drawing.Size(100, 25)
+        Me.lblRenttime.Size = New System.Drawing.Size(81, 20)
         Me.lblRenttime.TabIndex = 63
         Me.lblRenttime.Text = "Rent Time"
         '
@@ -428,10 +435,10 @@ Partial Class frmRentBike
         '
         Me.Panel6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel6.BackColor = System.Drawing.Color.LightGray
-        Me.Panel6.Location = New System.Drawing.Point(473, 331)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel6.Location = New System.Drawing.Point(355, 269)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(240, 1)
+        Me.Panel6.Size = New System.Drawing.Size(180, 1)
         Me.Panel6.TabIndex = 62
         '
         'lblReturntime
@@ -440,9 +447,10 @@ Partial Class frmRentBike
         Me.lblReturntime.AutoSize = True
         Me.lblReturntime.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblReturntime.ForeColor = System.Drawing.Color.LightGray
-        Me.lblReturntime.Location = New System.Drawing.Point(905, 257)
+        Me.lblReturntime.Location = New System.Drawing.Point(679, 209)
+        Me.lblReturntime.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblReturntime.Name = "lblReturntime"
-        Me.lblReturntime.Size = New System.Drawing.Size(120, 25)
+        Me.lblReturntime.Size = New System.Drawing.Size(96, 20)
         Me.lblReturntime.TabIndex = 66
         Me.lblReturntime.Text = "Return Time"
         '
@@ -450,10 +458,10 @@ Partial Class frmRentBike
         '
         Me.Panel7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel7.BackColor = System.Drawing.Color.LightGray
-        Me.Panel7.Location = New System.Drawing.Point(910, 331)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel7.Location = New System.Drawing.Point(682, 269)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(240, 1)
+        Me.Panel7.Size = New System.Drawing.Size(180, 1)
         Me.Panel7.TabIndex = 65
         '
         'dtp1
@@ -462,10 +470,10 @@ Partial Class frmRentBike
         Me.dtp1.CustomFormat = "MMM dd, h:mm tt"
         Me.dtp1.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtp1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtp1.Location = New System.Drawing.Point(473, 293)
-        Me.dtp1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dtp1.Location = New System.Drawing.Point(355, 238)
+        Me.dtp1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dtp1.Name = "dtp1"
-        Me.dtp1.Size = New System.Drawing.Size(240, 34)
+        Me.dtp1.Size = New System.Drawing.Size(181, 29)
         Me.dtp1.TabIndex = 69
         '
         'dtp2
@@ -474,10 +482,10 @@ Partial Class frmRentBike
         Me.dtp2.CustomFormat = "MMM dd, h:mm tt"
         Me.dtp2.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtp2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtp2.Location = New System.Drawing.Point(909, 293)
-        Me.dtp2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dtp2.Location = New System.Drawing.Point(682, 238)
+        Me.dtp2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dtp2.Name = "dtp2"
-        Me.dtp2.Size = New System.Drawing.Size(240, 34)
+        Me.dtp2.Size = New System.Drawing.Size(181, 29)
         Me.dtp2.TabIndex = 70
         '
         'btnClear
@@ -492,10 +500,10 @@ Partial Class frmRentBike
         Me.btnClear.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnClear.IconSize = 35
         Me.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnClear.Location = New System.Drawing.Point(611, 492)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnClear.Location = New System.Drawing.Point(458, 400)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(155, 62)
+        Me.btnClear.Size = New System.Drawing.Size(116, 50)
         Me.btnClear.TabIndex = 58
         Me.btnClear.Text = "Clear"
         Me.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -515,10 +523,10 @@ Partial Class frmRentBike
         Me.btnAddNewRent.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnAddNewRent.IconSize = 35
         Me.btnAddNewRent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAddNewRent.Location = New System.Drawing.Point(414, 492)
-        Me.btnAddNewRent.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnAddNewRent.Location = New System.Drawing.Point(310, 400)
+        Me.btnAddNewRent.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnAddNewRent.Name = "btnAddNewRent"
-        Me.btnAddNewRent.Size = New System.Drawing.Size(144, 62)
+        Me.btnAddNewRent.Size = New System.Drawing.Size(108, 50)
         Me.btnAddNewRent.TabIndex = 57
         Me.btnAddNewRent.Text = "Add"
         Me.btnAddNewRent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -532,11 +540,11 @@ Partial Class frmRentBike
         Me.txtCustomerId.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtCustomerId.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCustomerId.ForeColor = System.Drawing.Color.White
-        Me.txtCustomerId.Location = New System.Drawing.Point(1074, 114)
-        Me.txtCustomerId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtCustomerId.Location = New System.Drawing.Point(806, 93)
+        Me.txtCustomerId.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtCustomerId.Multiline = True
         Me.txtCustomerId.Name = "txtCustomerId"
-        Me.txtCustomerId.Size = New System.Drawing.Size(85, 34)
+        Me.txtCustomerId.Size = New System.Drawing.Size(64, 28)
         Me.txtCustomerId.TabIndex = 71
         Me.txtCustomerId.Visible = False
         '
@@ -552,22 +560,64 @@ Partial Class frmRentBike
         Me.btnCalculate.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnCalculate.IconSize = 30
         Me.btnCalculate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCalculate.Location = New System.Drawing.Point(819, 492)
-        Me.btnCalculate.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnCalculate.Location = New System.Drawing.Point(614, 400)
+        Me.btnCalculate.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(243, 62)
+        Me.btnCalculate.Size = New System.Drawing.Size(182, 50)
         Me.btnCalculate.TabIndex = 72
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnCalculate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
+        'btnAddOneHour
+        '
+        Me.btnAddOneHour.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnAddOneHour.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnAddOneHour.IconColor = System.Drawing.Color.Black
+        Me.btnAddOneHour.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnAddOneHour.Location = New System.Drawing.Point(692, 275)
+        Me.btnAddOneHour.Name = "btnAddOneHour"
+        Me.btnAddOneHour.Size = New System.Drawing.Size(49, 39)
+        Me.btnAddOneHour.TabIndex = 73
+        Me.btnAddOneHour.Text = "+1"
+        Me.btnAddOneHour.UseVisualStyleBackColor = True
+        '
+        'btnAddTwoHours
+        '
+        Me.btnAddTwoHours.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnAddTwoHours.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnAddTwoHours.IconColor = System.Drawing.Color.Black
+        Me.btnAddTwoHours.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnAddTwoHours.Location = New System.Drawing.Point(747, 275)
+        Me.btnAddTwoHours.Name = "btnAddTwoHours"
+        Me.btnAddTwoHours.Size = New System.Drawing.Size(49, 39)
+        Me.btnAddTwoHours.TabIndex = 74
+        Me.btnAddTwoHours.Text = "+2"
+        Me.btnAddTwoHours.UseVisualStyleBackColor = True
+        '
+        'btnAddThreeHours
+        '
+        Me.btnAddThreeHours.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnAddThreeHours.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnAddThreeHours.IconColor = System.Drawing.Color.Black
+        Me.btnAddThreeHours.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnAddThreeHours.Location = New System.Drawing.Point(802, 275)
+        Me.btnAddThreeHours.Name = "btnAddThreeHours"
+        Me.btnAddThreeHours.Size = New System.Drawing.Size(49, 39)
+        Me.btnAddThreeHours.TabIndex = 75
+        Me.btnAddThreeHours.Text = "+3"
+        Me.btnAddThreeHours.UseVisualStyleBackColor = True
+        '
         'frmRentBike
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1284, 882)
+        Me.ClientSize = New System.Drawing.Size(963, 717)
+        Me.Controls.Add(Me.btnAddThreeHours)
+        Me.Controls.Add(Me.btnAddTwoHours)
+        Me.Controls.Add(Me.btnAddOneHour)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.txtCustomerId)
         Me.Controls.Add(Me.dtp2)
@@ -596,7 +646,6 @@ Partial Class frmRentBike
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.pnlRentTitleCover)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmRentBike"
         Me.Text = "frmRentBike"
         Me.pnlRentTitleCover.ResumeLayout(False)
@@ -646,4 +695,7 @@ Partial Class frmRentBike
     Friend WithEvents noOfBikeRented As DataGridViewTextBoxColumn
     Friend WithEvents txtCustomerId As TextBox
     Friend WithEvents btnCalculate As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnAddOneHour As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnAddTwoHours As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnAddThreeHours As FontAwesome.Sharp.IconButton
 End Class

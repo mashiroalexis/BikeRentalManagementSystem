@@ -199,4 +199,16 @@ Public Class frmRentBike
             MessageBox.Show("Select a bike to rent", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
     End Sub
+
+    Private Sub btnAddOneHour_Click(sender As Object, e As EventArgs) Handles btnAddOneHour.Click
+        dtp2.Value = dtp2.Value.AddHours(1)
+    End Sub
+
+    Private Sub btnAddTwoHours_Click(sender As Object, e As EventArgs) Handles btnAddTwoHours.Click
+        dtp2.Value = dtp2.Value.AddHours(2)
+    End Sub
+
+    Private Sub btnAddThreeHours_Click(sender As Object, e As EventArgs) Handles btnAddThreeHours.Click
+        dtp2.Value = dtp2.Value.AddHours(3)
+    End Sub
 End Class
