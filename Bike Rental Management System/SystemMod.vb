@@ -1,4 +1,5 @@
 ﻿Module SystemMod
+    Dim currentUserId As Integer = 0
 
     '
     '   teporary fix for connection string storage
@@ -76,5 +77,12 @@
         Return completeTime
     End Function
 
+    Public Sub setUserId(userId As Integer)
+        currentUserId = userId
+    End Sub
+
+    Public Function getUserId()
+        Return currentUserId
+    End Function
 
 End Module

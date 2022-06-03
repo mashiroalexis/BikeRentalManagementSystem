@@ -35,7 +35,7 @@ Partial Class Splash
         'tmrSplashForm
         '
         Me.tmrSplashForm.Enabled = True
-        Me.tmrSplashForm.Interval = 1000
+        Me.tmrSplashForm.Interval = 700
         '
         'PictureBox2
         '

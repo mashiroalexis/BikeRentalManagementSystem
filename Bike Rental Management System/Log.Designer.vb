@@ -46,9 +46,10 @@ Partial Class Log
         Me.lblLogo.BackColor = System.Drawing.Color.Transparent
         Me.lblLogo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLogo.ForeColor = System.Drawing.Color.LightGray
-        Me.lblLogo.Location = New System.Drawing.Point(158, 58)
+        Me.lblLogo.Location = New System.Drawing.Point(118, 47)
+        Me.lblLogo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblLogo.Name = "lblLogo"
-        Me.lblLogo.Size = New System.Drawing.Size(197, 32)
+        Me.lblLogo.Size = New System.Drawing.Size(155, 26)
         Me.lblLogo.TabIndex = 0
         Me.lblLogo.Text = "BIKE RENTAL"
         '
@@ -56,10 +57,10 @@ Partial Class Log
         '
         Me.pbLogo.BackColor = System.Drawing.Color.Transparent
         Me.pbLogo.Image = CType(resources.GetObject("pbLogo.Image"), System.Drawing.Image)
-        Me.pbLogo.Location = New System.Drawing.Point(40, 34)
-        Me.pbLogo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pbLogo.Location = New System.Drawing.Point(30, 28)
+        Me.pbLogo.Margin = New System.Windows.Forms.Padding(2)
         Me.pbLogo.Name = "pbLogo"
-        Me.pbLogo.Size = New System.Drawing.Size(120, 59)
+        Me.pbLogo.Size = New System.Drawing.Size(90, 48)
         Me.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.pbLogo.TabIndex = 1
         Me.pbLogo.TabStop = False
@@ -71,10 +72,10 @@ Partial Class Log
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.Snow
-        Me.btnLogin.Location = New System.Drawing.Point(117, 238)
-        Me.btnLogin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnLogin.Location = New System.Drawing.Point(88, 193)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(2)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(233, 42)
+        Me.btnLogin.Size = New System.Drawing.Size(175, 34)
         Me.btnLogin.TabIndex = 6
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = False
@@ -85,9 +86,10 @@ Partial Class Log
         Me.lblacc.BackColor = System.Drawing.Color.Transparent
         Me.lblacc.Font = New System.Drawing.Font("Nirmala UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblacc.ForeColor = System.Drawing.Color.LightGray
-        Me.lblacc.Location = New System.Drawing.Point(189, 429)
+        Me.lblacc.Location = New System.Drawing.Point(142, 349)
+        Me.lblacc.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblacc.Name = "lblacc"
-        Me.lblacc.Size = New System.Drawing.Size(175, 19)
+        Me.lblacc.Size = New System.Drawing.Size(145, 13)
         Me.lblacc.TabIndex = 17
         Me.lblacc.Text = "Don't have an account yet?"
         '
@@ -99,9 +101,10 @@ Partial Class Log
         Me.lblsignup.Font = New System.Drawing.Font("Nirmala UI", 7.8!, CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) _
                 Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsignup.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblsignup.Location = New System.Drawing.Point(379, 428)
+        Me.lblsignup.Location = New System.Drawing.Point(284, 348)
+        Me.lblsignup.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblsignup.Name = "lblsignup"
-        Me.lblsignup.Size = New System.Drawing.Size(61, 19)
+        Me.lblsignup.Size = New System.Drawing.Size(48, 13)
         Me.lblsignup.TabIndex = 18
         Me.lblsignup.Text = "Sign Up"
         '
@@ -112,9 +115,10 @@ Partial Class Log
         Me.btnclose.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnclose.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnclose.ForeColor = System.Drawing.Color.LightGray
-        Me.btnclose.Location = New System.Drawing.Point(571, 10)
+        Me.btnclose.Location = New System.Drawing.Point(428, 8)
+        Me.btnclose.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.btnclose.Name = "btnclose"
-        Me.btnclose.Size = New System.Drawing.Size(21, 23)
+        Me.btnclose.Size = New System.Drawing.Size(18, 19)
         Me.btnclose.TabIndex = 19
         Me.btnclose.Text = "X"
         '
@@ -128,27 +132,28 @@ Partial Class Log
         Me.Panel1.Controls.Add(Me.btnLogin)
         Me.Panel1.Controls.Add(Me.pbLogo)
         Me.Panel1.Controls.Add(Me.lblLogo)
-        Me.Panel1.Location = New System.Drawing.Point(80, 74)
+        Me.Panel1.Location = New System.Drawing.Point(60, 60)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(459, 340)
+        Me.Panel1.Size = New System.Drawing.Size(344, 276)
         Me.Panel1.TabIndex = 20
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.LightGray
-        Me.Panel3.Location = New System.Drawing.Point(104, 183)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel3.Location = New System.Drawing.Point(78, 149)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(207, 1)
+        Me.Panel3.Size = New System.Drawing.Size(155, 1)
         Me.Panel3.TabIndex = 24
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.LightGray
-        Me.Panel2.Location = New System.Drawing.Point(104, 135)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel2.Location = New System.Drawing.Point(78, 110)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(207, 1)
+        Me.Panel2.Size = New System.Drawing.Size(155, 1)
         Me.Panel2.TabIndex = 23
         '
         'txtPassword
@@ -157,11 +162,11 @@ Partial Class Log
         Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtPassword.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.ForeColor = System.Drawing.Color.White
-        Me.txtPassword.Location = New System.Drawing.Point(104, 159)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtPassword.Location = New System.Drawing.Point(78, 129)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPassword.Multiline = True
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(233, 28)
+        Me.txtPassword.Size = New System.Drawing.Size(175, 23)
         Me.txtPassword.TabIndex = 8
         Me.txtPassword.Text = "Password"
         '
@@ -171,11 +176,11 @@ Partial Class Log
         Me.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtUsername.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsername.ForeColor = System.Drawing.Color.White
-        Me.txtUsername.Location = New System.Drawing.Point(104, 111)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtUsername.Location = New System.Drawing.Point(78, 90)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUsername.Multiline = True
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(233, 28)
+        Me.txtUsername.Size = New System.Drawing.Size(175, 23)
         Me.txtUsername.TabIndex = 7
         Me.txtUsername.Text = "Username"
         '
@@ -186,9 +191,10 @@ Partial Class Log
         Me.btnminimize.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnminimize.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnminimize.ForeColor = System.Drawing.Color.LightGray
-        Me.btnminimize.Location = New System.Drawing.Point(512, 4)
+        Me.btnminimize.Location = New System.Drawing.Point(384, 3)
+        Me.btnminimize.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.btnminimize.Name = "btnminimize"
-        Me.btnminimize.Size = New System.Drawing.Size(24, 23)
+        Me.btnminimize.Size = New System.Drawing.Size(21, 19)
         Me.btnminimize.TabIndex = 22
         Me.btnminimize.Text = "__"
         '
@@ -199,18 +205,19 @@ Partial Class Log
         Me.btnmaxmimize.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnmaxmimize.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnmaxmimize.ForeColor = System.Drawing.Color.LightGray
-        Me.btnmaxmimize.Location = New System.Drawing.Point(542, 10)
+        Me.btnmaxmimize.Location = New System.Drawing.Point(406, 8)
+        Me.btnmaxmimize.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.btnmaxmimize.Name = "btnmaxmimize"
-        Me.btnmaxmimize.Size = New System.Drawing.Size(26, 23)
+        Me.btnmaxmimize.Size = New System.Drawing.Size(22, 19)
         Me.btnmaxmimize.TabIndex = 21
         Me.btnmaxmimize.Text = "□"
         '
         'Log
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(616, 503)
+        Me.ClientSize = New System.Drawing.Size(462, 409)
         Me.Controls.Add(Me.btnminimize)
         Me.Controls.Add(Me.btnmaxmimize)
         Me.Controls.Add(Me.Panel1)
@@ -218,7 +225,7 @@ Partial Class Log
         Me.Controls.Add(Me.lblsignup)
         Me.Controls.Add(Me.lblacc)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Log"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
