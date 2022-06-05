@@ -3,7 +3,7 @@
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'make rounded corners
         roundCorners(Me)
-
+        MsgBox(getUserId())
         'when main form loads hide all submenu
         hideSubMenu()
     End Sub

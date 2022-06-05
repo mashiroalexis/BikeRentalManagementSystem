@@ -12,10 +12,22 @@ Public Class Reg
         con.Open()
         rdr = cmd.ExecuteReader()
 
-        If rdr.Read() Then
-            MsgBox("Duplicate")
+        If Not rdr.Read() Then
+            MsgBox("Registered Successfully")
+            Dim con1 As SqlConnection = New SqlConnection(getConnectionString())
+            Dim cmd1 As SqlCommand = New SqlCommand("INSERT into tblUser values(@fName, @email, @contactNo, @username, @password, @type, @isEnabled)", con1)
+            cmd1.Parameters.AddWithValue("@fName", txtFirstName.Text)
+            cmd1.Parameters.AddWithValue("@email", txtEmail.Text)
+            cmd1.Parameters.AddWithValue("@contactNo", txtContact.Text)
+            cmd1.Parameters.AddWithValue("@username", txtUsername.Text)
+            cmd1.Parameters.AddWithValue("@password", txtPassword.Text)
+            cmd1.Parameters.AddWithValue("@type", "admin")
+            cmd1.Parameters.AddWithValue("@isEnabled", 1)
+            con1.Open()
+            cmd1.ExecuteNonQuery()
+            con1.Close()
         Else
-            MsgBox("You can create new account!")
+            MsgBox("Duplicate")
         End If
         con.Close()
     End Sub
