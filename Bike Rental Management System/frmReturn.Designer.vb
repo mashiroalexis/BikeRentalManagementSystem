@@ -22,12 +22,12 @@ Partial Class frmReturn
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnlReturnTitleCover = New System.Windows.Forms.Panel()
         Me.pbCloseReturnForm = New FontAwesome.Sharp.IconPictureBox()
         Me.lblReturnTitle = New System.Windows.Forms.Label()
@@ -89,9 +89,9 @@ Partial Class frmReturn
         Me.pnlReturnTitleCover.Controls.Add(Me.lblReturnTitle)
         Me.pnlReturnTitleCover.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlReturnTitleCover.Location = New System.Drawing.Point(0, 0)
-        Me.pnlReturnTitleCover.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlReturnTitleCover.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlReturnTitleCover.Name = "pnlReturnTitleCover"
-        Me.pnlReturnTitleCover.Size = New System.Drawing.Size(963, 65)
+        Me.pnlReturnTitleCover.Size = New System.Drawing.Size(1284, 80)
         Me.pnlReturnTitleCover.TabIndex = 0
         '
         'pbCloseReturnForm
@@ -103,10 +103,11 @@ Partial Class frmReturn
         Me.pbCloseReturnForm.IconChar = FontAwesome.Sharp.IconChar.TimesCircle
         Me.pbCloseReturnForm.IconColor = System.Drawing.Color.LightGray
         Me.pbCloseReturnForm.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.pbCloseReturnForm.IconSize = 50
-        Me.pbCloseReturnForm.Location = New System.Drawing.Point(910, 10)
+        Me.pbCloseReturnForm.IconSize = 62
+        Me.pbCloseReturnForm.Location = New System.Drawing.Point(1213, 12)
+        Me.pbCloseReturnForm.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbCloseReturnForm.Name = "pbCloseReturnForm"
-        Me.pbCloseReturnForm.Size = New System.Drawing.Size(50, 50)
+        Me.pbCloseReturnForm.Size = New System.Drawing.Size(67, 62)
         Me.pbCloseReturnForm.TabIndex = 5
         Me.pbCloseReturnForm.TabStop = False
         '
@@ -116,9 +117,10 @@ Partial Class frmReturn
         Me.lblReturnTitle.AutoSize = True
         Me.lblReturnTitle.Font = New System.Drawing.Font("Nirmala UI", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblReturnTitle.ForeColor = System.Drawing.Color.LightGray
-        Me.lblReturnTitle.Location = New System.Drawing.Point(10, 7)
+        Me.lblReturnTitle.Location = New System.Drawing.Point(13, 9)
+        Me.lblReturnTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblReturnTitle.Name = "lblReturnTitle"
-        Me.lblReturnTitle.Size = New System.Drawing.Size(103, 37)
+        Me.lblReturnTitle.Size = New System.Drawing.Size(125, 45)
         Me.lblReturnTitle.TabIndex = 1
         Me.lblReturnTitle.Text = "Return"
         '
@@ -126,10 +128,10 @@ Partial Class frmReturn
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BackColor = System.Drawing.Color.LightGray
-        Me.Panel2.Location = New System.Drawing.Point(74, 145)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel2.Location = New System.Drawing.Point(99, 178)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(180, 1)
+        Me.Panel2.Size = New System.Drawing.Size(240, 1)
         Me.Panel2.TabIndex = 25
         '
         'txtNoOfBikesRented
@@ -139,11 +141,11 @@ Partial Class frmReturn
         Me.txtNoOfBikesRented.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtNoOfBikesRented.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNoOfBikesRented.ForeColor = System.Drawing.Color.White
-        Me.txtNoOfBikesRented.Location = New System.Drawing.Point(74, 119)
-        Me.txtNoOfBikesRented.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtNoOfBikesRented.Location = New System.Drawing.Point(99, 146)
+        Me.txtNoOfBikesRented.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNoOfBikesRented.Multiline = True
         Me.txtNoOfBikesRented.Name = "txtNoOfBikesRented"
-        Me.txtNoOfBikesRented.Size = New System.Drawing.Size(180, 28)
+        Me.txtNoOfBikesRented.Size = New System.Drawing.Size(240, 34)
         Me.txtNoOfBikesRented.TabIndex = 24
         '
         'lblNoOfBikesRented
@@ -152,10 +154,9 @@ Partial Class frmReturn
         Me.lblNoOfBikesRented.AutoSize = True
         Me.lblNoOfBikesRented.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNoOfBikesRented.ForeColor = System.Drawing.Color.LightGray
-        Me.lblNoOfBikesRented.Location = New System.Drawing.Point(70, 84)
-        Me.lblNoOfBikesRented.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblNoOfBikesRented.Location = New System.Drawing.Point(93, 103)
         Me.lblNoOfBikesRented.Name = "lblNoOfBikesRented"
-        Me.lblNoOfBikesRented.Size = New System.Drawing.Size(148, 20)
+        Me.lblNoOfBikesRented.Size = New System.Drawing.Size(186, 25)
         Me.lblNoOfBikesRented.TabIndex = 26
         Me.lblNoOfBikesRented.Text = "No. of Bikes Rented"
         '
@@ -166,10 +167,10 @@ Partial Class frmReturn
         Me.pnlRentalList.Controls.Add(Me.dgvRentalList)
         Me.pnlRentalList.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pnlRentalList.ForeColor = System.Drawing.Color.LightGray
-        Me.pnlRentalList.Location = New System.Drawing.Point(432, 119)
-        Me.pnlRentalList.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlRentalList.Location = New System.Drawing.Point(576, 146)
+        Me.pnlRentalList.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlRentalList.Name = "pnlRentalList"
-        Me.pnlRentalList.Size = New System.Drawing.Size(485, 261)
+        Me.pnlRentalList.Size = New System.Drawing.Size(645, 320)
         Me.pnlRentalList.TabIndex = 27
         '
         'dgvRentalList
@@ -179,40 +180,40 @@ Partial Class frmReturn
         Me.dgvRentalList.AllowUserToResizeColumns = False
         Me.dgvRentalList.AllowUserToResizeRows = False
         Me.dgvRentalList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvRentalList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvRentalList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvRentalList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvRentalList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.customerId, Me.fname, Me.rentDate, Me.returnDate, Me.hrsRented, Me.fee, Me.noOfBikeRented})
         Me.dgvRentalList.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.ScrollBar
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvRentalList.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ScrollBar
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvRentalList.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvRentalList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvRentalList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2
         Me.dgvRentalList.GridColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.dgvRentalList.Location = New System.Drawing.Point(0, 0)
-        Me.dgvRentalList.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgvRentalList.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgvRentalList.MultiSelect = False
         Me.dgvRentalList.Name = "dgvRentalList"
         Me.dgvRentalList.ReadOnly = True
         Me.dgvRentalList.RowHeadersVisible = False
         Me.dgvRentalList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black
-        Me.dgvRentalList.RowsDefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        Me.dgvRentalList.RowsDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvRentalList.RowTemplate.Height = 28
         Me.dgvRentalList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvRentalList.Size = New System.Drawing.Size(481, 257)
+        Me.dgvRentalList.Size = New System.Drawing.Size(641, 316)
         Me.dgvRentalList.TabIndex = 4
         '
         'customerId
@@ -278,10 +279,9 @@ Partial Class frmReturn
         Me.lblRentalsList.AutoSize = True
         Me.lblRentalsList.Font = New System.Drawing.Font("Nirmala UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRentalsList.ForeColor = System.Drawing.Color.LightGray
-        Me.lblRentalsList.Location = New System.Drawing.Point(620, 84)
-        Me.lblRentalsList.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblRentalsList.Location = New System.Drawing.Point(827, 103)
         Me.lblRentalsList.Name = "lblRentalsList"
-        Me.lblRentalsList.Size = New System.Drawing.Size(110, 25)
+        Me.lblRentalsList.Size = New System.Drawing.Size(144, 32)
         Me.lblRentalsList.TabIndex = 28
         Me.lblRentalsList.Text = "Rentals List"
         '
@@ -291,10 +291,9 @@ Partial Class frmReturn
         Me.lblReturnList.AutoSize = True
         Me.lblReturnList.Font = New System.Drawing.Font("Nirmala UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblReturnList.ForeColor = System.Drawing.Color.LightGray
-        Me.lblReturnList.Location = New System.Drawing.Point(624, 403)
-        Me.lblReturnList.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblReturnList.Location = New System.Drawing.Point(832, 496)
         Me.lblReturnList.Name = "lblReturnList"
-        Me.lblReturnList.Size = New System.Drawing.Size(107, 25)
+        Me.lblReturnList.Size = New System.Drawing.Size(138, 32)
         Me.lblReturnList.TabIndex = 30
         Me.lblReturnList.Text = "Return List"
         '
@@ -303,10 +302,10 @@ Partial Class frmReturn
         Me.pnlReturnList.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.pnlReturnList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.pnlReturnList.Controls.Add(Me.dgvReturnedList)
-        Me.pnlReturnList.Location = New System.Drawing.Point(432, 438)
-        Me.pnlReturnList.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlReturnList.Location = New System.Drawing.Point(576, 539)
+        Me.pnlReturnList.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlReturnList.Name = "pnlReturnList"
-        Me.pnlReturnList.Size = New System.Drawing.Size(485, 261)
+        Me.pnlReturnList.Size = New System.Drawing.Size(645, 320)
         Me.pnlReturnList.TabIndex = 29
         '
         'dgvReturnedList
@@ -316,40 +315,40 @@ Partial Class frmReturn
         Me.dgvReturnedList.AllowUserToResizeColumns = False
         Me.dgvReturnedList.AllowUserToResizeRows = False
         Me.dgvReturnedList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvReturnedList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvReturnedList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgvReturnedList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvReturnedList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.dgvReturnedList.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle17.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.ScrollBar
-        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvReturnedList.DefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.ScrollBar
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvReturnedList.DefaultCellStyle = DataGridViewCellStyle5
         Me.dgvReturnedList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvReturnedList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2
         Me.dgvReturnedList.GridColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.dgvReturnedList.Location = New System.Drawing.Point(0, 0)
-        Me.dgvReturnedList.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgvReturnedList.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgvReturnedList.MultiSelect = False
         Me.dgvReturnedList.Name = "dgvReturnedList"
         Me.dgvReturnedList.ReadOnly = True
         Me.dgvReturnedList.RowHeadersVisible = False
         Me.dgvReturnedList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader
-        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black
-        Me.dgvReturnedList.RowsDefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        Me.dgvReturnedList.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.dgvReturnedList.RowTemplate.Height = 28
         Me.dgvReturnedList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvReturnedList.Size = New System.Drawing.Size(481, 257)
+        Me.dgvReturnedList.Size = New System.Drawing.Size(641, 316)
         Me.dgvReturnedList.TabIndex = 4
         '
         'DataGridViewTextBoxColumn1
@@ -415,10 +414,9 @@ Partial Class frmReturn
         Me.lblCustomerName.AutoSize = True
         Me.lblCustomerName.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCustomerName.ForeColor = System.Drawing.Color.LightGray
-        Me.lblCustomerName.Location = New System.Drawing.Point(70, 180)
-        Me.lblCustomerName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblCustomerName.Location = New System.Drawing.Point(93, 222)
         Me.lblCustomerName.Name = "lblCustomerName"
-        Me.lblCustomerName.Size = New System.Drawing.Size(123, 20)
+        Me.lblCustomerName.Size = New System.Drawing.Size(155, 25)
         Me.lblCustomerName.TabIndex = 33
         Me.lblCustomerName.Text = "Customer Name"
         '
@@ -426,10 +424,10 @@ Partial Class frmReturn
         '
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel1.BackColor = System.Drawing.Color.LightGray
-        Me.Panel1.Location = New System.Drawing.Point(74, 240)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel1.Location = New System.Drawing.Point(99, 295)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(180, 1)
+        Me.Panel1.Size = New System.Drawing.Size(240, 1)
         Me.Panel1.TabIndex = 32
         '
         'txtCustomerName
@@ -439,11 +437,11 @@ Partial Class frmReturn
         Me.txtCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtCustomerName.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCustomerName.ForeColor = System.Drawing.Color.White
-        Me.txtCustomerName.Location = New System.Drawing.Point(74, 214)
-        Me.txtCustomerName.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtCustomerName.Location = New System.Drawing.Point(99, 263)
+        Me.txtCustomerName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtCustomerName.Multiline = True
         Me.txtCustomerName.Name = "txtCustomerName"
-        Me.txtCustomerName.Size = New System.Drawing.Size(180, 28)
+        Me.txtCustomerName.Size = New System.Drawing.Size(240, 34)
         Me.txtCustomerName.TabIndex = 31
         '
         'btnOK
@@ -453,10 +451,10 @@ Partial Class frmReturn
         Me.btnOK.FlatAppearance.BorderSize = 0
         Me.btnOK.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOK.ForeColor = System.Drawing.Color.LightGray
-        Me.btnOK.Location = New System.Drawing.Point(286, 665)
-        Me.btnOK.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnOK.Location = New System.Drawing.Point(381, 818)
+        Me.btnOK.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnOK.Name = "btnOK"
-        Me.btnOK.Size = New System.Drawing.Size(98, 42)
+        Me.btnOK.Size = New System.Drawing.Size(131, 52)
         Me.btnOK.TabIndex = 47
         Me.btnOK.Text = "Returned"
         Me.btnOK.UseVisualStyleBackColor = False
@@ -467,10 +465,9 @@ Partial Class frmReturn
         Me.lblHoursRented.AutoSize = True
         Me.lblHoursRented.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHoursRented.ForeColor = System.Drawing.Color.LightGray
-        Me.lblHoursRented.Location = New System.Drawing.Point(70, 274)
-        Me.lblHoursRented.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblHoursRented.Location = New System.Drawing.Point(93, 337)
         Me.lblHoursRented.Name = "lblHoursRented"
-        Me.lblHoursRented.Size = New System.Drawing.Size(112, 20)
+        Me.lblHoursRented.Size = New System.Drawing.Size(142, 25)
         Me.lblHoursRented.TabIndex = 50
         Me.lblHoursRented.Text = "Hour/s Rented"
         '
@@ -478,10 +475,10 @@ Partial Class frmReturn
         '
         Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel5.BackColor = System.Drawing.Color.LightGray
-        Me.Panel5.Location = New System.Drawing.Point(74, 334)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel5.Location = New System.Drawing.Point(99, 411)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(180, 1)
+        Me.Panel5.Size = New System.Drawing.Size(240, 1)
         Me.Panel5.TabIndex = 49
         '
         'txtHoursRented
@@ -491,11 +488,11 @@ Partial Class frmReturn
         Me.txtHoursRented.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtHoursRented.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHoursRented.ForeColor = System.Drawing.Color.White
-        Me.txtHoursRented.Location = New System.Drawing.Point(74, 308)
-        Me.txtHoursRented.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtHoursRented.Location = New System.Drawing.Point(99, 379)
+        Me.txtHoursRented.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtHoursRented.Multiline = True
         Me.txtHoursRented.Name = "txtHoursRented"
-        Me.txtHoursRented.Size = New System.Drawing.Size(180, 28)
+        Me.txtHoursRented.Size = New System.Drawing.Size(240, 34)
         Me.txtHoursRented.TabIndex = 48
         '
         'lblFee
@@ -504,10 +501,9 @@ Partial Class frmReturn
         Me.lblFee.AutoSize = True
         Me.lblFee.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFee.ForeColor = System.Drawing.Color.LightGray
-        Me.lblFee.Location = New System.Drawing.Point(70, 605)
-        Me.lblFee.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblFee.Location = New System.Drawing.Point(93, 745)
         Me.lblFee.Name = "lblFee"
-        Me.lblFee.Size = New System.Drawing.Size(33, 20)
+        Me.lblFee.Size = New System.Drawing.Size(42, 25)
         Me.lblFee.TabIndex = 53
         Me.lblFee.Text = "Fee"
         '
@@ -515,10 +511,10 @@ Partial Class frmReturn
         '
         Me.Panel6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel6.BackColor = System.Drawing.Color.LightGray
-        Me.Panel6.Location = New System.Drawing.Point(74, 665)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel6.Location = New System.Drawing.Point(99, 818)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(180, 1)
+        Me.Panel6.Size = New System.Drawing.Size(240, 1)
         Me.Panel6.TabIndex = 52
         '
         'txtFee
@@ -528,11 +524,11 @@ Partial Class frmReturn
         Me.txtFee.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtFee.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFee.ForeColor = System.Drawing.Color.White
-        Me.txtFee.Location = New System.Drawing.Point(74, 639)
-        Me.txtFee.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtFee.Location = New System.Drawing.Point(99, 786)
+        Me.txtFee.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtFee.Multiline = True
         Me.txtFee.Name = "txtFee"
-        Me.txtFee.Size = New System.Drawing.Size(180, 28)
+        Me.txtFee.Size = New System.Drawing.Size(240, 34)
         Me.txtFee.TabIndex = 51
         '
         'lblRentTime
@@ -541,10 +537,9 @@ Partial Class frmReturn
         Me.lblRentTime.AutoSize = True
         Me.lblRentTime.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRentTime.ForeColor = System.Drawing.Color.LightGray
-        Me.lblRentTime.Location = New System.Drawing.Point(70, 362)
-        Me.lblRentTime.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblRentTime.Location = New System.Drawing.Point(93, 446)
         Me.lblRentTime.Name = "lblRentTime"
-        Me.lblRentTime.Size = New System.Drawing.Size(81, 20)
+        Me.lblRentTime.Size = New System.Drawing.Size(100, 25)
         Me.lblRentTime.TabIndex = 55
         Me.lblRentTime.Text = "Rent Time"
         '
@@ -552,10 +547,10 @@ Partial Class frmReturn
         '
         Me.Panel4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel4.BackColor = System.Drawing.Color.LightGray
-        Me.Panel4.Location = New System.Drawing.Point(73, 422)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel4.Location = New System.Drawing.Point(97, 519)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(180, 1)
+        Me.Panel4.Size = New System.Drawing.Size(240, 1)
         Me.Panel4.TabIndex = 54
         '
         'lblReturnTime
@@ -564,10 +559,9 @@ Partial Class frmReturn
         Me.lblReturnTime.AutoSize = True
         Me.lblReturnTime.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblReturnTime.ForeColor = System.Drawing.Color.LightGray
-        Me.lblReturnTime.Location = New System.Drawing.Point(70, 444)
-        Me.lblReturnTime.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblReturnTime.Location = New System.Drawing.Point(93, 546)
         Me.lblReturnTime.Name = "lblReturnTime"
-        Me.lblReturnTime.Size = New System.Drawing.Size(96, 20)
+        Me.lblReturnTime.Size = New System.Drawing.Size(120, 25)
         Me.lblReturnTime.TabIndex = 58
         Me.lblReturnTime.Text = "Return Time"
         '
@@ -575,10 +569,10 @@ Partial Class frmReturn
         '
         Me.Panel7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel7.BackColor = System.Drawing.Color.LightGray
-        Me.Panel7.Location = New System.Drawing.Point(73, 504)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel7.Location = New System.Drawing.Point(97, 620)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(180, 1)
+        Me.Panel7.Size = New System.Drawing.Size(240, 1)
         Me.Panel7.TabIndex = 57
         '
         'dtpRentTime
@@ -587,10 +581,10 @@ Partial Class frmReturn
         Me.dtpRentTime.CustomFormat = "MMM dd, h:mm tt"
         Me.dtpRentTime.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpRentTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpRentTime.Location = New System.Drawing.Point(74, 391)
-        Me.dtpRentTime.Margin = New System.Windows.Forms.Padding(2)
+        Me.dtpRentTime.Location = New System.Drawing.Point(99, 481)
+        Me.dtpRentTime.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dtpRentTime.Name = "dtpRentTime"
-        Me.dtpRentTime.Size = New System.Drawing.Size(181, 29)
+        Me.dtpRentTime.Size = New System.Drawing.Size(240, 34)
         Me.dtpRentTime.TabIndex = 70
         '
         'dtpReturnTime
@@ -599,10 +593,10 @@ Partial Class frmReturn
         Me.dtpReturnTime.CustomFormat = "MMM dd, h:mm tt"
         Me.dtpReturnTime.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpReturnTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpReturnTime.Location = New System.Drawing.Point(73, 475)
-        Me.dtpReturnTime.Margin = New System.Windows.Forms.Padding(2)
+        Me.dtpReturnTime.Location = New System.Drawing.Point(97, 585)
+        Me.dtpReturnTime.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dtpReturnTime.Name = "dtpReturnTime"
-        Me.dtpReturnTime.Size = New System.Drawing.Size(181, 29)
+        Me.dtpReturnTime.Size = New System.Drawing.Size(240, 34)
         Me.dtpReturnTime.TabIndex = 71
         '
         'lblPenaltyCharge
@@ -611,10 +605,9 @@ Partial Class frmReturn
         Me.lblPenaltyCharge.AutoSize = True
         Me.lblPenaltyCharge.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPenaltyCharge.ForeColor = System.Drawing.Color.LightGray
-        Me.lblPenaltyCharge.Location = New System.Drawing.Point(70, 531)
-        Me.lblPenaltyCharge.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPenaltyCharge.Location = New System.Drawing.Point(93, 654)
         Me.lblPenaltyCharge.Name = "lblPenaltyCharge"
-        Me.lblPenaltyCharge.Size = New System.Drawing.Size(113, 20)
+        Me.lblPenaltyCharge.Size = New System.Drawing.Size(145, 25)
         Me.lblPenaltyCharge.TabIndex = 74
         Me.lblPenaltyCharge.Text = "Penalty Charge"
         '
@@ -622,10 +615,10 @@ Partial Class frmReturn
         '
         Me.Panel3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel3.BackColor = System.Drawing.Color.LightGray
-        Me.Panel3.Location = New System.Drawing.Point(74, 592)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel3.Location = New System.Drawing.Point(99, 729)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(180, 1)
+        Me.Panel3.Size = New System.Drawing.Size(240, 1)
         Me.Panel3.TabIndex = 73
         '
         'txtPenaltyCharged
@@ -635,11 +628,11 @@ Partial Class frmReturn
         Me.txtPenaltyCharged.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtPenaltyCharged.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPenaltyCharged.ForeColor = System.Drawing.Color.White
-        Me.txtPenaltyCharged.Location = New System.Drawing.Point(74, 566)
-        Me.txtPenaltyCharged.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtPenaltyCharged.Location = New System.Drawing.Point(99, 697)
+        Me.txtPenaltyCharged.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPenaltyCharged.Multiline = True
         Me.txtPenaltyCharged.Name = "txtPenaltyCharged"
-        Me.txtPenaltyCharged.Size = New System.Drawing.Size(180, 28)
+        Me.txtPenaltyCharged.Size = New System.Drawing.Size(240, 34)
         Me.txtPenaltyCharged.TabIndex = 72
         '
         'txtRentId
@@ -649,20 +642,20 @@ Partial Class frmReturn
         Me.txtRentId.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtRentId.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRentId.ForeColor = System.Drawing.Color.White
-        Me.txtRentId.Location = New System.Drawing.Point(222, 76)
-        Me.txtRentId.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtRentId.Location = New System.Drawing.Point(296, 94)
+        Me.txtRentId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtRentId.Multiline = True
         Me.txtRentId.Name = "txtRentId"
-        Me.txtRentId.Size = New System.Drawing.Size(75, 28)
+        Me.txtRentId.Size = New System.Drawing.Size(100, 34)
         Me.txtRentId.TabIndex = 75
         Me.txtRentId.Visible = False
         '
         'frmReturn
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(963, 717)
+        Me.ClientSize = New System.Drawing.Size(1284, 882)
         Me.Controls.Add(Me.txtRentId)
         Me.Controls.Add(Me.lblPenaltyCharge)
         Me.Controls.Add(Me.Panel3)
@@ -692,7 +685,7 @@ Partial Class frmReturn
         Me.Controls.Add(Me.txtNoOfBikesRented)
         Me.Controls.Add(Me.pnlReturnTitleCover)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frmReturn"
         Me.Text = "frmReturn"
         Me.pnlReturnTitleCover.ResumeLayout(False)

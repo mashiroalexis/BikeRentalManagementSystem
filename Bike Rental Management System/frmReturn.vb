@@ -138,4 +138,8 @@ Public Class frmReturn
         dtpReturnTime.Value = DateTime.Now
         txtFee.Text = Nothing
     End Sub
+
+    Private Sub dgvRentalList_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvRentalList.CellContentClick
+
+    End Sub
 End Class
