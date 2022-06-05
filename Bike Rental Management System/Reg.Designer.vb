@@ -40,6 +40,7 @@ Partial Class Reg
         Me.lblacc = New System.Windows.Forms.Label()
         Me.lbllogin = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -142,7 +143,7 @@ Partial Class Reg
         Me.txtFirstName.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFirstName.ForeColor = System.Drawing.Color.Black
         Me.txtFirstName.Location = New System.Drawing.Point(67, 92)
-        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.Size = New System.Drawing.Size(124, 20)
         Me.txtFirstName.TabIndex = 7
@@ -153,7 +154,7 @@ Partial Class Reg
         Me.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtLastName.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLastName.Location = New System.Drawing.Point(247, 92)
-        Me.txtLastName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtLastName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtLastName.Name = "txtLastName"
         Me.txtLastName.Size = New System.Drawing.Size(124, 20)
         Me.txtLastName.TabIndex = 8
@@ -165,7 +166,7 @@ Partial Class Reg
         Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtEmail.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmail.Location = New System.Drawing.Point(68, 170)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(302, 20)
         Me.txtEmail.TabIndex = 9
@@ -176,7 +177,7 @@ Partial Class Reg
         Me.txtContact.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtContact.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtContact.Location = New System.Drawing.Point(68, 227)
-        Me.txtContact.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtContact.Margin = New System.Windows.Forms.Padding(2)
         Me.txtContact.Name = "txtContact"
         Me.txtContact.Size = New System.Drawing.Size(302, 20)
         Me.txtContact.TabIndex = 10
@@ -187,7 +188,7 @@ Partial Class Reg
         Me.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtUsername.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsername.Location = New System.Drawing.Point(69, 282)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(302, 20)
         Me.txtUsername.TabIndex = 11
@@ -198,7 +199,7 @@ Partial Class Reg
         Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtPassword.Font = New System.Drawing.Font("Nirmala UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.Location = New System.Drawing.Point(69, 337)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(302, 20)
         Me.txtPassword.TabIndex = 12
@@ -209,7 +210,7 @@ Partial Class Reg
         Me.btnSubmit.Font = New System.Drawing.Font("Verdana", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubmit.ForeColor = System.Drawing.Color.Snow
         Me.btnSubmit.Location = New System.Drawing.Point(67, 373)
-        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(304, 33)
         Me.btnSubmit.TabIndex = 13
@@ -262,10 +263,22 @@ Partial Class Reg
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(-2, -2)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(439, 62)
         Me.Panel1.TabIndex = 18
+        '
+        'IconButton1
+        '
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.IconButton1.IconColor = System.Drawing.Color.Black
+        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton1.Location = New System.Drawing.Point(175, 411)
+        Me.IconButton1.Name = "IconButton1"
+        Me.IconButton1.Size = New System.Drawing.Size(75, 23)
+        Me.IconButton1.TabIndex = 19
+        Me.IconButton1.Text = "IconButton1"
+        Me.IconButton1.UseVisualStyleBackColor = True
         '
         'Reg
         '
@@ -273,6 +286,7 @@ Partial Class Reg
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(434, 497)
+        Me.Controls.Add(Me.IconButton1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.lbllogin)
         Me.Controls.Add(Me.lblacc)
@@ -291,7 +305,7 @@ Partial Class Reg
         Me.Controls.Add(Me.lblLastname)
         Me.Controls.Add(Me.lblFirstname)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Reg"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registration"
@@ -320,4 +334,5 @@ Partial Class Reg
     Friend WithEvents lblacc As Label
     Friend WithEvents lbllogin As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
 End Class
